@@ -5,81 +5,67 @@ const Exhibitions = () => {
   const exhibitions = [
     {
       id: "1",
+      title: "Name Dropping",
+      venue: "Pauline Perplexe",
+      dates: "16 septembre - 23 novembre 2023",
+      image: "https://raphaelrossi.com/assets/extraverted-paintings/extraverted-01.jpg"
+    },
+    {
+      id: "2",
       title: "Extraverted paintings / Introverting pictures",
       venue: "Bagnoler",
       dates: "16 septembre - 23 novembre 2023",
       image: "https://raphaelrossi.com/assets/extraverted-paintings/extraverted-01.jpg"
     },
     {
-      id: "2",
+      id: "3",
       title: "Watch to earn",
       venue: "Frac Bourgogne",
       dates: "12 janvier - 02 février 2024",
       image: "/assets/watch-to-earn/watch-12.jpg"
     },
     {
-      id: "3",
+      id: "4",
       title: "Madame Bovary",
       venue: "Poush",
       dates: "08 mars - 28 mars 2024",
       image: "/assets/madame-bovary/madame-bovary-08.jpg"
     },
     {
-      id: "4",
+      id: "5",
       title: "La capitale tomes 1 et 2, Vol.II",
       venue: "Centre d'Art les Tanneries",
       dates: "15 avril - 10 mai 2024",
       image: "https://raphaelrossi.com/assets/exhibitions/portraits-01.jpg"
     },
     {
-      id: "5",
-      title: "Silent Dialogues",
-      venue: "Centre d'Art Léandre",
-      dates: "01 juin - 20 juin 2024",
+      id: "6",
+      title: "La capitale tome I et II",
+      venue: "Centre d’art les Tanneries",
+      dates: "11 janvier - 22 mars 2020",
       image: "https://raphaelrossi.com/assets/exhibitions/silent-01.jpg"
     },
     {
-      id: "6",
-      title: "Acrylic Landscapes",
-      venue: "Espace 17",
-      dates: "05 juillet - 30 juillet 2024",
-      image: "https://raphaelrossi.com/assets/exhibitions/landscapes-01.jpg"
-    },
-    {
       id: "7",
-      title: "Studio Works",
-      venue: "Galerie du Pont",
-      dates: "10 août - 31 août 2024",
+      title: "Au bord de l'âge adulte",
+      venue: "FRAC Champagne-Ardennes",
+      dates: "23 janvier - 21 avril 2020",
       image: "https://raphaelrossi.com/assets/exhibitions/studio-01.jpg"
     },
     {
       id: "8",
-      title: "Between Shapes",
-      venue: "La Fabrique",
-      dates: "07 septembre - 27 septembre 2024",
+      title: "Le Vingtième Prix de la Fondation Ricard",
+      venue: "Fondation d'entreprise Ricard",
+      dates: "11 septembre - 27 octobre 2018",
       image: "https://raphaelrossi.com/assets/exhibitions/shapes-01.jpg"
     },
     {
       id: "9",
-      title: "Paper & Paint",
-      venue: "Galerie Blanche",
-      dates: "03 octobre - 24 octobre 2024",
+      title: "Which drinking buddy are you ?",
+      venue: "Chiffonnier",
+      dates: "28 avril - 20 mai 2018",
       image: "https://raphaelrossi.com/assets/exhibitions/paper-01.jpg"
     },
-    {
-      id: "10",
-      title: "Recent Works",
-      venue: "Studio 9",
-      dates: "12 novembre - 05 décembre 2024",
-      image: "https://raphaelrossi.com/assets/exhibitions/recent-01.jpg"
-    },
-    {
-      id: "11",
-      title: "Retrospective Selections",
-      venue: "Musée Local",
-      dates: "10 décembre 2024 - 15 janvier 2025",
-      image: "https://raphaelrossi.com/assets/exhibitions/retro-01.jpg"
-    }
   ];
 
 
