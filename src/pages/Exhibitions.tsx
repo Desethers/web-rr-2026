@@ -29,14 +29,14 @@ const Exhibitions = () => {
       title: "Madame Bovary",
       venue: "Poush",
       dates: "08 mars - 28 mars 2024",
-      image: "/assets/madame-bovary/madame-bovary-08.jpg"
+      image: "/assets/pictures-past-exhibitions/bovary-past-exhibitions-grid.jpg"
     },
     {
       id: "5",
       title: "La capitale tomes 1 et 2, Vol.II",
       venue: "Centre d'Art les Tanneries",
       dates: "15 avril - 10 mai 2024",
-      image: "https://raphaelrossi.com/assets/exhibitions/portraits-01.jpg"
+      image: "/assets/pictures-past-exhibitions/la-capitale-vol02-past-exhibitions-grid.jpg"
     },
     {
       id: "6",
@@ -50,7 +50,7 @@ const Exhibitions = () => {
       title: "Au bord de l'âge adulte",
       venue: "FRAC Champagne-Ardennes",
       dates: "23 janvier - 21 avril 2020",
-      image: "https://raphaelrossi.com/assets/exhibitions/studio-01.jpg"
+      image: "/assets/pictures-past-exhibitions/au-bord-de-l-age-past-exhibitions-grid.jpg"
     },
     {
       id: "8",
