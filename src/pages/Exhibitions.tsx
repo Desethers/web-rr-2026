@@ -43,13 +43,13 @@ const Exhibitions = () => {
       title: "La capitale tome I et II",
       venue: "Centre d’art les Tanneries",
       dates: "11 janvier - 22 mars 2020",
-      image: "https://raphaelrossi.com/assets/exhibitions/silent-01.jpg"
+      image: "/assets/pictures-past-exhibitions/la-capitale-tomes-1-et-2-past-exhibitions-grid.jpg"
     },
     {
       id: "7",
       title: "Au bord de l'âge adulte",
       venue: "FRAC Champagne-Ardennes",
-      dates: "23 janvier - 21 avril 2020",
+      dates: "10 otobre - 13 déc. 2019",
       image: "/assets/pictures-past-exhibitions/au-bord-de-l-age-past-exhibitions-grid.jpg"
     },
     {
@@ -57,14 +57,14 @@ const Exhibitions = () => {
       title: "Le Vingtième Prix de la Fondation Ricard",
       venue: "Fondation d'entreprise Ricard",
       dates: "11 septembre - 27 octobre 2018",
-      image: "https://raphaelrossi.com/assets/exhibitions/shapes-01.jpg"
+      image: "/assets/pictures-past-exhibitions/vingtieme-prix-past-exhibitions-grid.jpg"
     },
     {
       id: "9",
       title: "Which drinking buddy are you ?",
       venue: "Chiffonnier",
       dates: "28 avril - 20 mai 2018",
-      image: "https://raphaelrossi.com/assets/exhibitions/paper-01.jpg"
+      image: "/assets/pictures-past-exhibitions/which-drinking-past-exhibitions-grid.jpg"
     },
   ];
 
