@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 
 const Exhibitions = () => {
+  // ...existing code...
   const exhibitions = [
     {
       id: "1",
@@ -21,7 +22,7 @@ const Exhibitions = () => {
       title: "Madame Bovary",
       venue: "Poush",
       dates: "08 mars - 28 mars 2024",
-      image: "https://raphaelrossi.com/assets/exhibitions/colour-01.jpg"
+      image: "/assets/madame-bovary/madame-bovary-08.jpg"
     },
     {
       id: "4",
@@ -80,6 +81,8 @@ const Exhibitions = () => {
       image: "https://raphaelrossi.com/assets/exhibitions/retro-01.jpg"
     }
   ];
+
+
   return (
     <>
       <Navigation />
