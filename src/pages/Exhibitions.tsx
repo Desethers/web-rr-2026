@@ -1,7 +1,10 @@
 import Navigation from "@/components/Navigation";
 
 const Exhibitions = () => {
+<<<<<<< HEAD
   // ...existing code...
+=======
+>>>>>>> e6a1586fe02f5ea1d4672d458fce5678348def85
   const exhibitions = [
     {
       id: "1",
@@ -9,6 +12,7 @@ const Exhibitions = () => {
       venue: "Bagnoler",
       dates: "16 septembre - 23 novembre 2023",
       image: "https://raphaelrossi.com/assets/extraverted-paintings/extraverted-01.jpg"
+<<<<<<< HEAD
     },
     {
       id: "2",
@@ -83,6 +87,11 @@ const Exhibitions = () => {
   ];
 
 
+=======
+    }
+  ];
+
+>>>>>>> e6a1586fe02f5ea1d4672d458fce5678348def85
   return (
     <>
       <Navigation />
