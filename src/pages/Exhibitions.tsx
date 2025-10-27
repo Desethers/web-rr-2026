@@ -8,7 +8,7 @@ const Exhibitions = () => {
       title: "Name Dropping",
       venue: "Pauline Perplexe",
       dates: "16 septembre - 23 novembre 2023",
-      image: "https://raphaelrossi.com/assets/extraverted-paintings/extraverted-01.jpg"
+      image: "/assets/name-dropping/006.jpg"
     },
     {
       id: "2",
