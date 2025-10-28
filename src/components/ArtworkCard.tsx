@@ -13,7 +13,7 @@ const ArtworkCard = ({ id, image, title, year, medium, dimensions }: ArtworkCard
   return (
     <Link to={`/artwork/${id}`} className="group block">
       <div className="artwork-card">
-        <div className="aspect-square overflow-hidden bg-card mb-4">
+        <div className="aspect-square overflow-hidden mb-4" style={{ backgroundColor: '#f5f5f7', padding: '20px' }}>
           <img 
             src={image} 
             alt={title}
