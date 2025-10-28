@@ -80,4 +80,17 @@ All colors MUST be HSL.
   .image-filtered {
     filter: brightness(0.9);
   }
+
+  .zoom-slow {
+    animation: zoom-in 20s ease-in-out infinite alternate;
+  }
+
+  @keyframes zoom-in {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
 }

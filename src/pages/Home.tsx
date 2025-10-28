@@ -49,7 +49,7 @@ const Home = () => {
             <img 
               src="https://raphaelrossi.com/assets/extraverted-paintings/extraverted-01.jpg"
               alt="Exhibition view"
-              className="w-full h-auto object-cover image-filtered"
+              className="w-full h-auto object-cover image-filtered zoom-slow"
             />
           </div>
         </section>
