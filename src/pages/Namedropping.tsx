@@ -1,7 +1,8 @@
 import React from "react";
 import Navigation from "@/components/Navigation";
 import { Link } from "react-router-dom";
-import { nameDroppingImages } from "@/data/namedroppingimg";
+-import { nameDroppingImages } from "@/data/namedroppingimg";
++import { nameDroppingImages } from "../data/namedroppingimg";
 
 type ExhibitImage = {
   src: string;
@@ -10,7 +11,9 @@ type ExhibitImage = {
   className?: string;
 };
 
-const Figure: React.FC<{ img: ExhibitImage }> = ({ img }) => (
+const NameDropping: React.FC = () => {
+  console.log('nameDroppingImages', nameDroppingImages);
+  const images = nameDroppingImages;
   <figure className={img.className ?? "imagefull"}>
     <img
       src={img.src}
