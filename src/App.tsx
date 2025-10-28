@@ -8,6 +8,8 @@ import Gallery from "./pages/Gallery";
 import Exhibitions from "./pages/Exhibitions";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
+import Namedropping from "./pages/Namedropping";
+
 
 const queryClient = new QueryClient();
 
@@ -21,9 +23,11 @@ const App = () => (
           <Route path="/" element={<Home />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/exhibitions" element={<Exhibitions />} />
+          <Route path="/exhibitions/Namedropping" element={<Namedropping />} />
           <Route path="/about" element={<About />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
+          
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

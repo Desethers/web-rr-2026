@@ -1,5 +1,5 @@
 import Navigation from "@/components/Navigation";
-
+import { Link } from "react-router-dom";
 const Exhibitions = () => {
   // ...existing code...
   const exhibitions = [
@@ -69,7 +69,7 @@ const Exhibitions = () => {
   ];
 
 
-  return (
+return (
     <>
       <Navigation />
       
@@ -93,8 +93,20 @@ const Exhibitions = () => {
                     className="w-full h-full object-cover image-filtered transition-elegant group-hover:scale-105"
                   />
                 </div>
+
                 <div className="space-y-1">
-                  <h3 className="text-xl font-medium">{exhibition.title}</h3>
+                  {exhibition.title === "Name Dropping" ? (
+                    <Link
+                      to="/exhibitions/namedropping"
+                      state={exhibition}
+                      className="text-xl font-medium text-primary hover:underline"
+                    >
+                      {exhibition.title}
+                    </Link>
+                  ) : (
+                    <h3 className="text-xl font-medium">{exhibition.title}</h3>
+                  )}
+
                   <p className="text-base text-muted-foreground">{exhibition.venue}</p>
                   <p className="text-base text-muted-foreground">{exhibition.dates}</p>
                 </div>
