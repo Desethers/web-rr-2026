@@ -12,8 +12,8 @@ interface ArtworkCardProps {
 const ArtworkCard = ({ id, image, title, year, medium, dimensions }: ArtworkCardProps) => {
   return (
     <Link to={`/artwork/${id}`} className="group block">
-      <div className="artwork-card">
-        <div className="aspect-square overflow-hidden mb-4" style={{ backgroundColor: '#f5f5f7', padding: '20px' }}>
+      <div className="artwork-card" style={{ backgroundColor: '#f5f5f7', padding: '20px' }}>
+        <div className="aspect-square overflow-hidden mb-4">
           <img 
             src={image} 
             alt={title}
