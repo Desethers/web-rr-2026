@@ -73,18 +73,7 @@ const Home = () => {
 
         {/* Last Artworks */}
         <section className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
-          <div className="mb-8">
-            <h1 className="text-5xl lg:text-6xl font-semibold mb-4">Last artworks</h1>
-            <p className="text-2xl text-muted-foreground mb-6">New pieces from the studio</p>
-            <Link 
-              to="/gallery"
-              className="btn-rounded"
-            >
-              Explore more artworks
-            </Link>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
             {artworks.map((artwork, index) => (
               <div 
                 key={artwork.id}
@@ -94,6 +83,17 @@ const Home = () => {
                 <ArtworkCard {...artwork} />
               </div>
             ))}
+          </div>
+
+          <div>
+            <h1 className="text-5xl lg:text-6xl font-semibold mb-4">Last artworks</h1>
+            <p className="text-2xl text-muted-foreground mb-6">New pieces from the studio</p>
+            <Link 
+              to="/gallery"
+              className="btn-rounded"
+            >
+              Explore more artworks
+            </Link>
           </div>
         </section>
       </main>
