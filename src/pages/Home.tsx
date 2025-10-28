@@ -90,7 +90,7 @@ const Home = () => {
             ))}
           </div>
 
-          <div className="text-center">
+          <div>
             <Link 
               to="/gallery"
               className="btn-rounded"
