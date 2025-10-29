@@ -12,7 +12,7 @@ interface ArtworkCardProps {
 const ArtworkCard = ({ id, image, title, year, medium, dimensions }: ArtworkCardProps) => {
   return (
     <Link to={`/artwork/${id}`} className="group block">
-      <div className="artwork-card" style={{ backgroundColor: '#f5f5f7', padding: '20px', width: '278px' }}>
+      <div className="artwork-card" style={{ backgroundColor: '#f5f5f7', padding: '20px', width: '278px', borderRadius: '8px' }}>
         <div className="overflow-hidden mb-4" style={{ width: '238px', height: '238px' }}>
           <img 
             src={image} 
