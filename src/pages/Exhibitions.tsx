@@ -73,8 +73,8 @@ return (
     <>
       <Navigation />
       
-      <main className="pt-24">
-        <section className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
+      <main>
+        <section className="max-w-7xl mx-auto px-[25px] pt-5 pb-12">
           <div className="mb-12">
             <h1 className="text-5xl lg:text-6xl font-semibold mb-4 animate-fade-in">Past exhibitions</h1>
           </div>
