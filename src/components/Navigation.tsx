@@ -6,7 +6,7 @@ const Navigation = () => {
   const isActive = (path: string) => location.pathname === path;
   
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-sm">
+    <nav className="bg-background">
       <div className="max-w-7xl mx-auto px-[25px] py-6">
         <div className="flex items-center justify-between">
           <Link to="/" className="text-2xl font-semibold tracking-tight hover:opacity-70 transition-elegant">
