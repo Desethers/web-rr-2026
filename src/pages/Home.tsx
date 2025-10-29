@@ -42,9 +42,9 @@ const Home = () => {
     <>
       <Navigation />
       
-      <main className="pt-24">
+      <main>
         {/* Hero Section */}
-        <section className="max-w-7xl mx-auto px-6 lg:px-8 mt-8">
+        <section className="max-w-7xl mx-auto px-[25px] mt-[15px]">
           <div className="overflow-hidden">
             <img 
               src="https://raphaelrossi.com/assets/extraverted-paintings/extraverted-01.jpg"
