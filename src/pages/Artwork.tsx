@@ -10,7 +10,9 @@ const artworksData = [
     year: 2024,
     medium: "Acrylic on canvas",
     dimensions: "124 x 124 cm",
-    description: "Portrait painting of David Foster Wallace, capturing the essence of the celebrated American author.",
+    price: "€2800",
+    description: "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as David Foster Wallace, blending geometric patterns with color-splat experimentation.",
+    description2: "In this series, I investigate the interplay between personal identity and cultural memory by using the names of contemporary authors as motifs in my paintings. The geometric style, influenced by the architectural forms of public buildings, reflects the perspective of elite culture as viewed from the streets.",
     detailImages: [
       "/assets/artworks-img/foster-wallace-2024-01.jpg"
     ]
@@ -22,7 +24,9 @@ const artworksData = [
     year: 2024,
     medium: "Acrylic on canvas",
     dimensions: "104 x 104 cm",
-    description: "Contemporary portrait of the acclaimed novelist Ottessa Moshfegh.",
+    price: "€2400",
+    description: "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as Ottessa Moshfegh, blending geometric patterns with color-splat experimentation.",
+    description2: "In this series, I investigate the interplay between personal identity and cultural memory by using the names of contemporary authors as motifs in my paintings. The geometric style, influenced by the architectural forms of public buildings, reflects the perspective of elite culture as viewed from the streets.",
     detailImages: [
       "/assets/artworks-img/ottessa-moshfegh-face-2024.jpg",
       "/assets/artworks-img/ottessa-moshfegh-details-2024.jpg"
@@ -35,7 +39,9 @@ const artworksData = [
     year: 2023,
     medium: "Acrylic on canvas",
     dimensions: "50 x 40 cm",
-    description: "Portrait of the American poet and novelist Laura Kasischke.",
+    price: "€1800",
+    description: "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as Laura Kasischke, blending geometric patterns with color-splat experimentation.",
+    description2: "In this series, I investigate the interplay between personal identity and cultural memory by using the names of contemporary authors as motifs in my paintings. The geometric style, influenced by the architectural forms of public buildings, reflects the perspective of elite culture as viewed from the streets.",
     detailImages: [
       "/assets/artworks-img/kasischke-face-2023.jpg",
       "/assets/artworks-img/kasischke-detail-2023.jpg",
@@ -49,7 +55,9 @@ const artworksData = [
     year: 2023,
     medium: "Acrylic on canvas",
     dimensions: "50 x 40 cm",
-    description: "A tribute to the iconic American writer Joan Didion.",
+    price: "€1800",
+    description: "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as Joan Didion, blending geometric patterns with color-splat experimentation.",
+    description2: "In this series, I investigate the interplay between personal identity and cultural memory by using the names of contemporary authors as motifs in my paintings. The geometric style, influenced by the architectural forms of public buildings, reflects the perspective of elite culture as viewed from the streets.",
     detailImages: [
       "/assets/artworks-img/joan-didion-face-2023.jpg",
       "/assets/artworks-img/joan-didion-detail-2023.jpg",
@@ -105,7 +113,7 @@ const Artwork: React.FC = () => {
                 <p className="text-base text-muted-foreground">{artwork.medium}</p>
                 <p className="text-base text-muted-foreground mb-6">{artwork.dimensions}</p>
                 
-                <p className="text-2xl font-semibold mb-4">€2800</p>
+                <p className="text-2xl font-semibold mb-4">{artwork.price}</p>
                 
                 <button className="w-full border border-foreground py-3 px-6 hover:bg-foreground hover:text-background transition-colors">
                   Buy this painting
@@ -113,18 +121,8 @@ const Artwork: React.FC = () => {
               </div>
 
               <div className="space-y-4 text-base leading-relaxed">
-                <p>
-                  This painting is part of a unique series that explores the connection between 
-                  formal and psychological relationships in fiction and urban environments. The 
-                  geometric composition features the typographic names of contemporary authors, 
-                  such as {artwork.title}, blending geometric patterns with color-splat experimentation.
-                </p>
-                <p>
-                  In this series, I investigate the interplay between personal identity and cultural 
-                  memory by using the names of contemporary authors as motifs in my paintings. The 
-                  geometric style, influenced by the architectural forms of public buildings, reflects 
-                  the perspective of elite culture as viewed from the streets.
-                </p>
+                <p>{artwork.description}</p>
+                <p>{artwork.description2}</p>
               </div>
 
               <div className="pt-8 border-t">
