@@ -103,6 +103,14 @@ return (
                     >
                       {exhibition.title}
                     </Link>
+                  ) : exhibition.title === "Extraverted paintings / Introverting pictures" ? (
+                    <Link
+                      to="/exhibitions/extraverted-paintings"
+                      state={exhibition}
+                      className="text-xl font-medium text-primary hover:underline"
+                    >
+                      {exhibition.title}
+                    </Link>
                   ) : (
                     <h3 className="text-xl font-medium">{exhibition.title}</h3>
                   )}

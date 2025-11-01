@@ -9,6 +9,14 @@ import Exhibitions from "./pages/Exhibitions";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import Namedropping from "./pages/Namedropping";
+import ExtravertedPaintings from "./pages/Extraverted-paintings";
+import WatchToEarn from "./pages/Watch-to-earn";
+import MadameBovary from "./pages/Madame-Bovary";
+import LaCapitaleVolII from "./pages/La-capitale-vol-II";
+import LaCapitale from "./pages/La-capitale";
+import AuBordDeLAgeAdulte from "./pages/Au-bord-de-l-age-adulte";
+import LeVingtiemePrix from "./pages/Le-Vingtieme-Prix";
+import WhichDrinkingBuddyAreYou from "./pages/Which-drinking-buddy-are-you";
 
 
 const queryClient = new QueryClient();
@@ -24,6 +32,14 @@ const App = () => (
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/exhibitions" element={<Exhibitions />} />
           <Route path="/exhibitions/Namedropping" element={<Namedropping />} />
+          <Route path="/exhibitions/Extraverted-paintings" element={<ExtravertedPaintings />} />
+          <Route path="/exhibitions/Watch-to-earn" element={<WatchToEarn />} />
+          <Route path="/exhibitions/Madame-Bovary" element={<MadameBovary />} />
+          <Route path="/exhibitions/La-capitale-vol-II" element={<LaCapitaleVolII />} />
+          <Route path="/exhibitions/La-capitale" element={<LaCapitale />} />
+          <Route path="/exhibitions/Au-bord-de-l-age-adulte" element={<AuBordDeLAgeAdulte />} />
+          <Route path="/exhibitions/Le-Vingtieme-Prix" element={<LeVingtiemePrix />} />
+          <Route path="/exhibitions/Which-drinking-buddy-are-you" element={<WhichDrinkingBuddyAreYou />} />
           <Route path="/about" element={<About />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
