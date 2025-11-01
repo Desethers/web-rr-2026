@@ -81,55 +81,86 @@ const Artwork: React.FC = () => {
       <Navigation />
 
       <main>
-        <section className="title_exhibition">
-          <div className="container max-w-5xl mx-auto px-6 lg:px-8 pt-5 pb-12">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 leading-tight">
-              {artwork.title}, {artwork.year}
-            </h1>
-          </div>
-        </section>
-
-        <section className="textandinfos">
-          <div className="containerintro grid md:grid-cols-2 gap-6 max-w-5xl mx-auto px-6 lg:px-8 py-6">
-            <div className="intro_exhibition">
-              <p className="font-medium">{artwork.medium}</p>
-              <p className="mt-2">{artwork.dimensions}</p>
-            </div>
-
-            <div className="intro_exhibition">
-              <p>{artwork.description}</p>
-            </div>
-
-            <div className="filet_mobile md:col-span-2" />
-          </div>
-        </section>
-
-        <section className="gallery container max-w-5xl mx-auto px-6 lg:px-8">
-          <div className="space-y-8">
-            <figure className="imagefull">
-              <img
-                src={artwork.image}
-                alt={artwork.title}
-                className="w-full object-cover"
-                loading="lazy"
-                decoding="async"
-              />
-            </figure>
-
-            {artwork.detailImages.map((img, idx) => (
-              <figure key={idx} className="imagefull">
+        <section className="container max-w-7xl mx-auto px-6 lg:px-8 pt-5 pb-12">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            {/* Left column - Image */}
+            <div className="space-y-8">
+              <figure>
                 <img
-                  src={img}
-                  alt={`${artwork.title} detail ${idx + 1}`}
+                  src={artwork.detailImages[0] || artwork.image}
+                  alt={artwork.title}
                   className="w-full object-cover"
                   loading="lazy"
                   decoding="async"
                 />
               </figure>
-            ))}
+            </div>
 
-            <div className="mt-12">
-              <Link to="/gallery" className="text-sm hover:underline">← Back to Gallery</Link>
+            {/* Right column - Information */}
+            <div className="space-y-6">
+              <div>
+                <h1 className="text-3xl md:text-4xl font-semibold mb-2">
+                  {artwork.title}, {artwork.year}
+                </h1>
+                <p className="text-base text-muted-foreground">{artwork.medium}</p>
+                <p className="text-base text-muted-foreground mb-6">{artwork.dimensions}</p>
+                
+                <p className="text-2xl font-semibold mb-4">€2800</p>
+                
+                <button className="w-full border border-foreground py-3 px-6 hover:bg-foreground hover:text-background transition-colors">
+                  Buy this painting
+                </button>
+              </div>
+
+              <div className="space-y-4 text-base leading-relaxed">
+                <p>
+                  This painting is part of a unique series that explores the connection between 
+                  formal and psychological relationships in fiction and urban environments. The 
+                  geometric composition features the typographic names of contemporary authors, 
+                  such as {artwork.title}, blending geometric patterns with color-splat experimentation.
+                </p>
+                <p>
+                  In this series, I investigate the interplay between personal identity and cultural 
+                  memory by using the names of contemporary authors as motifs in my paintings. The 
+                  geometric style, influenced by the architectural forms of public buildings, reflects 
+                  the perspective of elite culture as viewed from the streets.
+                </p>
+              </div>
+
+              <div className="pt-8 border-t">
+                <h2 className="text-xl font-semibold mb-4">Request more information</h2>
+                <p className="text-sm text-muted-foreground mb-4">
+                  To learn more about this artwork or shipping method, please provide your contact information.
+                </p>
+                
+                <form className="space-y-4">
+                  <input 
+                    type="text" 
+                    placeholder="First name" 
+                    className="w-full border border-border px-4 py-2 bg-background"
+                  />
+                  <input 
+                    type="text" 
+                    placeholder="Last name" 
+                    className="w-full border border-border px-4 py-2 bg-background"
+                  />
+                  <input 
+                    type="email" 
+                    placeholder="Email address" 
+                    className="w-full border border-border px-4 py-2 bg-background"
+                  />
+                  <button 
+                    type="submit"
+                    className="bg-foreground text-background py-2 px-8 hover:opacity-90 transition-opacity"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
+              
+              <div className="pt-4">
+                <Link to="/gallery" className="text-sm hover:underline">← Back to Gallery</Link>
+              </div>
             </div>
           </div>
         </section>
