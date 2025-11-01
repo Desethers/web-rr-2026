@@ -111,6 +111,31 @@ return (
                     >
                       {exhibition.title}
                     </Link>
+                  ) : exhibition.title === "Watch to earn" ? (
+                    <Link
+                      to="/exhibitions/watch-to-earn"
+                      state={exhibition}
+                      className="text-xl font-medium text-primary hover:underline"
+                    >
+                      {exhibition.title}
+                    </Link>
+                  ) : exhibition.title === "Madame Bovary" ? (
+                    <Link
+                      to="/exhibitions/madame-bovary"
+                      state={exhibition}
+                      className="text-xl font-medium text-primary hover:underline"
+                    >
+                      {exhibition.title}
+                    </Link>
+                  ) : exhibition.title === "La capitales tomes 1 et 2" ? (
+                    <Link
+                      to="/exhibitions/la-capitales-tomes-1-et2"
+                      state={exhibition}
+                      className="text-xl font-medium text-primary hover:underline"
+                    >
+                      {exhibition.title}
+                    </Link>
+                    
                   ) : (
                     <h3 className="text-xl font-medium">{exhibition.title}</h3>
                   )}
