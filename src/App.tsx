@@ -8,6 +8,7 @@ import Gallery from "./pages/Gallery";
 import Exhibitions from "./pages/Exhibitions";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
+import Artwork from "./pages/Artwork";
 import Namedropping from "./pages/Namedropping";
 import ExtravertedPaintings from "./pages/Extraverted-paintings";
 import WatchToEarn from "./pages/Watch-to-earn";
@@ -30,6 +31,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/artwork/:id" element={<Artwork />} />
           <Route path="/exhibitions" element={<Exhibitions />} />
           <Route path="/exhibitions/Namedropping" element={<Namedropping />} />
           <Route path="/exhibitions/Extraverted-paintings" element={<ExtravertedPaintings />} />
