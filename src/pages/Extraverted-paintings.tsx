@@ -72,7 +72,7 @@ const NameDropping: React.FC = () => {
             {images.length > 0 && <Figure img={images[0]} />}
 
             <article className="texte_exhibition">
-              <div className="grid md:grid-cols-2 gap-8 px-[50px] max-w-[1440px] mx-auto">
+              <div className="grid md:grid-cols-2 gap-8 px-[60px] max-w-[1440px] mx-auto">
                 <p>
                   Sur le banc public s'échangent les mots et les images. La réification du sens en unités manipulables introduit dans l'esprit du collectionneur la possibilité d'articuler ses fétiches. Le partage des objets appelle une économie du signe. À la rue du commerce se traduit le modelé du masque par la griffe du chapeau. Les noms et les visages n'appartiennent plus tant à leur porteur qu'à celui ou celle qui leur imposera une place dans l'énonciation d'un désir.
                 </p>
