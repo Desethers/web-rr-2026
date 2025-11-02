@@ -69,6 +69,8 @@ const NameDropping: React.FC = () => {
 
         <section className="max-w-[1440px] mx-auto text-[19px] px-[25px] py-12">
           <div className="space-y-8">
+            {images.length > 0 && <Figure img={images[0]} />}
+
             <article className="texte_exhibition">
               <div className="grid md:grid-cols-2 gap-8 px-[50px] max-w-[1440px] mx-auto">
                 <p>
@@ -81,8 +83,8 @@ const NameDropping: React.FC = () => {
               <p className="px-[50px] mt-4">Texte de Manuel Vieillot</p>
             </article>
 
-            {images.map((img, idx) => (
-              <Figure key={idx} img={img} />
+            {images.slice(1).map((img, idx) => (
+              <Figure key={idx + 1} img={img} />
             ))}
 
             <div className="legende_bouton flex items-start gap-6">
