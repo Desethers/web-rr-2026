@@ -74,7 +74,7 @@ return (
       <Navigation />
       
       <main>
-        <section className="max-w-7xl mx-auto px-[25px] pt-5 pb-12">
+        <section className="max-w-[1440px] mx-auto px-[25px] py-12">
           <div className="mb-12">
             <h1 className="text-5xl lg:text-6xl font-semibold mb-4 animate-fade-in">Past exhibitions</h1>
           </div>
@@ -97,7 +97,7 @@ return (
                 <div className="space-y-1">
                   {exhibition.title === "Name Dropping" ? (
                     <Link
-                      to="/exhibitions/namedropping"
+                      to="/exhibitions/Namedropping"
                       state={exhibition}
                       className="text-xl font-medium text-primary hover:underline"
                     >
@@ -105,7 +105,7 @@ return (
                     </Link>
                   ) : exhibition.title === "Extraverted paintings / Introverting pictures" ? (
                     <Link
-                      to="/exhibitions/extraverted-paintings"
+                      to="/exhibitions/Extraverted-paintings"
                       state={exhibition}
                       className="text-xl font-medium text-primary hover:underline"
                     >
@@ -113,7 +113,7 @@ return (
                     </Link>
                   ) : exhibition.title === "Watch to earn" ? (
                     <Link
-                      to="/exhibitions/watch-to-earn"
+                      to="/exhibitions/Watch-to-earn"
                       state={exhibition}
                       className="text-xl font-medium text-primary hover:underline"
                     >
@@ -121,21 +121,52 @@ return (
                     </Link>
                   ) : exhibition.title === "Madame Bovary" ? (
                     <Link
-                      to="/exhibitions/madame-bovary"
+                      to="/exhibitions/Madame-Bovary"
                       state={exhibition}
                       className="text-xl font-medium text-primary hover:underline"
                     >
                       {exhibition.title}
                     </Link>
-                  ) : exhibition.title === "La capitales tomes 1 et 2" ? (
+                  ) : exhibition.title === "La capitale tomes 1 et 2, Vol.II" ? (
                     <Link
-                      to="/exhibitions/la-capitales-tomes-1-et2"
+                      to="/exhibitions/La-capitale-vol-II"
                       state={exhibition}
                       className="text-xl font-medium text-primary hover:underline"
                     >
                       {exhibition.title}
                     </Link>
-                    
+                  ) : exhibition.title === "La capitale tome I et II" ? (
+                    <Link
+                      to="/exhibitions/La-capitale"
+                      state={exhibition}
+                      className="text-xl font-medium text-primary hover:underline"
+                    >
+                      {exhibition.title}
+                    </Link>
+                  ) : exhibition.title === "Au bord de l'âge adulte" ? (
+                    <Link
+                      to="/exhibitions/Au-bord-de-l-age-adulte"
+                      state={exhibition}
+                      className="text-xl font-medium text-primary hover:underline"
+                    >
+                      {exhibition.title}
+                    </Link>
+                  ) : exhibition.title === "Le Vingtième Prix de la Fondation Ricard" ? (
+                    <Link
+                      to="/exhibitions/Le-Vingtieme-Prix"
+                      state={exhibition}
+                      className="text-xl font-medium text-primary hover:underline"
+                    >
+                      {exhibition.title}
+                    </Link>
+                  ) : exhibition.title === "Which drinking buddy are you ?" ? (
+                    <Link
+                      to="/exhibitions/Which-drinking-buddy-are-you"
+                      state={exhibition}
+                      className="text-xl font-medium text-primary hover:underline"
+                    >
+                      {exhibition.title}
+                    </Link>
                   ) : (
                     <h3 className="text-xl font-medium">{exhibition.title}</h3>
                   )}
