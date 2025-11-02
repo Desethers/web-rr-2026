@@ -68,7 +68,7 @@ const NameDropping: React.FC = () => {
         </section>
 
         <section className="max-w-[1440px] mx-auto text-[19px] px-[25px] py-12">
-          <div className="space-y-[25px]">
+          <div className="space-y-[100px]">
             {images.length > 0 && <Figure img={images[0]} />}
 
             <article className="texte_exhibition">
