@@ -89,11 +89,11 @@ const Artwork: React.FC = () => {
       <Navigation />
 
       <main>
-        <section className="container max-w-7xl mx-auto px-6 lg:px-8 pt-5 pb-12">
-          <div className="grid md:grid-cols-2 gap-12 items-start">
+        <section className="max-w-[1440px] mx-auto px-[25px] py-12">
+          <div className="grid md:grid-cols-[2fr_1fr] gap-12 items-start">
             {/* Left column - Image */}
-            <div className="space-y-8">
-              <figure>
+            <div className="flex justify-center items-start">
+              <figure className="flex justify-center items-center max-w-[700px] mx-auto">
                 <img
                   src={artwork.detailImages[0] || artwork.image}
                   alt={artwork.title}
@@ -115,7 +115,7 @@ const Artwork: React.FC = () => {
                 
                 <p className="text-2xl font-semibold mb-4">{artwork.price}</p>
                 
-                <button className="w-full border border-foreground py-3 px-6 hover:bg-foreground hover:text-background transition-colors">
+                <button className="w-full border border-foreground py-4 px-6 rounded hover:bg-foreground hover:text-background transition-colors">
                   Buy this painting
                 </button>
               </div>

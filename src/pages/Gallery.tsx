@@ -3,6 +3,14 @@ import ArtworkCard from "@/components/ArtworkCard";
 
 const Gallery = () => {
   const artworks = [
+     {
+      id: "foster-wallace-2024",
+      image: "https://raphaelrossi.com/assets/last-artworks/Foster-Wallace-2024-detoure.png",
+      title: "Foster Wallace",
+      year: 2024,
+      medium: "Acrylic on canvas",
+      dimensions: "124 x 124 cm"
+    },
     {
       id: "foster-wallace-2024",
       image: "https://raphaelrossi.com/assets/last-artworks/Foster-Wallace-2024-detoure.png",
@@ -42,7 +50,8 @@ const Gallery = () => {
       <Navigation />
       
       <main className="pt-24">
-        <section className="max-w-7xl mx-auto px-[25px] py-12">
+        <section className="max-w-[1440px] mx-auto px-[25px] py-12">
+        
           <div className="mb-12">
             <h1 className="text-5xl lg:text-6xl font-semibold mb-6 animate-fade-in">Gallery</h1>
             <div className="h-px bg-border mb-8"></div>

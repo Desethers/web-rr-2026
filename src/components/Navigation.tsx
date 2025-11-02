@@ -7,9 +7,12 @@ const Navigation = () => {
   
   return (
     <nav className="bg-background">
-      <div className="max-w-7xl mx-auto px-[25px] py-6">
+      <div className="max-w-[1440px] mx-auto px-[25px] py-12">
         <div className="flex items-center justify-between">
-          <Link to="/" className="text-2xl font-semibold tracking-tight hover:opacity-70 transition-elegant">
+          <Link 
+            to="/" 
+            className="text-2xl font-semibold tracking-tight hover:opacity-70 transition-elegant"
+          >
             Raphaël Rossi
           </Link>
           
