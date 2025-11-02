@@ -66,7 +66,9 @@ const NameDropping: React.FC = () => {
         </section>
 
         <section className="gallery max-w-[1440px] mx-auto px-[25px] py-12">
-          <div className="space-y-8">
+           <div className="space-y-[100px]">
+            {images.length > 0 && <Figure img={images[0]} />}
+            
             <article className="texte_exhibition">
               <p>
                 Sur le banc public s’échangent les mots et les images. La réification du sens en unités manipulables introduit dans l’esprit du collectionneur la possibilité d’articuler ses fétiches. Le partage des objets appelle une économie du signe...
