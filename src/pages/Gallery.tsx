@@ -49,12 +49,10 @@ const Gallery = () => {
     <>
       <Navigation />
       
-      <main className="pt-24">
-        <section className="max-w-[1440px] mx-auto px-[25px] py-12">
-        
+      <main>
+         <section className="max-w-[1440px] mx-auto px-[25px] py-12">
           <div className="mb-12">
             <h1 className="text-5xl lg:text-6xl font-semibold mb-6 animate-fade-in">Gallery</h1>
-            <div className="h-px bg-border mb-8"></div>
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <p className="text-lg text-muted-foreground">New pieces from the studio</p>
               <p className="text-base text-muted-foreground leading-relaxed">

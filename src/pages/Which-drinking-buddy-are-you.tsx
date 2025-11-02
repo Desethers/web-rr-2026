@@ -40,6 +40,7 @@ const WhichDrinkingBuddyAreYou: React.FC = () => {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4 leading-tight">
               Which drinking buddy are you ?
             </h1>
+            <div className="h-px bg-border mb-8"></div>
           </div>
         </section>
 

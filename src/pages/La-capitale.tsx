@@ -44,7 +44,7 @@ const LaCapitale: React.FC = () => {
         </section>
 
         <section className="textandinfos">
-          <div className="containerintro grid md:grid-cols-2 gap-6 max-w-5xl mx-auto px-6 lg:px-8 py-6">
+          <div className="containerintro grid md:grid-cols-2 gap-6 max-w-[1440px]mx-auto px-[25px] py-12">
             <div className="intro_exhibition">
               <p>11 janvier - 22 mars 2020</p>
               <p className="mt-2">

@@ -40,6 +40,7 @@ const NameDropping: React.FC = () => {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4 leading-tight">
               Name Dropping
             </h1>
+            <div className="h-px bg-border mb-8"></div>
           </div>
         </section>
 

@@ -34,18 +34,19 @@ const NameDropping: React.FC = () => {
     <>
       <Navigation />
 
-      <main className="pt-20">
+      <main className="pt-24">
         <section className="title_exhibition">
           <div className="max-w-[1440px] mx-auto px-[25px] py-1">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4 leading-tight">
              Extraverted Paintings / Introverting Pictures
             </h1>
+            <div className="h-px bg-border mb-8"></div>
           </div>
         </section>
 
         <section className="textandinfos">
-          <div className="containerintro grid md:grid-cols-2 gap-6 max-w-[1440px]mx-auto px-[25px] py-12">
-            <div className="intro_exhibition">
+          <div className="containerintro grid md:grid-cols-2 gap-6 max-w-[1440px]mx-auto text-[19px] px-[25px] py-0">
+            <div className="intro_exhibition ">
               <p>29 septembre - 22 octobre 2023</p>
               <p className="mt-2">
                 Bagnoler, 46 rue Jules Ferry,
@@ -54,9 +55,11 @@ const NameDropping: React.FC = () => {
               </p>
             </div>
 
-            <div className="intro_exhibition">
+            <div className="intro_exhibition ">
               <p>
-                Extrait : Sur le banc public s’échangent les mots et les images. La réification du sens en unités manipulables...
+                Extraverted paintings / Introverting pictures is a solo exhibition in which a new set of wall and framed collages is presented.
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias temporibus dolor cum laborum provident est, architecto excepturi aspernatur quisquam optio sint itaque inventore, non aliquam libero ullam facere impedit vel!
               </p>
             </div>
 
@@ -64,11 +67,13 @@ const NameDropping: React.FC = () => {
           </div>
         </section>
 
-        <section className="max-w-[1440px] mx-auto px-[25px] py-12">
+        <section className="max-w-[1440px] mx-auto text-[19px] px-[25px] py-12">
           <div className="space-y-8">
             <article className="texte_exhibition">
               <p>
-                Sur le banc public s’échangent les mots et les images. La réification du sens en unités manipulables introduit dans l’esprit du collectionneur la possibilité d’articuler ses fétiches. Le partage des objets appelle une économie du signe...
+                Sur le banc public s’échangent les mots et les images. La réification du sens en unités manipulables introduit dans l’esprit du collectionneur la possibilité d’articuler ses fétiches. Le partage des objets appelle une économie du signe. À la rue du commerce se traduit le modelé du masque par la griffe du chapeau. Les noms et les visages n’appartiennent plus tant à leur porteur qu’à celui ou celle qui leur imposera une place dans l’énonciation d’un désir.
+
+                La séquence qui en résulte enchaîne le modèle à une succession d’instantanés et d’inscriptions auxquelles son identité se doit de répondre. Le film décomposé en photographies découpe son existence en une multitude de vies possibles et alternatives qui toutes pourtant témoignent dans leur apparition même que cela a bien dû avoir été ainsi. La conformité de ses traits est celle d’un personnage de bande dessinée à qui on prête la persistance de l’être à mesure que de case en case il se fasse bien reconnaître. De celui qui se vérifie alors se sait dire la lettre manquante, se sait montrer le profil inconnu: J’ai lu ton prénom dans un livre, je t’ai déjà vu par ici.
               </p>
               <p>Texte de Manuel Vieillot</p>
             </article>

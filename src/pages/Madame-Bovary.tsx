@@ -40,11 +40,12 @@ const MadameBovary: React.FC = () => {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4 leading-tight">
               Madame Bovary
             </h1>
+            <div className="h-px bg-border mb-8"></div>
           </div>
         </section>
 
         <section className="textandinfos">
-          <div className="containerintro grid md:grid-cols-2 gap-6 max-w-5xl mx-auto px-6 lg:px-8 py-6">
+         <div className="containerintro grid md:grid-cols-2 gap-6 max-w-[1440px]mx-auto px-[25px] py-12">
             <div className="intro_exhibition">
               <p>08 mars - 28 mars 2024</p>
               <p className="mt-2">
