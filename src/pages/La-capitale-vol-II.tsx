@@ -34,10 +34,10 @@ const LaCapitaleVolII: React.FC = () => {
     <>
       <Navigation />
 
-      <main className="pt-24">
+      <main className="pt-20">
         <section className="title_exhibition">
-          <div className="container max-w-5xl mx-auto px-6 lg:px-8 py-12">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 leading-tight">
+          <div className="max-w-[1440px] mx-auto px-[25px] py-1">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4 leading-tight">
               La capitale tomes 1 et 2, Vol.II
             </h1>
           </div>
@@ -64,7 +64,7 @@ const LaCapitaleVolII: React.FC = () => {
           </div>
         </section>
 
-        <section className="gallery container max-w-5xl mx-auto px-6 lg:px-8">
+        <section className="gallery max-w-[1440px] mx-auto px-[25px] py-12">
           <div className="space-y-8">
             <article className="texte_exhibition">
               <p>

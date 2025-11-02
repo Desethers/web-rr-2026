@@ -34,17 +34,17 @@ const NameDropping: React.FC = () => {
     <>
       <Navigation />
 
-      <main className="pt-24">
+      <main className="pt-20">
         <section className="title_exhibition">
-          <div className="container max-w-5xl mx-auto px-6 lg:px-8 py-12">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 leading-tight">
-             Extraverted paintings
+          <div className="max-w-[1440px] mx-auto px-[25px] py-1">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4 leading-tight">
+             Extraverted Paintings / Introverting Pictures
             </h1>
           </div>
         </section>
 
         <section className="textandinfos">
-          <div className="containerintro grid md:grid-cols-2 gap-6 max-w-5xl mx-auto px-6 lg:px-8 py-6">
+          <div className="containerintro grid md:grid-cols-2 gap-6 max-w-[1440px]mx-auto px-[25px] py-12">
             <div className="intro_exhibition">
               <p>29 septembre - 22 octobre 2023</p>
               <p className="mt-2">
@@ -64,7 +64,7 @@ const NameDropping: React.FC = () => {
           </div>
         </section>
 
-        <section className="gallery container max-w-5xl mx-auto px-6 lg:px-8">
+        <section className="max-w-[1440px] mx-auto px-[25px] py-12">
           <div className="space-y-8">
             <article className="texte_exhibition">
               <p>

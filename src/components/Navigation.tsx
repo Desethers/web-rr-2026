@@ -7,7 +7,7 @@ const Navigation = () => {
   
   return (
     <nav className="bg-background">
-      <div className="max-w-[1440px] mx-auto px-[25px] py-12">
+      <div className="max-w-[1440px] mx-auto px-[25px] py-6">
         <div className="flex items-center justify-between">
           <Link 
             to="/" 
