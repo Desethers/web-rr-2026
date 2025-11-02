@@ -20,7 +20,7 @@ const Figure: React.FC<{ img: ExhibitImage }> = ({ img }) => (
       decoding="async"
     />
     {img.caption && (
-      <figcaption className="legende_img mt-2 text-sm text-muted-foreground">
+      <figcaption className="legende_img mt-2 text-sm text-muted-foreground ">
         {img.caption}
       </figcaption>
     )}
@@ -68,19 +68,20 @@ const NameDropping: React.FC = () => {
         </section>
 
         <section className="max-w-[1440px] mx-auto text-[19px] px-[25px] py-12">
-          <div className="space-y-8">
+          <div className="space-y-[25px]">
             {images.length > 0 && <Figure img={images[0]} />}
 
             <article className="texte_exhibition">
-              <div className="grid md:grid-cols-2 gap-8 px-[60px] max-w-[1440px] mx-auto">
+              <div className="grid md:grid-cols-2 gap-x-[100px] px-[100px] py-12 max-w-[1440px] mx-auto">
                 <p>
-                  Sur le banc public s'échangent les mots et les images. La réification du sens en unités manipulables introduit dans l'esprit du collectionneur la possibilité d'articuler ses fétiches. Le partage des objets appelle une économie du signe. À la rue du commerce se traduit le modelé du masque par la griffe du chapeau. Les noms et les visages n'appartiennent plus tant à leur porteur qu'à celui ou celle qui leur imposera une place dans l'énonciation d'un désir.
+                  Sur le banc public s'échangent les mots et les images. La réification du sens en unités manipulables introduit dans l'esprit du collectionneur la possibilité d'articuler ses fétiches. Le partage des objets appelle une économie du signe. À la rue du commerce se traduit le modelé du masque par la griffe du chapeau. Les noms et les visages n'appartiennent plus tant à leur porteur qu'à celui ou celle qui leur imposera une place dans l'énonciation d'un désir. La séquence qui en résulte enchaîne le modèle à une succession d'instantanés et d'inscriptions auxquelles son identité se doit de répondre. 
                 </p>
                 <p>
-                  La séquence qui en résulte enchaîne le modèle à une succession d'instantanés et d'inscriptions auxquelles son identité se doit de répondre. Le film décomposé en photographies découpe son existence en une multitude de vies possibles et alternatives qui toutes pourtant témoignent dans leur apparition même que cela a bien dû avoir été ainsi. La conformité de ses traits est celle d'un personnage de bande dessinée à qui on prête la persistance de l'être à mesure que de case en case il se fasse bien reconnaître. De celui qui se vérifie alors se sait dire la lettre manquante, se sait montrer le profil inconnu: J'ai lu ton prénom dans un livre, je t'ai déjà vu par ici.
+                   Le film décomposé en photographies découpe son existence en une multitude de vies possibles et alternatives qui toutes pourtant témoignent dans leur apparition même que cela a bien dû avoir été ainsi. La conformité de ses traits est celle d'un personnage de bande dessinée à qui on prête la persistance de l'être à mesure que de case en case il se fasse bien reconnaître. De celui qui se vérifie alors se sait dire la lettre manquante, se sait montrer le profil inconnu: J'ai lu ton prénom dans un livre, je t'ai déjà vu par ici.
+                   Texte de Manuel Vieillot
                 </p>
+                
               </div>
-              <p className="px-[50px] mt-4">Texte de Manuel Vieillot</p>
             </article>
 
             {images.slice(1).map((img, idx) => (
