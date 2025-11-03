@@ -8,6 +8,7 @@ type ExhibitImage = {
   alt?: string;
   caption?: string | JSX.Element;
   className?: string;
+  inquireLink?: string;
 };
 
 const Figure: React.FC<{ img: ExhibitImage }> = ({ img }) => (
@@ -20,9 +21,19 @@ const Figure: React.FC<{ img: ExhibitImage }> = ({ img }) => (
       decoding="async"
     />
     {img.caption && (
-      <figcaption className="legende_img mt-2 text-sm text-muted-foreground ">
-        {img.caption}
-      </figcaption>
+      <div className="flex items-start justify-between gap-6 mt-2">
+        <figcaption className="legende_img text-sm text-muted-foreground">
+          {img.caption}
+        </figcaption>
+        {img.inquireLink && (
+          <Link
+            to={img.inquireLink}
+            className="bouton_inquire inline-block border border-foreground px-8 py-2 hover:bg-foreground hover:text-background transition-colors whitespace-nowrap"
+          >
+            Inquire
+          </Link>
+        )}
+      </div>
     )}
   </figure>
 );
