@@ -139,24 +139,6 @@ const NameDropping: React.FC = () => {
               </div>
             </figure>
 
-            <div className="legende_bouton flex items-start justify-between gap-6">
-              <div className="legende_img">
-                <p>
-                  David Foster Wallace, 2024
-                  <br />
-                  canvas, magazines, laser print
-                  <br />
-                  200 x 40 cm
-                </p>
-              </div>
-              <Link
-                to="/artwork/foster-wallace"
-                className="bouton_inquire inline-block border border-foreground px-8 py-2 hover:bg-foreground hover:text-background transition-colors whitespace-nowrap"
-              >
-                Inquire
-              </Link>
-            </div>
-
             {[5, 6, 0, 7, 8].map((i) => (
               <Figure key={i} img={images[i]} />
             ))}
