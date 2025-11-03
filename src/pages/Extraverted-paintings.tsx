@@ -103,7 +103,9 @@ const NameDropping: React.FC = () => {
               </div>
             </article>
 
-            <Figure img={images[2]} />
+            {[2, 5, 6, 0, 7, 8].map((i) => (
+              <Figure key={i} img={images[i]} />
+            ))}
             
             <div className="legende_bouton flex items-start justify-between gap-6">
               <div className="legende_img">
@@ -122,10 +124,6 @@ const NameDropping: React.FC = () => {
                 Inquire
               </Link>
             </div>
-
-            {[5, 6, 0, 7, 8].map((i) => (
-              <Figure key={i} img={images[i]} />
-            ))}
 
             <div className="legende_bouton flex items-start gap-6 my-6">
               <p className="legende_img">
