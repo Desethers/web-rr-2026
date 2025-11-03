@@ -107,22 +107,6 @@ const NameDropping: React.FC = () => {
               <Figure key={i} img={images[i]} />
             ))}
 
-            <div className="legende_bouton flex items-start gap-6 my-6">
-              <p className="legende_img">
-                How to be... Millenials ethos, 2023
-                <br />
-                canvas, magazines
-                <br />
-                100 x 35 cm
-              </p>
-              <Link
-                to="/artworks/how-to-be-millenials-ethos"
-                className="bouton_inquire inline-block"
-              >
-                Inquire
-              </Link>
-            </div>
-
             {/* 🔹 Bloc 2 images côte à côte */}
             <div className="module_img_img grid md:grid-cols-2 gap-10 my-6">
               {[
@@ -151,17 +135,21 @@ const NameDropping: React.FC = () => {
                 </div>
               ))}
             </div>
-            {[11, 12, 13].map((i) => (
-              <Figure key={i} img={images[i]} />
-            ))}
+            <Figure key={11} img={images[11]} />
 
             <div className="quotes_exhibition_full">
-              <p className="quotes_full">
+              <p className="quotes_full text-[35px] px-[300px] text-left">
                 D'une certaine manière, le carré renvoie davantage à la double
                 page qu'à la page simple. C'est un texte que l'on observe plus
-                qu'on ne le lit...
+                qu'on ne le lit, que l'on a déjà parcouru et vers lequel on
+                revient, quelque chose que l'on reconnaît et devant lequel on se
+                sent chez soi.
               </p>
             </div>
+
+            {[12, 13].map((i) => (
+              <Figure key={i} img={images[i]} />
+            ))}
 
             <div className="mt-12">
               <Link to="/exhibitions" className="text-sm hover:underline">
@@ -173,7 +161,7 @@ const NameDropping: React.FC = () => {
       </main>
 
       <footer className="footer mt-12">
-        <div className="footer-content max-w-[1440px] mx-auto px-[25px] py-1">
+        <div className="footer-content max-w-[1440px] mx-auto px-[25px] py-6 flex justify-between items-center">
           <div className="legal">
             <p>© 2024 Raphaël Rossi - All Rights Reserved</p>
           </div>
@@ -182,6 +170,7 @@ const NameDropping: React.FC = () => {
               href="https://www.instagram.com/raphaaelrossi/"
               target="_blank"
               rel="noreferrer"
+              className="hover:underline"
             >
               Instagram
             </a>
