@@ -8,6 +8,7 @@ type ExhibitImage = {
   alt?: string;
   caption?: string | JSX.Element;
   className?: string;
+  inquireLink?: string;
 };
 
 const Figure: React.FC<{ img: ExhibitImage }> = ({ img }) => (
@@ -20,9 +21,19 @@ const Figure: React.FC<{ img: ExhibitImage }> = ({ img }) => (
       decoding="async"
     />
     {img.caption && (
-      <figcaption className="legende_img mt-2 text-sm text-muted-foreground ">
-        {img.caption}
-      </figcaption>
+      <div className="flex items-start justify-between gap-6 mt-2">
+        <figcaption className="legende_img text-sm text-muted-foreground">
+          {img.caption}
+        </figcaption>
+        {img.inquireLink && (
+          <Link
+            to={img.inquireLink}
+            className="bouton_inquire inline-block border border-foreground px-8 py-2 hover:bg-foreground hover:text-background transition-colors whitespace-nowrap"
+          >
+            Inquire
+          </Link>
+        )}
+      </div>
     )}
   </figure>
 );
@@ -103,7 +114,50 @@ const NameDropping: React.FC = () => {
               </div>
             </article>
 
-            {[2, 5, 6, 0, 7, 8].map((i) => (
+            <figure className="imagefull">
+              <img
+                src={images[2].src}
+                alt="Artwork 3"
+                className="w-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+              <div className="legende_bouton flex items-start justify-between gap-6 mt-2">
+                <div className="legende_img text-sm text-muted-foreground">
+                  <p>
+                    Artwork 3, 2023
+                    <br />
+                    canvas, magazines
+                  </p>
+                </div>
+                <Link
+                  to="/artwork/artwork-3"
+                  className="bouton_inquire inline-block border border-foreground px-8 py-2 hover:bg-foreground hover:text-background transition-colors whitespace-nowrap"
+                >
+                  Inquire
+                </Link>
+              </div>
+            </figure>
+
+            <div className="legende_bouton flex items-start justify-between gap-6">
+              <div className="legende_img">
+                <p>
+                  David Foster Wallace, 2024
+                  <br />
+                  canvas, magazines, laser print
+                  <br />
+                  200 x 40 cm
+                </p>
+              </div>
+              <Link
+                to="/artwork/foster-wallace"
+                className="bouton_inquire inline-block border border-foreground px-8 py-2 hover:bg-foreground hover:text-background transition-colors whitespace-nowrap"
+              >
+                Inquire
+              </Link>
+            </div>
+
+            {[5, 6, 0, 7, 8].map((i) => (
               <Figure key={i} img={images[i]} />
             ))}
 
