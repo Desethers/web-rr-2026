@@ -8,7 +8,6 @@ type ExhibitImage = {
   alt?: string;
   caption?: string | JSX.Element;
   className?: string;
-  inquireLink?: string;
 };
 
 const Figure: React.FC<{ img: ExhibitImage }> = ({ img }) => (
@@ -21,19 +20,9 @@ const Figure: React.FC<{ img: ExhibitImage }> = ({ img }) => (
       decoding="async"
     />
     {img.caption && (
-      <div className="legende_bouton flex items-start justify-between gap-6 mt-2">
-        <figcaption className="legende_img text-sm text-muted-foreground">
-          {img.caption}
-        </figcaption>
-        {img.inquireLink && (
-          <Link
-            to={img.inquireLink}
-            className="bouton_inquire inline-block border border-foreground px-8 py-2 hover:bg-foreground hover:text-background transition-colors whitespace-nowrap text-sm"
-          >
-            Inquire
-          </Link>
-        )}
-      </div>
+      <figcaption className="legende_img mt-2 text-sm text-muted-foreground ">
+        {img.caption}
+      </figcaption>
     )}
   </figure>
 );
@@ -114,9 +103,7 @@ const NameDropping: React.FC = () => {
               </div>
             </article>
 
-            {[2, 5, 6, 0, 7, 8].map((i) => (
-              <Figure key={i} img={images[i]} />
-            ))}
+            <Figure img={images[2]} />
             
             <div className="legende_bouton flex items-start justify-between gap-6">
               <div className="legende_img">
@@ -135,6 +122,10 @@ const NameDropping: React.FC = () => {
                 Inquire
               </Link>
             </div>
+
+            {[5, 6, 0, 7, 8].map((i) => (
+              <Figure key={i} img={images[i]} />
+            ))}
 
             <div className="legende_bouton flex items-start gap-6 my-6">
               <p className="legende_img">
