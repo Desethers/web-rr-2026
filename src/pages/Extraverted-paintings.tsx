@@ -124,7 +124,7 @@ const NameDropping: React.FC = () => {
             </div>
 
             {/* 🔹 Bloc 2 images côte à côte */}
-            <div className="module_img_img grid md:grid-cols-2 gap-6 my-6">
+            <div className="module_img_img grid md:grid-cols-2 gap-10 my-6">
               {[
                 {
                   src: "/assets/extraverted-paintings/extraverted-10.jpg",
@@ -151,7 +151,9 @@ const NameDropping: React.FC = () => {
                 </div>
               ))}
             </div>
-            <Figure img={images[11]} />
+            {[11, 12, 13].map((i) => (
+              <Figure key={i} img={images[i]} />
+            ))}
 
             <div className="quotes_exhibition_full">
               <p className="quotes_full">
