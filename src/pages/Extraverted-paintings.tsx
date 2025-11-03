@@ -114,23 +114,30 @@ const NameDropping: React.FC = () => {
               </div>
             </article>
 
-            <Figure img={images[2]} />
-            
-            <div className="legende_bouton flex items-start justify-between gap-6">
-              <div className="legende_img">
-                <p>
-                  Artwork 3, 2023
-                  <br />
-                  canvas, magazines
-                </p>
+            <figure className="imagefull">
+              <img
+                src={images[2].src}
+                alt="Artwork 3"
+                className="w-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+              <div className="legende_bouton flex items-start justify-between gap-6 mt-2">
+                <div className="legende_img text-sm text-muted-foreground">
+                  <p>
+                    Artwork 3, 2023
+                    <br />
+                    canvas, magazines
+                  </p>
+                </div>
+                <Link
+                  to="/artwork/artwork-3"
+                  className="bouton_inquire inline-block border border-foreground px-8 py-2 hover:bg-foreground hover:text-background transition-colors whitespace-nowrap"
+                >
+                  Inquire
+                </Link>
               </div>
-              <Link
-                to="/artwork/artwork-3"
-                className="bouton_inquire inline-block border border-foreground px-8 py-2 hover:bg-foreground hover:text-background transition-colors whitespace-nowrap"
-              >
-                Inquire
-              </Link>
-            </div>
+            </figure>
 
             <div className="legende_bouton flex items-start justify-between gap-6">
               <div className="legende_img">
