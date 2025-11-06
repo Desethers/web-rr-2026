@@ -87,30 +87,117 @@ const NameDropping: React.FC = () => {
 
             <article className="texte_exhibition">
               <div className="grid md:grid-cols-2 gap-x-[100px] px-[100px] max-w-[1440px] mx-auto text-justify">
-                <p>
-                  Sur le banc public s'échangent les mots et les images. La
-                  réification du sens en unités manipulables introduit dans
-                  l'esprit du collectionneur la possibilité d'articuler ses
-                  fétiches. Le partage des objets appelle une économie du signe.
-                  À la rue du commerce se traduit le modelé du masque par la
-                  griffe du chapeau. Les noms et les visages n'appartiennent
-                  plus tant à leur porteur qu'à celui ou celle qui leur imposera
-                  une place dans l'énonciation d'un désir. La séquence qui en
-                  résulte enchaîne le modèle à une succession d'instantanés et
-                  d'inscriptions auxquelles son identité se doit de répondre.
-                </p>
-                <p>
-                  Le film décomposé en photographies découpe son existence en
-                  une multitude de vies possibles et alternatives qui toutes
-                  pourtant témoignent dans leur apparition même que cela a bien
-                  dû avoir été ainsi. La conformité de ses traits est celle d'un
-                  personnage de bande dessinée à qui on prête la persistance de
-                  l'être à mesure que de case en case il se fasse bien
-                  reconnaître. De celui qui se vérifie alors se sait dire la
-                  lettre manquante, se sait montrer le profil inconnu: J'ai lu
-                  ton prénom dans un livre, je t'ai déjà vu par ici. Texte de
-                  Manuel Vieillot
-                </p>
+                <div>
+                  <p>
+                    Dans une précédente exposition de Raphaël Rossi, cette phrase, scindée
+                    d'une paire d'yeux braqués sur la porte, accueille le spectateur. Une
+                    affiche, sortie le 1er avril, un ready-made : une Script et une
+                    Garamond, blanches, sur fond de papier noir brillant, dont les traces de
+                    plis accrochent la lumière. Le tout, punaisé avec soin au centre d'un
+                    carton noir format portrait — un genre de 90 × 200, format porte.
+                  </p>
+
+                  <p className="mt-4">
+                    D'autres monochromes noirs, peints ou cartonnés. Des bandes
+                    <em> letterbox</em>
+                    <span className="text-xs align-super">*</span> comme des marges dans
+                    lesquelles Raphaël Rossi rapporte des images, piquées à la surface, de
+                    personnages joués par Julianne Moore, Adam Driver, des film stills de la
+                    filmographie de PTA : des petits morceaux de cinéma. Dans ces
+                    assemblages, des présences plus ou moins intentionnelles dialoguent.
+                    Chaque acteur et actrice appelle tous ses autres rôles. Question de
+                    référence.
+                  </p>
+
+                  <p className="mt-4">
+                    Adèle Exarchopoulos, éclairée par les flammes, échelle 1 ou plus grande
+                    encore, couronnée par la Quinzaine, affiche tranchée, dédoublée, deux
+                    fois, et collées sur les portes d'un placard. C'est tout.
+                  </p>
+
+                  <p className="mt-8">
+                    Pourtant, l'écho d'un grand sérieux à la tâche retient l'attention ; le
+                    refus d'une plasticité savante, ou saisissable, semble consommé. Les
+                    formes sont très ténues, presque punies. La minutie à l'œuvre, saisie.
+                    Et c'est comme si ça leur échappait (et quoi de plus humiliant ?) : la
+                    dimension affective, à laquelle renvoie forcément le fait d'extraire, à
+                    l'exacto, et de coller, sur carton neutre, des photogrammes montrant
+                    Kristen Stewart (qui n'a pas eu d'obsession ?)
+                  </p>
+
+                  <p className="mt-8">
+                    Reste-t-il quelque chose de ce radeau de sensibilité ou de
+                    sentimentalisme dans l'exposition <em>Name Dropping</em> ? Abandonnant
+                    le collage pour la peinture, Raphaël Rossi s'éloigne de ces matériaux
+                    fétichisés que sont les produits dérivés de l'industrie cinématographique
+                    pour deux monstres plus gros encore : la peinture et la littérature. On
+                    s'étouffe. Un diptyque noir et blanc, un peu argenté-chromé, affiche
+                    en vis-à-vis, tracé au pochoir : Michel Houellebecq et Virginie
+                    Despentes.
+                  </p>
+                </div>
+
+                <div>
+                  <p>
+                    Chez Pauline Perplexe, des aplats Seigneurie, peinture acrylique satin
+                    pour l'intérieur. Des bandes, blanches, blanches grisées, vertes (une
+                    seule), rouges, s'articulent avec des triangles qui interpénétrent des
+                    noms d'auteur·ices, avec ou sans sérif. Sur d'épais châssis, s'écrit —
+                    ou est écrit —, en gros caractères, des patronymes qui semblent feindre
+                    d'avoir été piochés au hasard ou par distraction. Ils démarrent ou
+                    débordent sur la tranche des toiles, et pèsent de tout leur poids dans
+                    la pièce. La peinture nomme pendant qu'elle efface.
+                  </p>
+
+                  <p className="mt-8">
+                    Certains noms nous parlent, d'autres non. S'installe un jeu
+                    d'inclusion et d'exclusion : ai-je lu, n'ai-je pas lu. On est dedans, ou
+                    on reste à côté. Seule la reconnaissance peut nous ramener à l'intérieur.
+                    Si le propre de la référence est qu'elle nous traverse, elle peut donc
+                    aussi glisser, passer au-dessus et nous laisser là.
+                  </p>
+
+                  <p className="mt-8">
+                    Ici, c'est la littérature postmoderne qui affleure de manière consciente,
+                    celle où l'artifice stylistique tente moins d'imiter le réel que de
+                    rechercher sa traduction sensible. Littérature postmoderne à la surface
+                    de toiles, peut-être <em>ersatz</em> d'une idée générique d'une histoire
+                    de l'art réduite à ses attributs les plus voyants. Affiche, adresse.
+                    Politique publique d'accès à la culture. Problème. Pour qui et pourquoi
+                    ces noms sont-ils là ? Des œuvres entières ramenées à des noms.
+                    Raphaël Rossi les a peut-être lus, ou alors il les aime bien : peu
+                    importe qu'il y soit affectivement attaché ou non. L'effet compte.
+                  </p>
+
+                  <p className="mt-8">
+                    Ce qui est pratique avec le <em>name dropping</em>, c'est qu'il permet
+                    de se placer dans la pièce. Une manière de parler littérature, art ou
+                    cinéma, par revers superficiel. Le name dropping scripte le niveau
+                    social de la conversation comme une pratique sociale en soi, un truc à
+                    la surface qui « fait genre ». Littéralement « lâcher des noms », mais
+                    pas n'importe lesquels, à défaut des autres, d'inconnus restés
+                    hors-champs. Et comme dirait Nathalie Quintane : « Il y a toujours une
+                    solution au problème de la culture. »
+                  </p>
+
+                  <p className="mt-8">
+                    Et c'est peut-être parce qu'il y a trop de bavard·es et de bavardage
+                    que Raphaël fait ça, ce travail en apnée, où toutes ses peintures, comme
+                    de lentes expirations contrôlées, synthétisent tout ce qu'il y a dire,
+                    tout ce qui a déjà été dit, redit et mal dit, par la vraie, la fausse
+                    citation, le miroir du sens. Finalement, il nous tend un crachoir, loin,
+                    très loin, d'être aseptisé. Pftiou.
+                  </p>
+
+                  <p className="mt-10 italic">
+                    Romain Grateau et Fiona Vilmer
+                  </p>
+
+                  <p className="mt-6 text-xs text-muted-foreground">
+                    * Bandes noires qui permettent de respecter le format d'affichage d'un
+                    film (4/3, 16/9), sans le déformer ou le recadrer.
+                  </p>
+                </div>
               </div>
             </article>
 
