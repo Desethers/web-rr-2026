@@ -234,10 +234,11 @@ const NameDropping: React.FC = () => {
             </div>
 
             <div className="quotes_exhibition_full">
-              <p className="quotes_full">
-                D'une certaine manière, le carré renvoie davantage à la double
-                page qu'à la page simple. C'est un texte que l'on observe plus
-                qu'on ne le lit...
+              <p className="quotes_full text-[35px] px-[300px] text-left">
+                Le name dropping scripte le niveau social de la conversation
+                comme une pratique sociale en soi, un truc à la surface qui fait
+                genre. Littéralement « lâcher des noms », mais pas n'importe
+                lequel, à défaut des autres, d'inconnus restés hors-champs.
               </p>
             </div>
 
@@ -251,7 +252,7 @@ const NameDropping: React.FC = () => {
       </main>
 
       <footer className="footer mt-12">
-        <div className="footer-content max-w-5xl mx-auto px-6 lg:px-8 py-6">
+        <div className="footer-content max-w-[1440px] mx-auto px-[25px] py-6 flex justify-between items-center">
           <div className="legal">
             <p>© 2024 Raphaël Rossi - All Rights Reserved</p>
           </div>
@@ -260,6 +261,7 @@ const NameDropping: React.FC = () => {
               href="https://www.instagram.com/raphaaelrossi/"
               target="_blank"
               rel="noreferrer"
+              className="hover:underline"
             >
               Instagram
             </a>
