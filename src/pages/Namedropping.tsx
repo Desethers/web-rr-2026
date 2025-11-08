@@ -2,7 +2,6 @@ import React from "react";
 import Navigation from "@/components/Navigation";
 import { Link } from "react-router-dom";
 import { nameDroppingImages } from "../data/namedroppingimg";
-
 type ExhibitImage = {
   src: string;
   alt?: string;
@@ -34,9 +33,9 @@ const NameDropping: React.FC = () => {
     <>
       <Navigation />
 
-      <main className="space-y-2.5">
+      <main>
         <section className="title_exhibition">
-          <div className="max-w-[1440px] mx-auto px-[25px] py-12">
+          <div className="max-w-[1440px] mx-auto px-[25px] pt-12">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4 leading-tight">
               Name Dropping
             </h1>
@@ -45,7 +44,7 @@ const NameDropping: React.FC = () => {
         </section>
 
         <section className="textandinfos">
-          <div className="containerintro grid md:grid-cols-2 gap-6 max-w-[1440px] mx-auto px-[25px] py-12">
+          <div className="containerintro grid md:grid-cols-2 gap-6 max-w-[1440px] mx-auto px-[25px] py-0">
             <div className="intro_exhibition">
               <p>29 septembre - 22 octobre 2023</p>
               <p className="mt-2">
@@ -68,7 +67,7 @@ const NameDropping: React.FC = () => {
 
         <section className="max-w-[1440px] mx-auto px-[25px] py-12">
           <div className="space-y-[100px]">
-            {images.length > 0 && <Figure img={images[0]} />}
+            <Figure key={4} img={images[4]} />
 
             <article className="texte_exhibition">
               <div className="grid md:grid-cols-2 gap-x-[100px] px-[100px] max-w-[1440px] mx-auto text-justify">
@@ -179,27 +178,9 @@ const NameDropping: React.FC = () => {
               </div>
             </article>
 
-            {images.map((img, idx) => (
-              <Figure key={idx} img={img} />
+            {[2, 3].map((i) => (
+              <Figure key={i} img={images[i]} />
             ))}
-
-            <div className="legende_bouton flex items-start gap-6">
-              <div>
-                <p className="legende_img">
-                  How to be... Millenials ethos, 2023
-                  <br />
-                  canvas, magazines
-                  <br />
-                  100 x 35 cm
-                </p>
-              </div>
-              <Link
-                to="/artworks/how-to-be-millenials-ethos"
-                className="bouton_inquire inline-block"
-              >
-                Inquire
-              </Link>
-            </div>
 
             {/* 🔹 Bloc 2 images côte à côte */}
             <div className="module_img_img grid md:grid-cols-2 gap-10 my-6">
@@ -209,7 +190,7 @@ const NameDropping: React.FC = () => {
                   caption: `Don DeLillo`,
                 },
                 {
-                  src: "/assets/name-dropping/013.jpg",
+                  src: "/assets/name-dropping/012.jpg",
                   caption: `Details of Valéria, 2023
                             canvas, magazines.`,
                 },
@@ -228,6 +209,9 @@ const NameDropping: React.FC = () => {
                 </div>
               ))}
             </div>
+            {[8, 1].map((i) => (
+              <Figure key={i} img={images[i]} />
+            ))}
 
             <div className="quotes_exhibition_full">
               <p className="quotes_full text-[35px] px-[300px] text-left">
@@ -237,6 +221,38 @@ const NameDropping: React.FC = () => {
                 lequel, à défaut des autres, d'inconnus restés hors-champs.
               </p>
             </div>
+            {[5].map((i) => (
+              <Figure key={i} img={images[i]} />
+            ))}
+            <div className="module_img_img grid md:grid-cols-2 gap-10 my-6">
+              {[
+                {
+                  src: "/assets/name-dropping/015.jpg",
+                  caption: `Don DeLillo`,
+                },
+                {
+                  src: "/assets/name-dropping/014.jpg",
+                  caption: `Details of Valéria, 2023
+                            canvas, magazines.`,
+                },
+              ].map((img, idx) => (
+                <div className="img_side" key={idx}>
+                  <img
+                    src={img.src}
+                    alt="view of exhibition"
+                    className="w-full"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <p className="legende_img whitespace-pre-line">
+                    {img.caption}
+                  </p>
+                </div>
+              ))}
+            </div>
+            {[16, 9, 6].map((i) => (
+              <Figure key={i} img={images[i]} />
+            ))}
 
             <div className="mt-12">
               <Link to="/exhibitions" className="text-sm hover:underline">

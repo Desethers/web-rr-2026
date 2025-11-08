@@ -21,14 +21,14 @@ const Figure: React.FC<{ img: ExhibitImage }> = ({ img }) => (
       decoding="async"
     />
     {img.caption && (
-      <div className="flex items-start justify-between gap-6 mt-2">
+      <div className="flex items-start justify-between gap-6 mt-2 py-4">
         <figcaption className="legende_img text-sm text-muted-foreground">
           {img.caption}
         </figcaption>
         {img.inquireLink && (
           <Link
             to={img.inquireLink}
-            className="bouton_inquire inline-block border border-foreground px-8 py-2 hover:bg-foreground hover:text-background transition-colors whitespace-nowrap"
+            className="bouton_inquire inline-block border border-foreground px-8 py-4 hover:bg-foreground hover:text-background transition-colors whitespace-nowrap"
           >
             Inquire
           </Link>
@@ -45,9 +45,9 @@ const NameDropping: React.FC = () => {
     <>
       <Navigation />
 
-      <main className="pt-24">
+      <main>
         <section className="title_exhibition">
-          <div className="max-w-[1440px] mx-auto px-[25px] py-1">
+          <div className="max-w-[1440px] mx-auto px-[25px] pt-12">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4 leading-tight">
               Extraverted Paintings / Introverting Pictures
             </h1>
@@ -56,7 +56,7 @@ const NameDropping: React.FC = () => {
         </section>
 
         <section className="textandinfos">
-          <div className="containerintro grid md:grid-cols-2 gap-6 max-w-[1440px]mx-auto text-[19px] px-[25px] py-0">
+          <div className="containerintro grid md:grid-cols-2 gap-6 max-w-[1440px]mx-auto text-[19px] px-[25px]">
             <div className="intro_exhibition ">
               <p>29 septembre - 22 octobre 2023</p>
               <p className="mt-2">
@@ -128,7 +128,7 @@ const NameDropping: React.FC = () => {
                 loading="lazy"
                 decoding="async"
               />
-              <div className="legende_bouton flex items-start justify-between gap-6 mt-2">
+              <div className="legende_bouton flex items-start justify-between gap-6 mt-2 py-4">
                 <div className="legende_img text-sm text-muted-foreground">
                   <p>
                     Artwork 3, 2023
@@ -138,7 +138,7 @@ const NameDropping: React.FC = () => {
                 </div>
                 <Link
                   to="/artwork/artwork-3"
-                  className="bouton_inquire inline-block border border-foreground px-8 py-2 hover:bg-foreground hover:text-background transition-colors whitespace-nowrap"
+                  className="bouton_inquire inline-block border border-foreground w-[260px] py-2 text-center hover:bg-foreground hover:text-background transition-colors"
                 >
                   Inquire
                 </Link>
