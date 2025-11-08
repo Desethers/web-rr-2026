@@ -224,16 +224,19 @@ const NameDropping: React.FC = () => {
             {[5].map((i) => (
               <Figure key={i} img={images[i]} />
             ))}
+
             <div className="module_img_img grid md:grid-cols-2 gap-10 my-6">
               {[
                 {
                   src: "/assets/name-dropping/015.jpg",
                   caption: `Don DeLillo`,
+                  inquireLink: "/artwork/artwork-15",
                 },
                 {
                   src: "/assets/name-dropping/014.jpg",
                   caption: `Details of Valéria, 2023
                             canvas, magazines.`,
+                  inquireLink: "/artwork/foster-wallace-2024",
                 },
               ].map((img, idx) => (
                 <div className="img_side" key={idx}>
@@ -244,12 +247,25 @@ const NameDropping: React.FC = () => {
                     loading="lazy"
                     decoding="async"
                   />
-                  <p className="legende_img whitespace-pre-line">
-                    {img.caption}
-                  </p>
+
+                  <div className="flex items-start justify-between gap-6 mt-2 py-2">
+                    <p className="legende_img whitespace-pre-line">
+                      {img.caption}
+                    </p>
+
+                    {img.inquireLink && (
+                      <Link
+                        to={img.inquireLink}
+                        className="bouton_inquire inline-block border border-foreground w-[260px] py-2 text-center hover:bg-foreground hover:text-background transition-colors whitespace-nowrap"
+                      >
+                        Inquire
+                      </Link>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>
+
             {[16, 9, 6].map((i) => (
               <Figure key={i} img={images[i]} />
             ))}
