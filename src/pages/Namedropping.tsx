@@ -2,7 +2,6 @@ import React from "react";
 import Navigation from "@/components/Navigation";
 import { Link } from "react-router-dom";
 import { nameDroppingImages } from "../data/namedroppingimg";
-import Footer from "@/components/Footer";
 
 type ExhibitImage = {
   src: string;
