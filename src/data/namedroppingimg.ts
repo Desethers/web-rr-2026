@@ -20,5 +20,5 @@ export const nameDroppingImages: ExhibitImage[] = [
   { src: "/assets/name-dropping/014.jpg", alt: "Installation view, Name Dropping at Pauline Perplex, 2025", caption: "Installation view, Name Dropping at Pauline Perplex, 2025" },
   { src: "/assets/name-dropping/015.jpg", alt: "View of exhibition", caption: "View of exhibition" },
   { src: "/assets/name-dropping/016.jpg", alt: "Installation view", caption: "Installation view, Name Dropping at Pauline Perplex, 2025" },
-  { src: "public/assets/name-dropping/017.jpg", alt: "Installation view", caption: "Installation view, Name Dropping at Pauline Perplex, 2025" },
+  { src: "/assets/name-dropping/017.jpg", alt: "Installation view", caption: "Installation view, Name Dropping at Pauline Perplex, 2025" },
 ];

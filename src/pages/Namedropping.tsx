@@ -2,6 +2,7 @@ import React from "react";
 import Navigation from "@/components/Navigation";
 import { Link } from "react-router-dom";
 import { nameDroppingImages } from "../data/namedroppingimg";
+import Footer from "@/components/Footer";
 
 type ExhibitImage = {
   src: string;
@@ -34,9 +35,9 @@ const NameDropping: React.FC = () => {
     <>
       <Navigation />
 
-      <main className="pt-20">
+      <main className="space-y-2.5">
         <section className="title_exhibition">
-          <div className="max-w-[1440px] mx-auto px-[25px] py-1">
+          <div className="max-w-[1440px] mx-auto px-[25px] py-12">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4 leading-tight">
               Name Dropping
             </h1>
@@ -66,7 +67,7 @@ const NameDropping: React.FC = () => {
           </div>
         </section>
 
-        <section className="gallery max-w-[1440px] mx-auto px-[25px] py-12">
+        <section className="max-w-[1440px] mx-auto px-[25px] py-12">
           <div className="space-y-[100px]">
             {images.length > 0 && <Figure img={images[0]} />}
 
@@ -201,36 +202,32 @@ const NameDropping: React.FC = () => {
               </Link>
             </div>
 
-            <div className="module_img_img grid md:grid-cols-2 gap-6">
-              <div className="img_side">
-                <img
-                  src="/assets/extraverted-paintings/extraverted-10.jpg"
-                  alt=""
-                  className="w-full"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <p className="legende_img">
-                  Details of America generates great artists and finest sales,
-                  2023
-                  <br />
-                  canvas, laser print, magazines
-                </p>
-              </div>
-              <div className="img_side">
-                <img
-                  src="/assets/extraverted-paintings/extraverted-11.jpg"
-                  alt=""
-                  className="w-full"
-                  loading="lazy"
-                  decoding="async"
-                />
-                <p className="legende_img">
-                  Details of Valéria, 2023
-                  <br />
-                  canvas, magazines.
-                </p>
-              </div>
+            {/* 🔹 Bloc 2 images côte à côte */}
+            <div className="module_img_img grid md:grid-cols-2 gap-10 my-6">
+              {[
+                {
+                  src: "/assets/name-dropping/013.jpg",
+                  caption: `Don DeLillo`,
+                },
+                {
+                  src: "/assets/name-dropping/013.jpg",
+                  caption: `Details of Valéria, 2023
+                            canvas, magazines.`,
+                },
+              ].map((img, idx) => (
+                <div className="img_side" key={idx}>
+                  <img
+                    src={img.src}
+                    alt="view of exhibition"
+                    className="w-full"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <p className="legende_img whitespace-pre-line">
+                    {img.caption}
+                  </p>
+                </div>
+              ))}
             </div>
 
             <div className="quotes_exhibition_full">
