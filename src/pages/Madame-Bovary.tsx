@@ -113,33 +113,38 @@ const MadameBovary: React.FC = () => {
               <div className="module_img_img grid md:grid-cols-2 gap-10">
                 {[
                   {
-                    src: "/assets/madame-bovary/madame-bovary-05.jpg",
+                    src: "/assets/madame-bovary/madame-bovary-09.jpg",
                     caption: `Don DeLillo`,
                   },
                   {
-                    src: "/assets/madame-bovary/madame-bovary-09.jpg",
+                    src: "/assets/madame-bovary/madame-bovary-05.jpg",
                     caption: `Details of Valéria, 2023
-                              canvas, magazines.`,
+                      canvas, magazines.`,
                   },
                 ].map((img, idx) => (
-                  <div className="img_side" key={idx}>
+                  <figure className="imagefull" key={idx}>
                     <img
                       src={img.src}
                       alt="view of exhibition"
-                      className="w-full"
+                      className="w-full object-cover"
                       loading="lazy"
                       decoding="async"
                     />
-                    <p className="legende_img whitespace-pre-line">
+                    <figcaption className="legende_img mt-2 text-sm text-muted-foreground">
                       {img.caption}
-                    </p>
-                  </div>
+                    </figcaption>
+                  </figure>
                 ))}
               </div>
 
               {[0].map((i) => (
                 <Figure key={i} img={images[i]} />
               ))}
+            </div>
+            <div className="mt-12">
+              <Link to="/exhibitions" className="text-sm hover:underline">
+                ← Retour aux expositions
+              </Link>
             </div>
           </section>
         </section>

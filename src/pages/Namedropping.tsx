@@ -46,18 +46,30 @@ const NameDropping: React.FC = () => {
         <section className="textandinfos">
           <div className="containerintro grid md:grid-cols-2 gap-6 max-w-[1440px] mx-auto px-[25px] py-0">
             <div className="intro_exhibition">
-              <p>29 septembre - 22 octobre 2023</p>
-              <p className="mt-2">
-                Bagnoler, 46 rue Jules Ferry,
-                <br />
-                93170, Bagnolet
+              <p>13 juin - 04 juillet 2025</p>
+              <p className="mt-4">
+                <p>Pauline Perplexe</p>
+                <p>90 Av. de la Convention, 94110 Arcueil</p>
               </p>
             </div>
 
-            <div className="intro_exhibition">
+            <div className="intro_exhibition space-y-5">
               <p>
-                Extrait : Sur le banc public s'échangent les mots et les images.
-                La réification du sens en unités manipulables...
+                Name Dropping explores how cultural references shape belonging
+                and social codes by turning literary names into visual material.
+              </p>
+              <p>
+                Writers’ names — from Houellebecq to Despentes — appear
+                stencilled on canvases, both visible and erased, creating a play
+                of inclusion and exclusion: what we recognise invites us in,
+                what we don’t leaves us out. The works reveal how references act
+                as passwords, status signals, or emotional markers.
+              </p>
+              <p>
+                By stripping names of their aura and reducing them to surface,
+                the exhibition transforms cultural capital into paint. It
+                questions how we speak about art, literature, and identity — and
+                what remains once the names disappear.
               </p>
             </div>
 
@@ -65,7 +77,7 @@ const NameDropping: React.FC = () => {
           </div>
         </section>
 
-        <section className="max-w-[1440px] mx-auto px-[25px] py-12">
+        <section className="gallery max-w-[1440px] mx-auto px-[25px] py-12">
           <div className="space-y-[100px]">
             <Figure key={4} img={images[4]} />
 
@@ -182,31 +194,44 @@ const NameDropping: React.FC = () => {
               <Figure key={i} img={images[i]} />
             ))}
 
-            {/* 🔹 Bloc 2 images côte à côte */}
-            <div className="module_img_img grid md:grid-cols-2 gap-10 my-6">
+            <div className="module_img_img grid md:grid-cols-2 gap-10">
               {[
                 {
                   src: "/assets/name-dropping/013.jpg",
-                  caption: `Don DeLillo`,
+                  caption: `Don DeLillo 02, 2025`,
+                  inquireLink: "/artwork/artwork-15",
                 },
                 {
                   src: "/assets/name-dropping/012.jpg",
                   caption: `Details of Valéria, 2023
-                            canvas, magazines.`,
+            canvas, magazines.`,
+                  inquireLink: "/artwork/foster-wallace-2024",
                 },
               ].map((img, idx) => (
-                <div className="img_side" key={idx}>
+                <figure className="imagefull" key={idx}>
                   <img
                     src={img.src}
                     alt="view of exhibition"
-                    className="w-full"
+                    className="w-full object-cover"
                     loading="lazy"
                     decoding="async"
                   />
-                  <p className="legende_img whitespace-pre-line">
-                    {img.caption}
-                  </p>
-                </div>
+
+                  <div className="flex items-start justify-between gap-6 mt-2">
+                    <figcaption className="legende_img text-sm text-muted-foreground">
+                      {img.caption}
+                    </figcaption>
+
+                    {img.inquireLink && (
+                      <Link
+                        to={img.inquireLink}
+                        className="bouton_inquire inline-block border border-foreground w-[260px] py-2 text-center hover:bg-foreground hover:text-background transition-colors whitespace-nowrap"
+                      >
+                        Inquire
+                      </Link>
+                    )}
+                  </div>
+                </figure>
               ))}
             </div>
             {[8, 1].map((i) => (
@@ -225,7 +250,7 @@ const NameDropping: React.FC = () => {
               <Figure key={i} img={images[i]} />
             ))}
 
-            <div className="module_img_img grid md:grid-cols-2 gap-10 my-6">
+            <div className="module_img_img grid md:grid-cols-2 gap-10">
               {[
                 {
                   src: "/assets/name-dropping/015.jpg",
@@ -235,23 +260,23 @@ const NameDropping: React.FC = () => {
                 {
                   src: "/assets/name-dropping/014.jpg",
                   caption: `Details of Valéria, 2023
-                            canvas, magazines.`,
+            canvas, magazines.`,
                   inquireLink: "/artwork/foster-wallace-2024",
                 },
               ].map((img, idx) => (
-                <div className="img_side" key={idx}>
+                <figure className="imagefull" key={idx}>
                   <img
                     src={img.src}
                     alt="view of exhibition"
-                    className="w-full"
+                    className="w-full object-cover"
                     loading="lazy"
                     decoding="async"
                   />
 
-                  <div className="flex items-start justify-between gap-6 mt-2 py-2">
-                    <p className="legende_img whitespace-pre-line">
+                  <div className="flex items-start justify-between gap-6 mt-2">
+                    <figcaption className="legende_img text-sm text-muted-foreground">
                       {img.caption}
-                    </p>
+                    </figcaption>
 
                     {img.inquireLink && (
                       <Link
@@ -262,7 +287,7 @@ const NameDropping: React.FC = () => {
                       </Link>
                     )}
                   </div>
-                </div>
+                </figure>
               ))}
             </div>
 
