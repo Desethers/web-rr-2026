@@ -10,7 +10,7 @@ const artworksData = [
     year: 2025,
     medium: "Acrylic on canvas",
     dimensions: "124 x 124 cm",
-    price: "€1200",
+    price: "€1800",
     description:
       "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as David Foster Wallace, blending geometric patterns with color-splat experimentation.",
     description2:
@@ -44,7 +44,7 @@ const artworksData = [
     year: 2023,
     medium: "Acrylic on canvas",
     dimensions: "50 x 40 cm",
-    price: "€1800",
+    price: "€1200",
     description:
       "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as Laura Kasischke, blending geometric patterns with color-splat experimentation.",
     description2:
