@@ -4,20 +4,20 @@ import { Link, useParams } from "react-router-dom";
 
 const artworksData = [
   {
-    id: "foster-wallace-2024",
+    id: "De-Lillo-02",
     image: "/assets/last-artworks/Foster-Wallace-2024-detoure.png",
-    title: "Foster Wallace",
-    year: 2024,
+    title: "Laura Kasischke",
+    year: 2025,
     medium: "Acrylic on canvas",
     dimensions: "124 x 124 cm",
-    price: "€2800",
+    price: "€1200",
     description:
       "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as David Foster Wallace, blending geometric patterns with color-splat experimentation.",
     description2:
       "In this series, I investigate the interplay between personal identity and cultural memory by using the names of contemporary authors as motifs in my paintings. The geometric style, influenced by the architectural forms of public buildings, reflects the perspective of elite culture as viewed from the streets.",
     detailImages: [
-      "/assets/artworks-img/foster-wallace-2024-01.jpg",
       "/assets/artworks-img/DonDelLillo-02-center.jpg",
+      "/assets/name-dropping/013.jpg",
     ],
   },
   {
@@ -105,17 +105,22 @@ const Artwork: React.FC = () => {
       <main>
         <section className="max-w-[1440px] mx-auto px-[25px] py-12">
           <div className="grid md:grid-cols-[2fr_1fr] gap-12 items-start">
-            {/* Left column - Image */}
-            <div className="flex justify-center items-start">
-              <figure className="flex justify-center items-center max-w-[700px] mx-auto">
-                <img
-                  src={artwork.detailImages[0] || artwork.image}
-                  alt={artwork.title}
-                  className="w-full object-cover"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </figure>
+            {/* Left column - Images */}
+            <div className="flex flex-col justify-start items-center gap-6">
+              {artwork.detailImages.slice(0, 4).map((img, index) => (
+                <figure
+                  key={index}
+                  className="flex justify-center items-center max-w-[700px] w-full"
+                >
+                  <img
+                    src={img || artwork.image}
+                    alt={`${artwork.title} detail ${index + 1}`}
+                    className="w-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              ))}
             </div>
 
             {/* Right column - Information */}
