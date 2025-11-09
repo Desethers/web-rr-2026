@@ -15,7 +15,10 @@ const artworksData = [
       "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as David Foster Wallace, blending geometric patterns with color-splat experimentation.",
     description2:
       "In this series, I investigate the interplay between personal identity and cultural memory by using the names of contemporary authors as motifs in my paintings. The geometric style, influenced by the architectural forms of public buildings, reflects the perspective of elite culture as viewed from the streets.",
-    detailImages: ["/assets/artworks-img/foster-wallace-2024-01.jpg"],
+    detailImages: [
+      "/assets/artworks-img/foster-wallace-2024-01.jpg",
+      "/assets/artworks-img/DonDelLillo-02-center.jpg",
+    ],
   },
   {
     id: "ottessa-moshfegh-2024",
