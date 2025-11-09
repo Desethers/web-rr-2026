@@ -80,7 +80,32 @@ const MadameBovary: React.FC = () => {
 
           <section className="max-w-[1440px] mx-auto py-12">
             <div className="space-y-[100px]">
-              {[8, 1].map((i) => (
+              {[8, 12, 10].map((i) => (
+                <Figure key={i} img={images[i]} />
+              ))}
+              {/* 🔹 Bloc image + citation côte à côte */}
+              <div className="module_img_quote grid md:grid-cols-2 gap-10 my-6">
+                {/* Image à gauche */}
+                <div className="img_side">
+                  <img
+                    src="/assets/madame-bovary/madame-bovary-01.jpg"
+                    alt="view of exhibition"
+                    className="w-full"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <p className="legende_img whitespace-pre-line">Don DeLillo</p>
+                </div>
+
+                {/* Citation à droite */}
+                <div className="quote_side flex items-center">
+                  <p className="text-2xl md:text-4xl lg:text-5xl font-medium leading-tight px-[100px]">
+                    "Le name dropping scripte le niveau social de la
+                    conversation comme une pratique sociale en soi"
+                  </p>
+                </div>
+              </div>
+              {[3, 7, 4].map((i) => (
                 <Figure key={i} img={images[i]} />
               ))}
 
@@ -88,11 +113,11 @@ const MadameBovary: React.FC = () => {
               <div className="module_img_img grid md:grid-cols-2 gap-10">
                 {[
                   {
-                    src: "/assets/name-dropping/013.jpg",
+                    src: "/assets/madame-bovary/madame-bovary-05.jpg",
                     caption: `Don DeLillo`,
                   },
                   {
-                    src: "/assets/name-dropping/012.jpg",
+                    src: "/assets/madame-bovary/madame-bovary-09.jpg",
                     caption: `Details of Valéria, 2023
                               canvas, magazines.`,
                   },
@@ -112,7 +137,7 @@ const MadameBovary: React.FC = () => {
                 ))}
               </div>
 
-              {[8, 1].map((i) => (
+              {[0].map((i) => (
                 <Figure key={i} img={images[i]} />
               ))}
             </div>
