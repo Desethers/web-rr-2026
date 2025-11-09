@@ -51,7 +51,7 @@ const Home = () => {
         <section className="max-w-[1440px] mx-auto px-[25px] py-12">
           <div className="overflow-hidden">
             <img
-              src="/assets/name-dropping/010.jpg"
+              src="/assets/name-dropping/006.jpg"
               alt="Exhibition view"
               className="w-full h-auto object-cover image-filtered zoom-slow"
             />
