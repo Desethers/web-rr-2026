@@ -14,7 +14,7 @@ const Exhibitions = () => {
       id: "2",
       title: "Extraverted paintings / Introverting pictures",
       venue: "Bagnoler",
-      dates: "16 septembre - 23 novembre 2023",
+      dates: "12 septembre - 10 octobre 2023",
       image:
         "https://raphaelrossi.com/assets/extraverted-paintings/extraverted-01.jpg",
     },
@@ -22,7 +22,7 @@ const Exhibitions = () => {
       id: "3",
       title: "Watch to earn",
       venue: "Frac Bourgogne",
-      dates: "12 janvier - 02 février 2024",
+      dates: "5 septembre - 6 novembre 2022",
       image: "/assets/watch-to-earn/watch-12.jpg",
     },
     {
