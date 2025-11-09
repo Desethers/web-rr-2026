@@ -59,14 +59,16 @@ const Home = () => {
         </section>
 
         {/* Featured Exhibition */}
-        <section className="max-w-[1440px] mx-auto px-[25px] py-12">
+        <section className="max-w-[1440px] mx-auto px-[25px]">
           <div className="max-w-3xl">
             <h1 className="text-5xl lg:text-6xl font-semibold mb-4 animate-fade-in">
-              Extraverted paintings / Introverting pictures
+              Name dropping
             </h1>
-            <p className="text-2xl text-muted-foreground mb-2">Bagnoler</p>
+            <p className="text-2xl text-muted-foreground mb-2">
+              Pauline Perplexe
+            </p>
             <p className="text-2xl text-muted-foreground mb-6">
-              16 septembre - 23 novembre 2023
+              13 juin - 4 juillet 2025
             </p>
             <Link to="/exhibitions" className="btn-rounded">
               Explore more exhibitions
