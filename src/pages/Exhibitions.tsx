@@ -87,14 +87,14 @@ const Exhibitions = () => {
             </h1>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
             {exhibitions.map((exhibition, index) => (
               <div
                 key={exhibition.id}
                 className="group animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="aspect-[4/3] overflow-hidden bg-card mb-4">
+                <div className="aspect-[4/3] overflow-hidden bg-card mb-4 rounded-xl">
                   <img
                     src={exhibition.image}
                     alt={exhibition.title}

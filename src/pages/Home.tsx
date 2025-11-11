@@ -23,7 +23,7 @@ const Home = () => {
       dimensions: "104 x 104 cm",
     },
     {
-      id: "Don DeLillo-02",
+      id: "De-Lillo-02",
       image: "/assets/artworks-img/DonDeLillo-icon-Gallery.png",
       title: "Don DeLillo 02",
       year: 2025,
@@ -31,13 +31,12 @@ const Home = () => {
       dimensions: "80 x 80 cm",
     },
     {
-      id: "joan-didion-2023",
-      image:
-        "https://raphaelrossi.com/assets/last-artworks/joan-didion-face-2023.png",
-      title: "Joan Didion",
-      year: 2023,
+      id: "-20",
+      image: "/assets/artworks-img/Despentes-diptik-icone.png",
+      title: "Despentes 14 & 15",
+      year: 2025,
       medium: "Acrylic on canvas",
-      dimensions: "50 x 40 cm",
+      dimensions: "80 x 160 cm",
     },
   ];
 

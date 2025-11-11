@@ -4,12 +4,20 @@ import ArtworkCard from "@/components/ArtworkCard";
 const Gallery = () => {
   const artworks = [
     {
+      id: "Despentes 14&15",
+      image: "/assets/artworks-img/Despentes-diptik-icone.png",
+      title: "Despentes 14 & 15",
+      year: 2025,
+      medium: "Acrylic on canvas",
+      dimensions: "80 x 160 cm",
+    },
+    {
       id: "Kasischke-02",
       image: "/assets/artworks-img/Kasischke02-Icon-Gallery.png",
       title: "Kasischke 02",
       year: 2025,
       medium: "Acrylic on canvas",
-      dimensions: "124 x 124 cm",
+      dimensions: "123 x 92,5 cm",
     },
     {
       id: "De-Lillo-02",
@@ -17,7 +25,7 @@ const Gallery = () => {
       title: "Don DeLillo 02",
       year: 2025,
       medium: "Acrylic on canvas",
-      dimensions: "124 x 124 cm",
+      dimensions: "80 x 80 cm",
     },
     {
       id: "foster-wallace-2024",
@@ -26,7 +34,7 @@ const Gallery = () => {
       title: "Foster Wallace",
       year: 2024,
       medium: "Acrylic on canvas",
-      dimensions: "124 x 124 cm",
+      dimensions: "123 x 123 cm",
     },
     {
       id: "ottessa-moshfegh-2024",
@@ -35,7 +43,15 @@ const Gallery = () => {
       title: "Ottessa Moshfegh",
       year: 2024,
       medium: "Acrylic on canvas",
-      dimensions: "104 x 104 cm",
+      dimensions: "103 x 103 cm",
+    },
+    {
+      id: "how-to-be",
+      image: "/assets/artworks-img/how-to-be-millenials-ethos-face-2023.jpg",
+      title: "How to be... Millennials ethos",
+      year: 2023,
+      medium: "Acrylic on canvas, print laser",
+      dimensions: "40 x 100 cm",
     },
     {
       id: "laura-kasischke-2023",

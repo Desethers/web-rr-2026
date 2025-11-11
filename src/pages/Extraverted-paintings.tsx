@@ -120,9 +120,11 @@ const NameDropping: React.FC = () => {
               </div>
             </article>
 
+            <Figure key={2} img={images[2]} />
+
             <figure className="imagefull">
               <img
-                src={images[2].src}
+                src={images[5].src}
                 alt="Artwork 3"
                 className="w-full object-cover"
                 loading="lazy"
@@ -137,7 +139,7 @@ const NameDropping: React.FC = () => {
                   </p>
                 </div>
                 <Link
-                  to="/artwork/artwork-3"
+                  to="/artwork/how-to-be"
                   className="bouton_inquire inline-block border border-foreground w-[260px] py-2 text-center hover:bg-foreground hover:text-background transition-colors"
                 >
                   Inquire
@@ -145,7 +147,7 @@ const NameDropping: React.FC = () => {
               </div>
             </figure>
 
-            {[5, 6, 0, 7, 8].map((i) => (
+            {[6, 0, 7, 8].map((i) => (
               <Figure key={i} img={images[i]} />
             ))}
 

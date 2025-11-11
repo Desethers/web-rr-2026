@@ -194,6 +194,32 @@ const NameDropping: React.FC = () => {
               <Figure key={i} img={images[i]} />
             ))}
 
+            {/* 🔹 Bloc image + citation côte à côte */}
+            <div className="module_img_quote grid md:grid-cols-2 gap-10">
+              {/* Image à gauche */}
+              <figure className="img_side">
+                <img
+                  src="/assets/artworks-img/Franzen-01-detail.jpg"
+                  alt="view of exhibition"
+                  className="w-full"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption className="legende_img text-sm text-muted-foreground mt-2 text-left">
+                  Franzen 02, 2025
+                </figcaption>
+              </figure>
+
+              {/* Citation à droite */}
+              <div className="quote_side flex items-center">
+                <p className="text-2xl md:text-3xl lg:text-3xl font-medium leading-tight px-[100px]">
+                  Si le propre de la référence est qu'elle nous traverse, et
+                  elle peut donc aussi glisser, passer au dessus et nous laisser
+                  là.
+                </p>
+              </div>
+            </div>
+
             <div className="module_img_img grid md:grid-cols-2 gap-10">
               {[
                 {
@@ -255,7 +281,7 @@ const NameDropping: React.FC = () => {
                 {
                   src: "/assets/name-dropping/015.jpg",
                   caption: `Don DeLillo`,
-                  inquireLink: "/artwork/artwork-15",
+                  inquireLink: "/artwork/ottessa-moshfegh-2024",
                 },
                 {
                   src: "/assets/name-dropping/014.jpg",

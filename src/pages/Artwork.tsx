@@ -4,12 +4,30 @@ import { Link, useParams } from "react-router-dom";
 
 const artworksData = [
   {
+    id: "Despentes 14&15",
+    image: "/assets/artworks-img/DonDeLillo-icon-Gallery.png",
+    title: "Despentes 14 & 15",
+    year: 2025,
+    medium: "Acrylic on canvas",
+    dimensions: "80 x 80 cm (x2)",
+    price: "€2400",
+    description:
+      "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as David Foster Wallace, blending geometric patterns with color-splat experimentation.",
+    description2:
+      "In this series, I investigate the interplay between personal identity and cultural memory by using the names of contemporary authors as motifs in my paintings. The geometric style, influenced by the architectural forms of public buildings, reflects the perspective of elite culture as viewed from the streets.",
+    detailImages: [
+      "/assets/artworks-img/Despentes-Center-Gallery.jpg",
+      "/assets/artworks-img/Despentes-Detail-Gallery.jpg",
+      "/assets/artworks-img/Despentes-detail2-Gallery.jpg",
+    ],
+  },
+  {
     id: "Kasischke-02",
     image: "/assets/artworks-img/DonDeLillo-icon-Gallery.png",
     title: "Kasischke 02",
     year: 2025,
     medium: "Acrylic on canvas",
-    dimensions: "124 x 124 cm",
+    dimensions: "123 x 92,5 cm",
     price: "€1800",
     description:
       "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as David Foster Wallace, blending geometric patterns with color-splat experimentation.",
@@ -26,7 +44,7 @@ const artworksData = [
     title: "Don DeLillo 02",
     year: 2025,
     medium: "Acrylic on canvas",
-    dimensions: "124 x 124 cm",
+    dimensions: "80 x 80 cm",
     price: "€1800",
     description:
       "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as David Foster Wallace, blending geometric patterns with color-splat experimentation.",
@@ -44,7 +62,7 @@ const artworksData = [
     title: "Foster Wallace",
     year: 2024,
     medium: "Acrylic on canvas",
-    dimensions: "104 x 104 cm",
+    dimensions: "123 x 123 cm",
     price: "€2400",
     description:
       "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as Ottessa Moshfegh, blending geometric patterns with color-splat experimentation.",
@@ -61,15 +79,33 @@ const artworksData = [
     title: "Ottessa Moshfegh",
     year: 2024,
     medium: "Acrylic on canvas",
-    dimensions: "104 x 104 cm",
+    dimensions: "103 x 103 cm",
     price: "€2400",
     description:
       "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as Ottessa Moshfegh, blending geometric patterns with color-splat experimentation.",
     description2:
       "In this series, I investigate the interplay between personal identity and cultural memory by using the names of contemporary authors as motifs in my paintings. The geometric style, influenced by the architectural forms of public buildings, reflects the perspective of elite culture as viewed from the streets.",
     detailImages: [
-      "/assets/artworks-img/ottessa-moshfegh-face-2024.jpg",
+      "/assets/name-dropping/015.jpg",
       "/assets/artworks-img/ottessa-moshfegh-details-2024.jpg",
+      "/assets/artworks-img/Moshfegh-detail-gallery.jpg",
+    ],
+  },
+  {
+    id: "how-to-be",
+    image: "/assets/last-artworks/kasischke-face-2023.png",
+    title: "How to be...Millenials ethos",
+    year: 2023,
+    medium: "Acrylic on canvas",
+    dimensions: "40 x 100 cm",
+    price: "€1200",
+    description:
+      "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as Laura Kasischke, blending geometric patterns with color-splat experimentation.",
+    description2:
+      "In this series, I investigate the interplay between personal identity and cultural memory by using the names of contemporary authors as motifs in my paintings. The geometric style, influenced by the architectural forms of public buildings, reflects the perspective of elite culture as viewed from the streets.",
+    detailImages: [
+      "/assets/artworks-img/how-to-be-millenials-ethos-face-2023.jpg",
+      "/assets/artworks-img/how-to-be-millenials-detail-2023.jpg",
     ],
   },
   {
@@ -173,7 +209,7 @@ const Artwork: React.FC = () => {
 
                 <p className="text-2xl font-semibold mb-4">{artwork.price}</p>
 
-                <button className="w-full border border-foreground py-4 px-6 rounded hover:bg-foreground hover:text-background transition-colors">
+                <button className="w-full border border-foreground py-4 px-8 rounded hover:bg-foreground hover:text-background transition-colors text-xl mt-4 mb-8">
                   Buy this painting
                 </button>
               </div>
