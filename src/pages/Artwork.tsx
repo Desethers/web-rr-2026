@@ -4,9 +4,26 @@ import { Link, useParams } from "react-router-dom";
 
 const artworksData = [
   {
+    id: "Kasischke-02",
+    image: "/assets/artworks-img/DonDeLillo-icon-Gallery.png",
+    title: "Kasischke 02",
+    year: 2025,
+    medium: "Acrylic on canvas",
+    dimensions: "124 x 124 cm",
+    price: "€1800",
+    description:
+      "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as David Foster Wallace, blending geometric patterns with color-splat experimentation.",
+    description2:
+      "In this series, I investigate the interplay between personal identity and cultural memory by using the names of contemporary authors as motifs in my paintings. The geometric style, influenced by the architectural forms of public buildings, reflects the perspective of elite culture as viewed from the streets.",
+    detailImages: [
+      "/assets/artworks-img/Kasischke02-Center-Gallery.jpg",
+      "/assets/artworks-img/Kasischke02-detail-Gallery.jpg",
+    ],
+  },
+  {
     id: "De-Lillo-02",
-    image: "/assets/last-artworks/Foster-Wallace-2024-detoure.png",
-    title: "Laura Kasischke",
+    image: "/assets/artworks-img/DonDeLillo-icon-Gallery.png",
+    title: "Don DeLillo 02",
     year: 2025,
     medium: "Acrylic on canvas",
     dimensions: "124 x 124 cm",
@@ -18,6 +35,24 @@ const artworksData = [
     detailImages: [
       "/assets/artworks-img/DonDelLillo-02-center.jpg",
       "/assets/name-dropping/013.jpg",
+      "/assets/artworks-img/Don DeLillo-detail-Gallery.png",
+    ],
+  },
+  {
+    id: "foster-wallace-2024",
+    image: "/assets/last-artworks/ottessa-moshfegh-2024-detoure.png",
+    title: "Foster Wallace",
+    year: 2024,
+    medium: "Acrylic on canvas",
+    dimensions: "104 x 104 cm",
+    price: "€2400",
+    description:
+      "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as Ottessa Moshfegh, blending geometric patterns with color-splat experimentation.",
+    description2:
+      "In this series, I investigate the interplay between personal identity and cultural memory by using the names of contemporary authors as motifs in my paintings. The geometric style, influenced by the architectural forms of public buildings, reflects the perspective of elite culture as viewed from the streets.",
+    detailImages: [
+      "/assets/artworks-img/Foster-Wallace-Center-Gallery.jpg",
+      "/assets/artworks-img/foster-wallace-2024-01.jpg",
     ],
   },
   {

@@ -199,13 +199,13 @@ const NameDropping: React.FC = () => {
                 {
                   src: "/assets/name-dropping/013.jpg",
                   caption: `Don DeLillo 02, 2025`,
-                  inquireLink: "/artwork/artwork-15",
+                  inquireLink: "/artwork/De-Lillo-02",
                 },
                 {
                   src: "/assets/name-dropping/012.jpg",
                   caption: `Details of Valéria, 2023
             canvas, magazines.`,
-                  inquireLink: "/artwork/foster-wallace-2024",
+                  inquireLink: "/artwork/Kasischke-02",
                 },
               ].map((img, idx) => (
                 <figure className="imagefull" key={idx}>

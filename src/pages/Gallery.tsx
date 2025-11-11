@@ -4,18 +4,18 @@ import ArtworkCard from "@/components/ArtworkCard";
 const Gallery = () => {
   const artworks = [
     {
-      id: "De-Lillo-02",
-      image: "/assets/artworks-img/DonDelLillo-02-center.jpg",
-      title: "Laura Kasischke",
+      id: "Kasischke-02",
+      image: "/assets/artworks-img/Kasischke02-Icon-Gallery.png",
+      title: "Kasischke 02",
       year: 2025,
       medium: "Acrylic on canvas",
       dimensions: "124 x 124 cm",
     },
     {
       id: "De-Lillo-02",
-      image: "/assets/artworks-img/DonDelLillo-02-center.jpg",
+      image: "/assets/artworks-img/DonDeLillo-icon-Gallery.png",
       title: "Don DeLillo 02",
-      year: 2024,
+      year: 2025,
       medium: "Acrylic on canvas",
       dimensions: "124 x 124 cm",
     },

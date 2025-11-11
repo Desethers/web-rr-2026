@@ -23,13 +23,12 @@ const Home = () => {
       dimensions: "104 x 104 cm",
     },
     {
-      id: "laura-kasischke-2023",
-      image:
-        "https://raphaelrossi.com/assets/last-artworks/kasischke-face-2023.png",
-      title: "Laura Kasischke",
-      year: 2023,
+      id: "Don DeLillo-02",
+      image: "/assets/artworks-img/DonDeLillo-icon-Gallery.png",
+      title: "Don DeLillo 02",
+      year: 2025,
       medium: "Acrylic on canvas",
-      dimensions: "50 x 40 cm",
+      dimensions: "80 x 80 cm",
     },
     {
       id: "joan-didion-2023",
