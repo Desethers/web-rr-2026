@@ -61,14 +61,14 @@ const MadameBovary: React.FC = () => {
               </p>
 
               <p className="mb-4">
-                This exhibition delves into the relationship between urban
+                This exhibition explores the relationship between urban
                 psychology and cinema, echoing the concept of bovarysme – an
                 exploration of how desires merge with reality through fiction.
               </p>
 
               <p className="mb-4">
-                It sheds light on my engagement with films, not only as an
-                artistic expression but also as a nexus between self-perception,
+                It shows my engagement with films, not only as an artistic
+                expression but also as a nexus between self-perception,
                 architecture, and urban psychology.
               </p>
 
