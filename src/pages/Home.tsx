@@ -31,7 +31,7 @@ const Home = () => {
       dimensions: "80 x 80 cm",
     },
     {
-      id: "-20",
+      id: "Despentes 14&15",
       image: "/assets/artworks-img/Despentes-diptik-icone.png",
       title: "Despentes 14 & 15",
       year: 2025,

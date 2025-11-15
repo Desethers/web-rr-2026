@@ -88,10 +88,12 @@ const Gallery = () => {
                 New pieces from the studio
               </p>
               <p className="text-base text-muted-foreground leading-relaxed">
-                Dive into our newest arrivals with a curated selection of
-                standout artworks, hand-picked by our curators each week.
-                Discover fresh paintings, innovative sculptures, limited-edition
-                prints, serene ceramics, and everything in between.
+                The Gallery is the straight line from my studio to you—no
+                intermediates. You’re plugged straight into my production. Each
+                piece—painting, collage, collectible—comes out of my hands.
+                Priced by me, shipped by me. No gallery cut, no hidden fees.
+                You’re not just buying—you’re co-writing the cycle. Questions,
+                commissions, or thoughts on a piece? Hit me up directly.
               </p>
             </div>
           </div>

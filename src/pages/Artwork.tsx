@@ -10,7 +10,7 @@ const artworksData = [
     year: 2025,
     medium: "Acrylic on canvas",
     dimensions: "80 x 80 cm (x2)",
-    price: "€2400",
+    price: "€2600",
     description:
       "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as David Foster Wallace, blending geometric patterns with color-splat experimentation.",
     description2:
@@ -28,7 +28,7 @@ const artworksData = [
     year: 2025,
     medium: "Acrylic on canvas",
     dimensions: "123 x 92,5 cm",
-    price: "€1800",
+    price: "€2300",
     description:
       "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as David Foster Wallace, blending geometric patterns with color-splat experimentation.",
     description2:
@@ -45,7 +45,7 @@ const artworksData = [
     year: 2025,
     medium: "Acrylic on canvas",
     dimensions: "80 x 80 cm",
-    price: "€1800",
+    price: "€1300",
     description:
       "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as David Foster Wallace, blending geometric patterns with color-splat experimentation.",
     description2:
@@ -63,7 +63,7 @@ const artworksData = [
     year: 2024,
     medium: "Acrylic on canvas",
     dimensions: "123 x 123 cm",
-    price: "€2400",
+    price: "€3500",
     description:
       "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as Ottessa Moshfegh, blending geometric patterns with color-splat experimentation.",
     description2:
@@ -80,7 +80,7 @@ const artworksData = [
     year: 2024,
     medium: "Acrylic on canvas",
     dimensions: "103 x 103 cm",
-    price: "€2400",
+    price: "€3100",
     description:
       "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as Ottessa Moshfegh, blending geometric patterns with color-splat experimentation.",
     description2:
@@ -98,7 +98,7 @@ const artworksData = [
     year: 2023,
     medium: "Acrylic on canvas",
     dimensions: "40 x 100 cm",
-    price: "€1200",
+    price: "€1500",
     description:
       "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as Laura Kasischke, blending geometric patterns with color-splat experimentation.",
     description2:
@@ -115,7 +115,7 @@ const artworksData = [
     year: 2023,
     medium: "Acrylic on canvas",
     dimensions: "50 x 40 cm",
-    price: "€1200",
+    price: "€900",
     description:
       "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as Laura Kasischke, blending geometric patterns with color-splat experimentation.",
     description2:
@@ -133,7 +133,7 @@ const artworksData = [
     year: 2023,
     medium: "Acrylic on canvas",
     dimensions: "50 x 40 cm",
-    price: "€1800",
+    price: "€900",
     description:
       "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as Joan Didion, blending geometric patterns with color-splat experimentation.",
     description2:
