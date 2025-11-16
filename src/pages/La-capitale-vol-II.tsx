@@ -57,17 +57,11 @@ const LaCapitaleVolII: React.FC = () => {
 
             <div className="intro_exhibition">
               <p className="mb-4">
-                For their first exhibition, both collective and individual, at
-                the Tanneries, Camille Besson, Raphaël Rossi, Maxime Testu, and
-                Victor Vaysse bring together a collection of heterogeneous
-                figures in the Petite Galerie.{" "}
+                For their second presence at the Tanneries, Camille Besson,
+                Raphaël Rossi, Maxime Testu, and Victor Vaysse reinvest the
+                Petite Galerie, navigating between flashbacks and
               </p>
-              <p className="mb-4">
-                {" "}
-                By juxtaposing these figures, they highlight both artistic
-                individualities and shared reflections—deep undercurrents of a
-                contingent and pragmatic association of individuals.
-              </p>
+
               <p className="mb-4">Curator : Eric Degoutte</p>
             </div>
 
@@ -82,25 +76,41 @@ const LaCapitaleVolII: React.FC = () => {
               <div className="grid md:grid-cols-2 gap-x-[100px] px-[100px] max-w-[1440px] mx-auto text-justify">
                 <div>
                   <p className="mb-4">
-                    Cinema, its history, the images it produces, both as they
-                    are and as we conceive them, are the preferred materials of
-                    Raphaël Rossi. They are found as much in his practice as a
-                    sculptor as in his more recent and increasingly prevalent
-                    work in collage, through which the artist seems to be
-                    developing a new approach to. Mixing within his collages
-                    film posters, portraits of actresses and actors – true icons
-                    –, logos of theaters, producers, and distributors,
+                    Eclectic, the creations displayed on the walls – whose
+                    apparent two-dimensionality seems to be nothing but a
+                    deception – are interconnected in a manner reminiscent of an
+                    editorial railway or a cinema screening schedule. It's not
+                    surprising, then, that it falls to Raphaël Rossi (born in
+                    1988 in Dijon) – whose work revolves around systems and
+                    devices of cinematic dissemination and reception – to
+                    organize, connect, or even separate them, thereby
+                    structuring the space. As a discerning observer, the artist
+                    proposes two in situ installations for this purpose.
+                  </p>
+                  <p>
+                    The first, composed of several black monochromes mounted on
+                    frames, forms a horizon line. A simplified extraction of a
+                    characteristic element from the facade of MK2 Beaubourg in
+                    Paris, stripped of its branding, it nonetheless carries
+                    within the exhibition space the memories associated with its
+                    original nature, weaving together personal stories and
+                    collective unconscious.
                   </p>
                 </div>
                 <div>
                   <p className="mb-4">
-                    Raphaël Rossi captures the singular materiality of these
-                    images, as well as the thoughts they convey. In doing so, he
-                    questions both the ontological and physical relationships
-                    between the individual and cinema, between intimate and
-                    collective imaginaries, leading to analyses to which the
-                    figure of the artist is not immune. Text by Eric Degoutte
+                    A true vanishing point, its stretch both encourages and
+                    follows the movements of the visitor, delineating a
+                    trajectory in which all presented works are inscribed.
+                    Aerial in nature, this black thread of the exhibition
+                    engages in a dialogue with another, more down-to-earth black
+                    strip. Sewer grates littering the floor and contaminating
+                    the walls serve to complete the demarcation – while
+                    seemingly extending it – of the exhibition framework,
+                    unfolding a thought in motion, a true visual journey through
+                    four universes presented in a multi-screen.
                   </p>
+                  <p className="mb-4">Text by Eric Degoutte</p>
                 </div>
               </div>
             </article>

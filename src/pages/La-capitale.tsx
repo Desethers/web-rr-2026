@@ -38,7 +38,7 @@ const LaCapitale: React.FC = () => {
         <section className="title_exhibition">
           <div className="max-w-[1440px] mx-auto px-[25px] pt-12">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4 leading-tight">
-              La capitae Tomes I et II
+              La capitale Tomes I et II
             </h1>
             <div className="h-px bg-border mb-8"></div>
           </div>
@@ -56,10 +56,19 @@ const LaCapitale: React.FC = () => {
             </div>
 
             <div className="intro_exhibition">
-              <p>
-                Extrait : Sur le banc public s’échangent les mots et les images.
-                La réification du sens en unités manipulables...
+              <p className="mb-4">
+                For their first exhibition, both collective and individual, at
+                the Tanneries, Camille Besson, Raphaël Rossi, Maxime Testu, and
+                Victor Vaysse bring together a collection of heterogeneous
+                figures in the Petite Galerie.{" "}
               </p>
+              <p className="mb-4">
+                {" "}
+                By juxtaposing these figures, they highlight both artistic
+                individualities and shared reflections—deep undercurrents of a
+                contingent and pragmatic association of individuals.
+              </p>
+              <p className="mb-4">Curator : Eric Degoutte</p>
             </div>
 
             <div className="filet_mobile md:col-span-2" />
@@ -69,13 +78,30 @@ const LaCapitale: React.FC = () => {
         <section className="gallery max-w-[1440px] mx-auto px-[25px] py-12">
           <div className="space-y-8">
             <article className="texte_exhibition">
-              <p>
-                Sur le banc public s’échangent les mots et les images. La
-                réification du sens en unités manipulables introduit dans
-                l’esprit du collectionneur la possibilité d’articuler ses
-                fétiches. Le partage des objets appelle une économie du signe...
-              </p>
-              <p>Texte de Manuel Vieillot</p>
+              <div className="grid md:grid-cols-2 gap-x-[100px] px-[100px] max-w-[1440px] mx-auto text-justify">
+                <div>
+                  <p className="mb-4">
+                    Cinema, its history, the images it produces, both as they
+                    are and as we conceive them, are the preferred materials of
+                    Raphaël Rossi. They are found as much in his practice as a
+                    sculptor as in his more recent and increasingly prevalent
+                    work in collage, through which the artist seems to be
+                    developing a new approach to. Mixing within his collages
+                    film posters, portraits of actresses and actors – true icons
+                    –, logos of theaters, producers, and distributors,
+                  </p>
+                </div>
+                <div>
+                  <p className="mb-4">
+                    Raphaël Rossi captures the singular materiality of these
+                    images, as well as the thoughts they convey. In doing so, he
+                    questions both the ontological and physical relationships
+                    between the individual and cinema, between intimate and
+                    collective imaginaries, leading to analyses to which the
+                    figure of the artist is not immune. Text by Eric Degoutte
+                  </p>
+                </div>
+              </div>
             </article>
 
             {images.map((img, idx) => (

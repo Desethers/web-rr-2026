@@ -45,9 +45,10 @@ const AuBordDeLAgeAdulte: React.FC = () => {
         </section>
 
         <section className="textandinfos">
-          <div className="containerintro grid md:grid-cols-2 gap-6 max-w-[1440px]mx-auto px-[25px]">
+          {/* 🔥 Correction : espace ajouté entre [1440px] et mx-auto */}
+          <div className="containerintro grid md:grid-cols-2 gap-6 max-w-[1440px] mx-auto px-[25px]">
             <div className="intro_exhibition">
-              <p>10 otobre - 13 déc. 2019</p>
+              <p>23 janvier - 21 avril 2020</p>
               <p className="mt-2">
                 FRAC Champagne-Ardennes,
                 <br />
@@ -55,10 +56,18 @@ const AuBordDeLAgeAdulte: React.FC = () => {
               </p>
             </div>
 
-            <div className="intro_exhibition">
+            <div className="intro_exhibition space-y-5">
               <p>
-                Extrait : Sur le banc public s’échangent les mots et les images.
-                La réification du sens en unités manipulables...
+                The FRAC Champagne-Ardenne hosts, as part of the exhibition
+                Plein Jeu #2, Camille Beson, Raphaël Rossi, Maxime Testu, and
+                Victor Vaysse.
+              </p>
+              <p>
+                This provides another opportunity for these members of the
+                artist-run space Le Marquis to showcase their creations
+                together, a few months after Neïl Beloufa's invitation to the
+                Twentieth Ricard Prize at the Ricard Foundation, where they
+                presented Has-been, hélas.
               </p>
             </div>
 
@@ -67,19 +76,94 @@ const AuBordDeLAgeAdulte: React.FC = () => {
         </section>
 
         <section className="gallery max-w-[1440px] mx-auto px-[25px] py-12">
-          <div className="space-y-8">
+          <div className="space-y-[100px]">
+            <Figure key={4} img={images[4]} />
+
             <article className="texte_exhibition">
-              <p>
-                Sur le banc public s’échangent les mots et les images. La
-                réification du sens en unités manipulables introduit dans
-                l’esprit du collectionneur la possibilité d’articuler ses
-                fétiches. Le partage des objets appelle une économie du signe...
-              </p>
-              <p>Texte de Manuel Vieillot</p>
+              <div className="grid md:grid-cols-2 gap-x-[100px] px-[100px] max-w-[1440px] mx-auto text-justify">
+                <div>
+                  <p className="mb-4">
+                    Raphaël Rossi is interested in public space furniture,
+                    which, despite its seemingly simple forms, exhibits
+                    sculptural qualities.
+                  </p>
+                  <p className="mb-4">
+                    The artist creates benches from steel tubes panels,
+                    accentuating the aggressive shapes that public authorities
+                    have given to public benches to discourage homeless
+                    individuals from sitting on them. He thus highlights the
+                    dual discourse of designing furniture for conviviality while
+                    proclaiming a prohibition through "unwelcoming forms." The
+                    benches invite idleness, internal monologue, or dialogue.
+                    These pieces are juxtaposed with films that have shaped his
+                    perspective on the world.
+                  </p>
+                  <p className="mb-4">
+                    The posters of L’âge des possibles by Pascale Ferrand and
+                    Comment je me suis disputé by Arnaud Desplechin, which he
+                    places on these benches, share a common theme of addressing
+                    the generation of 25-35-year-olds, the pivotal moment
+                    between leaving higher education and entering the
+                    professional world. These young people, born in the 90s, did
+                    not experience the Beat Generation nor the hope of the
+                    future in the 2000s. Instead, they found themselves in a
+                    reality where the prospect of a better world was
+                    dissipating.
+                  </p>
+                </div>
+
+                <div>
+                  <p className="mb-4">
+                    Raphaël Rossi reflects on a turn-of-the-century youth: what
+                    does it mean to be young and reach the end of a century? For
+                    the artist, cinema is a privileged medium for exchange, a
+                    catalyst for debate, a form of dialogue because it "belongs
+                    to no one." It serves as an open path for discussion,
+                    allowing the projection of personal experiences and
+                    references in a more collective and instantaneous manner
+                    than literature.
+                  </p>
+
+                  <p className="mb-4 italic">
+                    Text by Valérie Toubas and Daniel Guionnet
+                  </p>
+                </div>
+              </div>
             </article>
 
-            {images.map((img, idx) => (
-              <Figure key={idx} img={img} />
+            {[0].map((i) => (
+              <Figure key={i} img={images[i]} />
+            ))}
+
+            {/* Image + citation */}
+            <div className="module_img_quote grid md:grid-cols-2 gap-10">
+              <figure className="img_side">
+                <img
+                  src="/assets/au-bord-de-l-age-adulte/au-bord-05.jpg"
+                  alt="view of exhibition"
+                  className="w-full"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption className="legende_img text-sm text-muted-foreground mt-2 text-left">
+                  Installation view, Au bord de l'âge adulte, 2019 Photo :
+                  Martin Argyroglo ©
+                </figcaption>
+              </figure>
+
+              <div className="quote_side flex items-center">
+                <p className="text-2xl md:text-3xl lg:text-3xl font-medium leading-tight px-[100px]">
+                  «Cette pratique décousue et éclatée du collage est une façon
+                  de classer, de rassembler, de hiérarchiser ses goûts, de
+                  donner de la valeur aux expériences qui comptent pour lui.»
+                  Marie Griffay, extrait du texte de l’exposition Au bord de
+                  l’âge adulte.
+                </p>
+              </div>
+            </div>
+
+            {[3, 1, 6].map((i) => (
+              <Figure key={i} img={images[i]} />
             ))}
 
             <div className="mt-12">
@@ -92,7 +176,7 @@ const AuBordDeLAgeAdulte: React.FC = () => {
       </main>
 
       <footer className="footer mt-12">
-        <div className="footer-content max-w-5xl mx-auto px-6 lg:px-8 py-6">
+        <div className="footer-content max-w-[1440px] mx-auto px-[25px] py-6 flex justify-between items-center">
           <div className="legal">
             <p>© 2024 Raphaël Rossi - All Rights Reserved</p>
           </div>
@@ -101,6 +185,7 @@ const AuBordDeLAgeAdulte: React.FC = () => {
               href="https://www.instagram.com/raphaaelrossi/"
               target="_blank"
               rel="noreferrer"
+              className="hover:underline"
             >
               Instagram
             </a>
