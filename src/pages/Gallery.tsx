@@ -87,14 +87,20 @@ const Gallery = () => {
               <p className="text-lg text-muted-foreground">
                 New pieces from the studio
               </p>
-              <p className="text-base text-muted-foreground leading-relaxed">
-                The Gallery is the straight line from my studio to you—no
-                intermediates. You’re plugged straight into my production. Each
-                piece—painting, collage, collectible—comes out of my hands.
-                Priced by me, shipped by me. No gallery cut, no hidden fees.
-                You’re not just buying—you’re co-writing the cycle. Questions,
-                commissions, or thoughts on a piece? Hit me up directly.
-              </p>
+
+              <div className="text-base text-muted-foreground leading-relaxed mb-4">
+                <p className="mb-4">
+                  The Gallery is the straight line from my studio to you—no
+                  intermediates. You’re plugged straight into my production.
+                  Each piece—painting, collage, collectible—comes out of my
+                  hands.
+                </p>
+
+                <p className="mb-4">
+                  Questions, commissions, or thoughts on a piece? Hit me up
+                  directly.
+                </p>
+              </div>
             </div>
           </div>
 

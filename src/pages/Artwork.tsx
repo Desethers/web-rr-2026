@@ -12,7 +12,7 @@ const artworksData = [
     dimensions: "80 x 80 cm (x2)",
     price: "€2600",
     description:
-      "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as David Foster Wallace, blending geometric patterns with color-splat experimentation.",
+      "This diptyque of two peintings is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as Virginie Despentes, blending geometric patterns with color-splat experimentation.",
     description2:
       "In this series, I investigate the interplay between personal identity and cultural memory by using the names of contemporary authors as motifs in my paintings. The geometric style, influenced by the architectural forms of public buildings, reflects the perspective of elite culture as viewed from the streets.",
     detailImages: [
@@ -30,7 +30,7 @@ const artworksData = [
     dimensions: "123 x 92,5 cm",
     price: "€2300",
     description:
-      "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as David Foster Wallace, blending geometric patterns with color-splat experimentation.",
+      "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as Laura Kasischke, blending geometric patterns with color-splat experimentation.",
     description2:
       "In this series, I investigate the interplay between personal identity and cultural memory by using the names of contemporary authors as motifs in my paintings. The geometric style, influenced by the architectural forms of public buildings, reflects the perspective of elite culture as viewed from the streets.",
     detailImages: [
@@ -47,7 +47,7 @@ const artworksData = [
     dimensions: "80 x 80 cm",
     price: "€1300",
     description:
-      "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as David Foster Wallace, blending geometric patterns with color-splat experimentation.",
+      "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as Don DeLillo, blending geometric patterns with color-splat experimentation.",
     description2:
       "In this series, I investigate the interplay between personal identity and cultural memory by using the names of contemporary authors as motifs in my paintings. The geometric style, influenced by the architectural forms of public buildings, reflects the perspective of elite culture as viewed from the streets.",
     detailImages: [
@@ -65,7 +65,7 @@ const artworksData = [
     dimensions: "123 x 123 cm",
     price: "€3500",
     description:
-      "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as Ottessa Moshfegh, blending geometric patterns with color-splat experimentation.",
+      "This painting is part of a unique series that explores the connection between formal and psychological relationships in fiction and urban environments. The geometric composition features the typographic names of contemporary authors, such as David Foster Wallace, blending geometric patterns with color-splat experimentation.",
     description2:
       "In this series, I investigate the interplay between personal identity and cultural memory by using the names of contemporary authors as motifs in my paintings. The geometric style, influenced by the architectural forms of public buildings, reflects the perspective of elite culture as viewed from the streets.",
     detailImages: [
@@ -111,7 +111,7 @@ const artworksData = [
   {
     id: "laura-kasischke-2023",
     image: "/assets/last-artworks/kasischke-face-2023.png",
-    title: "Laura Kasischke",
+    title: "Kasischke",
     year: 2023,
     medium: "Acrylic on canvas",
     dimensions: "50 x 40 cm",

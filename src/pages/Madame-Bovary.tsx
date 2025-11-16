@@ -33,18 +33,18 @@ const MadameBovary: React.FC = () => {
     <>
       <Navigation />
 
-      <main className="px-[25px]">
+      <main>
         <section className="title_exhibition">
-          <div className="max-w-[1440px] mx-auto pt-12">
+          <div className="max-w-[1440px] mx-auto px-[25px] pt-12">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4 leading-tight">
-              Madame Bovary
+              Name Dropping
             </h1>
             <div className="h-px bg-border mb-8"></div>
           </div>
         </section>
 
         <section className="textandinfos">
-          <div className="containerintro grid md:grid-cols-2 gap-6 max-w-[1440px] mx-auto py-6">
+          <div className="containerintro grid md:grid-cols-2 gap-6 max-w-[1440px] mx-auto py-6 px-[25px]">
             <div className="intro_exhibition">
               <p>08 mars - 28 mars 2024</p>
               <p className="mt-2">
@@ -78,7 +78,7 @@ const MadameBovary: React.FC = () => {
             <div className="filet_mobile md:col-span-2" />
           </div>
 
-          <section className="max-w-[1440px] mx-auto py-12">
+          <section className="max-w-[1440px] mx-auto py-12 px-[25px]">
             <div className="space-y-[100px]">
               {[8, 12, 10].map((i) => (
                 <Figure key={i} img={images[i]} />
