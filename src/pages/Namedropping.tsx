@@ -89,7 +89,7 @@ const NameDropping: React.FC = () => {
               <div className="relative">
                 <div
                   className={`grid md:grid-cols-2 gap-x-6 md:gap-x-8 lg:gap-x-12 xl:gap-x-16 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 max-w-[1440px] mx-auto text-justify overflow-hidden transition-all duration-500 ${
-                    isMobile && !isTextExpanded ? "max-h-[7.5em]" : "max-h-[5000px]"
+                    isMobile && !isTextExpanded ? "max-h-[10em]" : "max-h-[5000px]"
                   }`}
                 >
                 <div>
@@ -199,7 +199,7 @@ const NameDropping: React.FC = () => {
               </div>
                 
               {isMobile && !isTextExpanded && (
-                <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-background to-transparent pointer-events-none" />
+                <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none" />
               )}
               </div>
               
