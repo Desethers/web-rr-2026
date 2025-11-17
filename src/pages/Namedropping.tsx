@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Navigation from "@/components/Navigation";
 import { Link } from "react-router-dom";
+import { ChevronDown } from "lucide-react";
 import { nameDroppingImages } from "../data/namedroppingimg";
+import { useIsMobile } from "@/hooks/use-mobile";
 type ExhibitImage = {
   src: string;
   alt?: string;
@@ -28,6 +30,8 @@ const Figure: React.FC<{ img: ExhibitImage }> = ({ img }) => (
 
 const NameDropping: React.FC = () => {
   const images = nameDroppingImages;
+  const isMobile = useIsMobile();
+  const [isTextExpanded, setIsTextExpanded] = useState(false);
 
   return (
     <>
@@ -82,7 +86,28 @@ const NameDropping: React.FC = () => {
             <Figure key={4} img={images[4]} />
 
             <article className="texte_exhibition">
-              <div className="grid md:grid-cols-2 gap-x-6 md:gap-x-8 lg:gap-x-12 xl:gap-x-16 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 max-w-[1440px] mx-auto text-justify">
+              {isMobile && (
+                <button
+                  onClick={() => setIsTextExpanded(!isTextExpanded)}
+                  className="flex items-center justify-center gap-2 w-full mb-6 py-3 text-foreground hover:bg-secondary transition-colors rounded-lg"
+                >
+                  <span className="font-medium">
+                    {isTextExpanded ? "Masquer le texte" : "Lire le texte de l'exposition"}
+                  </span>
+                  <ChevronDown
+                    className={`transition-transform duration-300 ${
+                      isTextExpanded ? "rotate-180" : ""
+                    }`}
+                    size={20}
+                  />
+                </button>
+              )}
+              
+              <div
+                className={`grid md:grid-cols-2 gap-x-6 md:gap-x-8 lg:gap-x-12 xl:gap-x-16 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 max-w-[1440px] mx-auto text-justify overflow-hidden transition-all duration-500 ${
+                  isMobile && !isTextExpanded ? "max-h-0 opacity-0" : "max-h-[5000px] opacity-100"
+                }`}
+              >
                 <div>
                   <p className="mb-4 italic">Madame Bovary, c'est vous.</p>
                   <p className="mb-4">
