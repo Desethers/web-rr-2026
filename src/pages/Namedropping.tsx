@@ -35,8 +35,8 @@ const NameDropping: React.FC = () => {
 
       <main>
         <section className="title_exhibition">
-          <div className="max-w-[1440px] mx-auto px-[25px] pt-12">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4 leading-tight">
+          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 pt-8 md:pt-12">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-4 leading-tight">
               Name Dropping
             </h1>
             <div className="h-px bg-border mb-8"></div>
@@ -44,7 +44,7 @@ const NameDropping: React.FC = () => {
         </section>
 
         <section className="textandinfos">
-          <div className="containerintro grid md:grid-cols-2 gap-6 max-w-[1440px] mx-auto px-[25px] py-0">
+          <div className="containerintro grid md:grid-cols-2 gap-6 max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-0">
             <div className="intro_exhibition">
               <p>13 juin - 04 juillet 2025</p>
               <p className="mt-4">
@@ -77,12 +77,12 @@ const NameDropping: React.FC = () => {
           </div>
         </section>
 
-        <section className="gallery max-w-[1440px] mx-auto px-[25px] py-12">
-          <div className="space-y-[100px]">
+        <section className="gallery max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-8 md:py-12">
+          <div className="space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-24 xl:space-y-[100px]">
             <Figure key={4} img={images[4]} />
 
             <article className="texte_exhibition">
-              <div className="grid md:grid-cols-2 gap-x-[100px] px-[100px] max-w-[1440px] mx-auto text-justify">
+              <div className="grid md:grid-cols-2 gap-x-6 md:gap-x-8 lg:gap-x-12 xl:gap-x-16 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 max-w-[1440px] mx-auto text-justify">
                 <div>
                   <p className="mb-4 italic">Madame Bovary, c'est vous.</p>
                   <p className="mb-4">
@@ -195,7 +195,7 @@ const NameDropping: React.FC = () => {
             ))}
 
             {/* 🔹 Bloc image + citation côte à côte */}
-            <div className="module_img_quote grid md:grid-cols-2 gap-10">
+            <div className="module_img_quote grid md:grid-cols-2 gap-6 md:gap-8 lg:gap-10">
               {/* Image à gauche */}
               <figure className="img_side">
                 <img
@@ -212,7 +212,7 @@ const NameDropping: React.FC = () => {
 
               {/* Citation à droite */}
               <div className="quote_side flex items-center">
-                <p className="text-2xl md:text-3xl lg:text-3xl font-medium leading-tight px-[100px]">
+                <p className="text-xl sm:text-2xl md:text-3xl font-medium leading-tight px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
                   Si le propre de la référence est qu'elle nous traverse, et
                   elle peut donc aussi glisser, passer au dessus et nous laisser
                   là.
@@ -220,7 +220,7 @@ const NameDropping: React.FC = () => {
               </div>
             </div>
 
-            <div className="module_img_img grid md:grid-cols-2 gap-10">
+            <div className="module_img_img grid md:grid-cols-2 gap-6 md:gap-8 lg:gap-10">
               {[
                 {
                   src: "/assets/name-dropping/013.jpg",
@@ -251,7 +251,7 @@ const NameDropping: React.FC = () => {
                     {img.inquireLink && (
                       <Link
                         to={img.inquireLink}
-                        className="bouton_inquire inline-block border border-foreground w-[260px] py-2 text-center hover:bg-foreground hover:text-background transition-colors whitespace-nowrap"
+                        className="bouton_inquire inline-block border border-foreground w-full sm:w-[200px] md:w-[240px] lg:w-[260px] py-2 text-center hover:bg-foreground hover:text-background transition-colors whitespace-nowrap text-sm md:text-base"
                       >
                         Inquire
                       </Link>
@@ -265,7 +265,7 @@ const NameDropping: React.FC = () => {
             ))}
 
             <div className="quotes_exhibition_full">
-              <p className="quotes_full text-[35px] px-[300px] text-left">
+              <p className="quotes_full text-xl sm:text-2xl md:text-3xl lg:text-4xl px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 2xl:px-32 text-left leading-tight">
                 Le name dropping scripte le niveau social de la conversation
                 comme une pratique sociale en soi, un truc à la surface qui fait
                 genre. Littéralement « lâcher des noms », mais pas n'importe
@@ -276,7 +276,7 @@ const NameDropping: React.FC = () => {
               <Figure key={i} img={images[i]} />
             ))}
 
-            <div className="module_img_img grid md:grid-cols-2 gap-10">
+            <div className="module_img_img grid md:grid-cols-2 gap-6 md:gap-8 lg:gap-10">
               {[
                 {
                   src: "/assets/name-dropping/015.jpg",
@@ -307,7 +307,7 @@ const NameDropping: React.FC = () => {
                     {img.inquireLink && (
                       <Link
                         to={img.inquireLink}
-                        className="bouton_inquire inline-block border border-foreground w-[260px] py-2 text-center hover:bg-foreground hover:text-background transition-colors whitespace-nowrap"
+                        className="bouton_inquire inline-block border border-foreground w-full sm:w-[200px] md:w-[240px] lg:w-[260px] py-2 text-center hover:bg-foreground hover:text-background transition-colors whitespace-nowrap text-sm md:text-base"
                       >
                         Inquire
                       </Link>
@@ -331,16 +331,16 @@ const NameDropping: React.FC = () => {
       </main>
 
       <footer className="footer mt-12">
-        <div className="footer-content max-w-[1440px] mx-auto px-[25px] py-6 flex justify-between items-center">
-          <div className="legal">
-            <p>© 2024 Raphaël Rossi - All Rights Reserved</p>
+        <div className="footer-content max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <div className="legal text-center sm:text-left">
+            <p className="text-sm md:text-base">© 2024 Raphaël Rossi - All Rights Reserved</p>
           </div>
-          <div className="social-media">
+          <div className="social-media text-center sm:text-right">
             <a
               href="https://www.instagram.com/raphaaelrossi/"
               target="_blank"
               rel="noreferrer"
-              className="hover:underline"
+              className="hover:underline text-sm md:text-base"
             >
               Instagram
             </a>
