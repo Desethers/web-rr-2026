@@ -56,7 +56,7 @@ const NameDropping: React.FC = () => {
         </section>
 
         <section className="textandinfos">
-          <div className="containerintro grid md:grid-cols-2 gap-6 max-w-[1440px]mx-auto text-[19px] px-[25px]">
+          <div className="containerintro grid md:grid-cols-2 gap-6 max-w-[1440px]mx-auto text-sm sm:text-base md:text-[19px] px-[25px]">
             <div className="intro_exhibition ">
               <p>29 septembre - 22 octobre 2023</p>
               <p className="mt-2">
