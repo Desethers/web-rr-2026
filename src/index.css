@@ -65,19 +65,22 @@ All colors MUST be HSL.
     @apply font-light tracking-tight;
   }
 }
-.textandinfos {
+.textandinfos,
+.intro_exhibition {
   font-size: 16px;
   line-height: 1.5;
 }
 
 @media (min-width: 768px) {
-  .textandinfos {
+  .textandinfos,
+  .intro_exhibition {
     font-size: 19px;
   }
 }
 
 @media (min-width: 1024px) {
-  .textandinfos {
+  .textandinfos,
+  .intro_exhibition {
     font-size: 20px;
   }
 }
