@@ -57,6 +57,8 @@ const NameDropping: React.FC = () => {
               </p>
             </div>
 
+            <div className="h-px bg-border my-6 md:hidden" />
+
             <div className="intro_exhibition space-y-5">
               <p>
                 Name Dropping explores how cultural references shape belonging
