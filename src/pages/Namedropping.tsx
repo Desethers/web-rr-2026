@@ -39,7 +39,7 @@ const NameDropping: React.FC = () => {
 
       <main>
         <section className="title_exhibition">
-          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 pt-8 md:pt-12">
+          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] pt-8 md:pt-12">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-4 leading-tight">
               Name Dropping
             </h1>
@@ -48,7 +48,7 @@ const NameDropping: React.FC = () => {
         </section>
 
         <section className="textandinfos">
-          <div className="containerintro grid md:grid-cols-2 gap-6 max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-0">
+          <div className="containerintro grid md:grid-cols-2 gap-6 max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] py-0">
             <div className="intro_exhibition">
               <p>13 juin - 04 juillet 2025</p>
               <p className="mt-4">
@@ -83,7 +83,7 @@ const NameDropping: React.FC = () => {
           </div>
         </section>
 
-        <section className="gallery max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-8 md:py-12">
+        <section className="gallery max-w-[1440px] mx-auto mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px]">
           <div className="space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-24 xl:space-y-[100px]">
             <Figure key={4} img={images[4]} />
 
@@ -91,120 +91,126 @@ const NameDropping: React.FC = () => {
               <div className="relative">
                 <div
                   className={`grid md:grid-cols-2 gap-x-6 md:gap-x-8 lg:gap-x-12 xl:gap-x-16 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 max-w-[1440px] mx-auto text-justify overflow-hidden transition-all duration-500 ${
-                    isMobile && !isTextExpanded ? "max-h-[10em]" : "max-h-[5000px]"
+                    isMobile && !isTextExpanded
+                      ? "max-h-[10em]"
+                      : "max-h-[5000px]"
                   }`}
                 >
-                <div>
-                  <p className="mb-4 italic">Madame Bovary, c'est vous.</p>
-                  <p className="mb-4">
-                    Dans une précédente exposition de Raphaël Rossi, cette
-                    phrase, scindée d'une paire d'yeux braqués sur la porte,
-                    accueille le spectateur. Une affiche, sortie le 1er Avril,
-                    un ready-made, une Script et une Garamond, blanches, sur
-                    fond de papier noir brillant, les traces de plis accrochent
-                    la lumière. Le tout punaisé avec soin au centre d'un carton
-                    noir format portrait, un genre de 90 par 200, format porte.
-                    D'autres monochromes noirs, peints ou cartonnés. Des bandes
-                    letterbox* comme des marges dans lesquelles Raphaël Rossi
-                    rapporte des images, piquées à la surface, de personnages
-                    joués par Julianne Moore, Adam Driver, des film stills de la
-                    filmographie de PTA, des petits morceaux de cinéma. Dans ces
-                    assemblages, des présences plus ou moins intentionnelles
-                    dialoguent. Chaque acteur et actrice appelle tous ses autres
-                    rôles. Question de référence. Adèle Exarchopoulos, éclairée
-                    par les flammes, échelle 1 ou plus grande encore, couronnée
-                    par la Quinzaine, affiche tranchée, dédoublée, deux fois, et
-                    collées sur les portes d'un placard. C'est tout.
-                  </p>
-                  <p className="mb-4">
-                    Pourtant, l'écho d'un grand sérieux à la tâche retient
-                    l'attention, le refus d'une plasticité savante, ou
-                    saisissable, semble consommé. Les formes sont très ténues,
-                    presque punies. La minutie à l'oeuvre saisie. Et c'est comme
-                    si ça leur échappait (et quoi de plus humiliant ?) : la
-                    dimension affective, à laquelle renvoie forcément, le fait
-                    d'extraire, à l'exacto, et de coller, sur carton neutre, des
-                    photogrammes montrant Kristen Stewart (qui n'a pas eu
-                    d'obsession?)
-                  </p>
-                  <p className="mb-4">
-                    Reste-t-il quelque chose de ce radeau de sensibilité ou de
-                    sentimentalisme dans l'exposition Name Dropping ?
-                    Abandonnant le collage pour la peinture, Raphaël Rossi
-                    s'éloigne de ces matériaux fétichisés que sont les produits
-                    dérivés de l'industrie cinématographique pour deux monstres
-                    plus gros encore : la peinture et la littérature. On
-                    s'étouffe. Un diptyque noir et blanc, un peu argenté-chromé
-                    affiche en vis-à-vis, tracé au pochoir : Michel Houellebecq
-                    et Virginie Despentes.
-                  </p>
-                  <p className="mb-4">
-                    Chez Pauline Perplexe, des aplats Seigneurie, peinture
-                    acrylique satin pour l'intérieur. Des bandes, blanches,
-                    blanches grisées, vertes (une seule), rouges, s'articulent
-                    avec des triangles qui interpénétrent des noms d'auteurices,
-                    avec ou sans sérif. Sur d'épais châssis, s'écrit où est
-                    écrit, en gros caractères, des patronymes qui semblent
-                    feindre d'avoir été piochés au hasard ou par distraction.
-                    Ils démarrent ou débordent sur la tranche des toiles, et
-                    pèsent de tous leurs poids dans la pièce. La peinture nomme
-                    pendant qu'elle efface.
-                  </p>
+                  <div>
+                    <p className="mb-4 italic">Madame Bovary, c'est vous.</p>
+                    <p className="mb-4">
+                      Dans une précédente exposition de Raphaël Rossi, cette
+                      phrase, scindée d'une paire d'yeux braqués sur la porte,
+                      accueille le spectateur. Une affiche, sortie le 1er Avril,
+                      un ready-made, une Script et une Garamond, blanches, sur
+                      fond de papier noir brillant, les traces de plis
+                      accrochent la lumière. Le tout punaisé avec soin au centre
+                      d'un carton noir format portrait, un genre de 90 par 200,
+                      format porte. D'autres monochromes noirs, peints ou
+                      cartonnés. Des bandes letterbox* comme des marges dans
+                      lesquelles Raphaël Rossi rapporte des images, piquées à la
+                      surface, de personnages joués par Julianne Moore, Adam
+                      Driver, des film stills de la filmographie de PTA, des
+                      petits morceaux de cinéma. Dans ces assemblages, des
+                      présences plus ou moins intentionnelles dialoguent. Chaque
+                      acteur et actrice appelle tous ses autres rôles. Question
+                      de référence. Adèle Exarchopoulos, éclairée par les
+                      flammes, échelle 1 ou plus grande encore, couronnée par la
+                      Quinzaine, affiche tranchée, dédoublée, deux fois, et
+                      collées sur les portes d'un placard. C'est tout.
+                    </p>
+                    <p className="mb-4">
+                      Pourtant, l'écho d'un grand sérieux à la tâche retient
+                      l'attention, le refus d'une plasticité savante, ou
+                      saisissable, semble consommé. Les formes sont très ténues,
+                      presque punies. La minutie à l'oeuvre saisie. Et c'est
+                      comme si ça leur échappait (et quoi de plus humiliant ?) :
+                      la dimension affective, à laquelle renvoie forcément, le
+                      fait d'extraire, à l'exacto, et de coller, sur carton
+                      neutre, des photogrammes montrant Kristen Stewart (qui n'a
+                      pas eu d'obsession?)
+                    </p>
+                    <p className="mb-4">
+                      Reste-t-il quelque chose de ce radeau de sensibilité ou de
+                      sentimentalisme dans l'exposition Name Dropping ?
+                      Abandonnant le collage pour la peinture, Raphaël Rossi
+                      s'éloigne de ces matériaux fétichisés que sont les
+                      produits dérivés de l'industrie cinématographique pour
+                      deux monstres plus gros encore : la peinture et la
+                      littérature. On s'étouffe. Un diptyque noir et blanc, un
+                      peu argenté-chromé affiche en vis-à-vis, tracé au pochoir
+                      : Michel Houellebecq et Virginie Despentes.
+                    </p>
+                    <p className="mb-4">
+                      Chez Pauline Perplexe, des aplats Seigneurie, peinture
+                      acrylique satin pour l'intérieur. Des bandes, blanches,
+                      blanches grisées, vertes (une seule), rouges, s'articulent
+                      avec des triangles qui interpénétrent des noms
+                      d'auteurices, avec ou sans sérif. Sur d'épais châssis,
+                      s'écrit où est écrit, en gros caractères, des patronymes
+                      qui semblent feindre d'avoir été piochés au hasard ou par
+                      distraction. Ils démarrent ou débordent sur la tranche des
+                      toiles, et pèsent de tous leurs poids dans la pièce. La
+                      peinture nomme pendant qu'elle efface.
+                    </p>
+                  </div>
+                  <div>
+                    <p className="mb-4">
+                      Certains noms nous parlent, d'autres non. S'installe un
+                      jeu d'inclusion et d'exclusion. Ai-je lu, n'ai-je pas lu.
+                      On est dedans, ou on reste à côté. Seule la reconnaissance
+                      peut nous ramener à l'intérieur. Si le propre de la
+                      référence est qu'elle nous traverse, et elle peut donc
+                      aussi glisser, passer au dessus et nous laisser là.
+                    </p>
+                    <p className="mb-4">
+                      Ici, c'est la littérature postmoderne, qui affleure de
+                      manière consciente, celle où l'artifice stylistique tente
+                      moins d'imiter le réel que de rechercher sa traduction
+                      sensible. Littérature postmoderne, à la surface de toiles
+                      peut-être ersatz d'une idée générique d'une histoire de
+                      l'art réduite à ses attributs les plus voyants. Affiche,
+                      adresse. Politique publique d'accès à la culture.
+                      Problème. Pour qui et pourquoi ces noms sont-ils là ? Des
+                      oeuvres entières ramenées à des noms. Raphaël Rossi les a
+                      peut-être lus, ou alors il les aime bien, peu importe
+                      qu'il y soit affectivement attaché ou non. L'effet compte.
+                      Ce qui est pratique avec le name dropping, c'est qu'il
+                      permet de se placer dans la pièce. Une manière de parler
+                      littérature, art ou cinéma, par revers superficiel. Le
+                      name dropping scripte le niveau social de la conversation
+                      comme une pratique sociale en soi, un truc à la surface
+                      qui fait genre. Littéralement « lâcher des noms », mais
+                      pas n'importe lequel, à défaut des autres, d'inconnus
+                      restés hors-champs. Et comme dirait Nathalie Quintane « Il
+                      y a toujours une solution au problème de la culture ».
+                    </p>
+                    <p className="mb-4">
+                      Et c'est peut-être parce qu'il y a trop de bavard.es et de
+                      bavardage que Raphaël fait ça, ce travail en apnée, où
+                      toutes ses peintures, comme de lentes expirations
+                      contrôlée, synthétisent tout ce qu'il y a dire, tout ce
+                      qui a déjà été dit, redit et mal dit, par la vrai, la
+                      fausse citation, le miroir du sens. Finalement il nous
+                      tend un crachoir, loin, très loin, d'être aseptisée.
+                      Pftiou.
+                    </p>
+                    <p className="mb-4 italic">
+                      Romain Grateau et Fiona Vilmer
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      *Bandes noires qui permettent de respecter le format
+                      d'affichage d'un film (4/3, 16/9), sans le déformer ou le
+                      recadrer. L'inverse du plein écran.
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <p className="mb-4">
-                    Certains noms nous parlent, d'autres non. S'installe un jeu
-                    d'inclusion et d'exclusion. Ai-je lu, n'ai-je pas lu. On est
-                    dedans, ou on reste à côté. Seule la reconnaissance peut
-                    nous ramener à l'intérieur. Si le propre de la référence est
-                    qu'elle nous traverse, et elle peut donc aussi glisser,
-                    passer au dessus et nous laisser là.
-                  </p>
-                  <p className="mb-4">
-                    Ici, c'est la littérature postmoderne, qui affleure de
-                    manière consciente, celle où l'artifice stylistique tente
-                    moins d'imiter le réel que de rechercher sa traduction
-                    sensible. Littérature postmoderne, à la surface de toiles
-                    peut-être ersatz d'une idée générique d'une histoire de
-                    l'art réduite à ses attributs les plus voyants. Affiche,
-                    adresse. Politique publique d'accès à la culture. Problème.
-                    Pour qui et pourquoi ces noms sont-ils là ? Des oeuvres
-                    entières ramenées à des noms. Raphaël Rossi les a peut-être
-                    lus, ou alors il les aime bien, peu importe qu'il y soit
-                    affectivement attaché ou non. L'effet compte. Ce qui est
-                    pratique avec le name dropping, c'est qu'il permet de se
-                    placer dans la pièce. Une manière de parler littérature, art
-                    ou cinéma, par revers superficiel. Le name dropping scripte
-                    le niveau social de la conversation comme une pratique
-                    sociale en soi, un truc à la surface qui fait genre.
-                    Littéralement « lâcher des noms », mais pas n'importe
-                    lequel, à défaut des autres, d'inconnus restés hors-champs.
-                    Et comme dirait Nathalie Quintane « Il y a toujours une
-                    solution au problème de la culture ».
-                  </p>
-                  <p className="mb-4">
-                    Et c'est peut-être parce qu'il y a trop de bavard.es et de
-                    bavardage que Raphaël fait ça, ce travail en apnée, où
-                    toutes ses peintures, comme de lentes expirations contrôlée,
-                    synthétisent tout ce qu'il y a dire, tout ce qui a déjà été
-                    dit, redit et mal dit, par la vrai, la fausse citation, le
-                    miroir du sens. Finalement il nous tend un crachoir, loin,
-                    très loin, d'être aseptisée. Pftiou.
-                  </p>
-                  <p className="mb-4 italic">Romain Grateau et Fiona Vilmer</p>
-                  <p className="text-sm text-muted-foreground">
-                    *Bandes noires qui permettent de respecter le format
-                    d'affichage d'un film (4/3, 16/9), sans le déformer ou le
-                    recadrer. L'inverse du plein écran.
-                  </p>
-                </div>
+
+                {isMobile && !isTextExpanded && (
+                  <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none" />
+                )}
               </div>
-                
-              {isMobile && !isTextExpanded && (
-                <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none" />
-              )}
-              </div>
-              
+
               {isMobile && (
                 <button
                   onClick={() => setIsTextExpanded(!isTextExpanded)}
@@ -366,7 +372,9 @@ const NameDropping: React.FC = () => {
       <footer className="footer mt-12">
         <div className="footer-content max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-6 flex flex-col sm:flex-row justify-between items-center gap-4">
           <div className="legal text-center sm:text-left">
-            <p className="text-sm md:text-base">© 2024 Raphaël Rossi - All Rights Reserved</p>
+            <p className="text-sm md:text-base">
+              © 2024 Raphaël Rossi - All Rights Reserved
+            </p>
           </div>
           <div className="social-media text-center sm:text-right">
             <a
