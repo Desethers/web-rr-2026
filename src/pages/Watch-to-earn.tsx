@@ -36,8 +36,8 @@ const WatchToEarn: React.FC = () => {
 
       <main>
         <section className="title_exhibition">
-          <div className="max-w-[1440px] mx-auto px-[25px] pt-12">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4 leading-tight">
+          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] pt-8 md:pt-12">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-4 leading-tight">
               Watch to earn
             </h1>
             <div className="h-px bg-border mb-8"></div>
@@ -53,6 +53,8 @@ const WatchToEarn: React.FC = () => {
                 <p>16 Rue Quentin, 21000 Dijon</p>
               </p>
             </div>
+
+            <div className="h-px bg-border md:hidden" />
 
             <div className="intro_exhibition">
               <p>

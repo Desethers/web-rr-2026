@@ -57,7 +57,7 @@ const NameDropping: React.FC = () => {
               </p>
             </div>
 
-            <div className="h-px bg-border my-6 md:hidden" />
+            <div className="h-px bg-border md:hidden" />
 
             <div className="intro_exhibition space-y-5">
               <p>

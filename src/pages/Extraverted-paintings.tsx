@@ -47,8 +47,8 @@ const NameDropping: React.FC = () => {
 
       <main>
         <section className="title_exhibition">
-          <div className="max-w-[1440px] mx-auto px-[25px] pt-12">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4 leading-tight">
+          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] pt-8 md:pt-12">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-4 leading-tight">
               Extraverted Paintings / Introverting Pictures
             </h1>
             <div className="h-px bg-border mb-8"></div>
@@ -56,15 +56,17 @@ const NameDropping: React.FC = () => {
         </section>
 
         <section className="textandinfos">
-          <div className="containerintro grid md:grid-cols-2 gap-6 max-w-[1440px]mx-auto text-sm sm:text-base md:text-[19px] px-[25px]">
-            <div className="intro_exhibition ">
+          <div className="containerintro grid md:grid-cols-2 gap-6 max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] py-0">
+            <div className="intro_exhibition">
               <p>29 septembre - 22 octobre 2023</p>
-              <p className="mt-2">
+              <p className="mt-1">
                 Bagnoler, 46 rue Jules Ferry,
                 <br />
                 93170, Bagnolet
               </p>
             </div>
+
+            <div className="h-px bg-border md:hidden" />
 
             <div className="intro_exhibition ">
               <p>
