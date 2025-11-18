@@ -39,7 +39,7 @@ const MadameBovary: React.FC = () => {
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-4 leading-tight">
               Madame Bovary
             </h1>
-            <div className="h-px bg-border mb-8"></div>
+            <div className="h-px bg-border mb-5 md:mb-8"></div>
           </div>
         </section>
 

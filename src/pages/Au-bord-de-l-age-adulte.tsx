@@ -40,12 +40,11 @@ const AuBordDeLAgeAdulte: React.FC = () => {
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-4 leading-tight">
               Au bord de l'âge adulte
             </h1>
-            <div className="h-px bg-border mb-8"></div>
+            <div className="h-px bg-border mb-5 md:mb-8"></div>
           </div>
         </section>
 
         <section className="textandinfos">
-          {/* 🔥 Correction : espace ajouté entre [1440px] et mx-auto */}
           <div className="containerintro grid md:grid-cols-2 gap-6 max-w-[1440px] mx-auto px-[25px]">
             <div className="intro_exhibition">
               <p>23 janvier - 21 avril 2020</p>

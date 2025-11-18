@@ -40,7 +40,7 @@ const LeVingtiemePrix: React.FC = () => {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4 leading-tight">
               Le Vingtième Prix De La Fondation Ricard
             </h1>
-            <div className="h-px bg-border mb-8"></div>
+            <div className="h-px bg-border mb-5 md:mb-8"></div>
           </div>
         </section>
 

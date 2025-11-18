@@ -51,7 +51,7 @@ const NameDropping: React.FC = () => {
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-4 leading-tight">
               Extraverted Paintings / Introverting Pictures
             </h1>
-            <div className="h-px bg-border mb-8"></div>
+            <div className="h-px bg-border mb-5 md:mb-8"></div>
           </div>
         </section>
 
@@ -88,7 +88,7 @@ const NameDropping: React.FC = () => {
             {images.length > 0 && <Figure img={images[0]} />}
 
             <article className="texte_exhibition">
-              <div className="grid md:grid-cols-2 gap-x-[100px] px-[100px] max-w-[1440px] mx-auto text-justify">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[100px] px-[20px] md:px-[100px] max-w-[1440px] mx-auto text-justify">
                 <div>
                   <p>
                     Sur le banc public s'échangent les mots et les images. La
