@@ -1,15 +1,10 @@
 import { Link, useLocation } from "react-router-dom";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/ui/sheet";
 
 const Navigation = () => {
   const location = useLocation();
-  const [open, setOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   
   const isActive = (path: string) => location.pathname === path;
   
@@ -20,7 +15,7 @@ const Navigation = () => {
   ];
   
   return (
-    <nav className="bg-background">
+    <nav className="bg-background relative">
       <div className="max-w-[1440px] mx-auto px-[25px] py-6">
         <div className="flex items-center justify-between">
           <Link 
@@ -43,31 +38,39 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* Mobile Navigation */}
-          <Sheet open={open} onOpenChange={setOpen}>
-            <SheetTrigger className="md:hidden p-2 hover:bg-secondary/50 rounded-md transition-elegant">
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="md:hidden p-2 hover:bg-secondary/50 rounded-md transition-elegant"
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
               <Menu className="h-6 w-6" />
-            </SheetTrigger>
-            <SheetContent side="right" className="w-[250px]">
-              <div className="flex flex-col gap-4 mt-8">
-                {navLinks.map((link) => (
-                  <Link
-                    key={link.to}
-                    to={link.to}
-                    onClick={() => setOpen(false)}
-                    className={`text-lg py-3 px-4 rounded-md transition-elegant ${
-                      isActive(link.to) 
-                        ? 'bg-secondary text-foreground font-medium' 
-                        : 'hover:bg-secondary/50'
-                    }`}
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-              </div>
-            </SheetContent>
-          </Sheet>
+            )}
+          </button>
         </div>
+
+        {/* Mobile Navigation Menu */}
+        {isMenuOpen && (
+          <div className="md:hidden absolute right-0 top-full mt-2 mr-[25px] bg-background border border-border rounded-lg shadow-lg py-2 w-[250px] z-50">
+            {navLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                onClick={() => setIsMenuOpen(false)}
+                className={`block px-4 py-3 text-base transition-elegant ${
+                  isActive(link.to) 
+                    ? 'bg-secondary text-foreground font-medium' 
+                    : 'hover:bg-secondary/50'
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        )}
       </div>
     </nav>
   );
