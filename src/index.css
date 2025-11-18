@@ -66,8 +66,37 @@ All colors MUST be HSL.
   }
 }
 .textandinfos {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .textandinfos {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .textandinfos {
+    font-size: 20px;
+  }
+}
+
+.texte_exhibition {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .texte_exhibition {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .texte_exhibition {
+    font-size: 20px;
+  }
 }
 
 @layer utilities {
