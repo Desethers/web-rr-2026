@@ -28,7 +28,7 @@ const Figure: React.FC<{ img: ExhibitImage }> = ({ img }) => (
         {img.inquireLink && (
           <Link
             to={img.inquireLink}
-            className="bouton_inquire inline-block border border-foreground px-4 py-2 md:px-8 md:py-4 text-sm md:text-base hover:bg-foreground hover:text-background transition-colors whitespace-nowrap"
+            className="bouton_inquire inline-block border border-foreground px-2 py-1 md:px-8 md:py-4 text-xs md:text-base hover:bg-foreground hover:text-background transition-colors whitespace-nowrap"
           >
             Inquire
           </Link>
@@ -142,7 +142,7 @@ const NameDropping: React.FC = () => {
                 </div>
                 <Link
                   to="/artwork/how-to-be"
-                  className="bouton_inquire inline-block border border-foreground w-[130px] md:w-[260px] py-1 md:py-2 text-sm md:text-base text-center hover:bg-foreground hover:text-background transition-colors"
+                  className="bouton_inquire inline-block border border-foreground w-[100px] md:w-[260px] py-0.5 md:py-2 text-xs md:text-base text-center hover:bg-foreground hover:text-background transition-colors"
                 >
                   Inquire
                 </Link>
