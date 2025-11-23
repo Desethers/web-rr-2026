@@ -146,7 +146,7 @@ const NameDropping: React.FC = () => {
             <Figure key={11} img={images[11]} />
 
             <div className="quotes_exhibition_full">
-              <p className="quotes_full px-0 py-0 text-2xl font-medium text-center">
+              <p className="quotes_full font-medium text-4xl px-[250px] text-left py-[200px]">
                 D'une certaine manière, le carré renvoie davantage à la double
                 page qu'à la page simple. C'est un texte que l'on observe plus
                 qu'on ne le lit, que l'on a déjà parcouru et vers lequel on
