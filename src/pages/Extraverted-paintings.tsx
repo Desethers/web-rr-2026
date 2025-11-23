@@ -110,15 +110,15 @@ const NameDropping: React.FC = () => {
 
             <figure className="imagefull">
               <img src={images[5].src} alt="Artwork 3" className="w-full object-cover" loading="lazy" decoding="async" />
-              <div className="legende_bouton flex items-start justify-between gap-6 mt-2 py-4">
-                <div className="legende_img text-sm text-muted-foreground">
+              <div className="mt-2 py-4">
+                <div className="legende_img text-sm text-muted-foreground mb-4">
                   <p>
                     Artwork 3, 2023
                     <br />
                     canvas, magazines
                   </p>
                 </div>
-                <Link to="/artwork/how-to-be" className="bouton_inquire inline-block border border-foreground w-[100px] md:w-[260px] md:py-2 text-xs md:text-base text-center hover:bg-foreground hover:text-background transition-colors py-0">
+                <Link to="/artwork/how-to-be" className="bouton_inquire block w-full border border-foreground px-4 py-2 md:py-4 text-xs md:text-base text-center hover:bg-foreground hover:text-background transition-colors">
                   Inquire
                 </Link>
               </div>
