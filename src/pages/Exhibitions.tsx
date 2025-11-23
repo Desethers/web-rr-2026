@@ -65,14 +65,6 @@ const Exhibitions = () => {
       image:
         "/assets/pictures-past-exhibitions/vingtieme-prix-past-exhibitions-grid.jpg",
     },
-    {
-      id: "9",
-      title: "Which drinking buddy are you ?",
-      venue: "Chiffonnier",
-      dates: "28 avril - 20 mai 2018",
-      image:
-        "/assets/pictures-past-exhibitions/which-drinking-past-exhibitions-grid.jpg",
-    },
   ];
 
   return (
@@ -165,14 +157,6 @@ const Exhibitions = () => {
                     "Le Vingtième Prix de la Fondation Ricard" ? (
                     <Link
                       to="/exhibitions/Le-Vingtieme-Prix"
-                      state={exhibition}
-                      className="text-xl font-medium text-primary hover:underline"
-                    >
-                      {exhibition.title}
-                    </Link>
-                  ) : exhibition.title === "Which drinking buddy are you ?" ? (
-                    <Link
-                      to="/exhibitions/Which-drinking-buddy-are-you"
                       state={exhibition}
                       className="text-xl font-medium text-primary hover:underline"
                     >
