@@ -167,12 +167,12 @@ const NameDropping: React.FC = () => {
       </main>
 
       <footer className="footer mt-12">
-        <div className="footer-content max-w-[1440px] mx-auto px-4 md:px-[25px] py-6 flex flex-col md:flex-row justify-center md:justify-between items-center gap-4 md:gap-0">
+        <div className="footer-content max-w-[1440px] mx-auto px-4 md:px-[25px] py-6 flex flex-row justify-between items-center">
           <div className="legal">
-            <p className="text-sm md:text-base text-center md:text-left">© 2024 Raphaël Rossi - All Rights Reserved</p>
+            <p className="text-xs md:text-base">© 2024 Raphaël Rossi - All Rights Reserved</p>
           </div>
           <div className="social-media">
-            <a href="https://www.instagram.com/raphaaelrossi/" target="_blank" rel="noreferrer" className="hover:underline text-sm md:text-base">
+            <a href="https://www.instagram.com/raphaaelrossi/" target="_blank" rel="noreferrer" className="hover:underline text-xs md:text-base">
               Instagram
             </a>
           </div>
