@@ -2,7 +2,6 @@ import React from "react";
 import Navigation from "@/components/Navigation";
 import { Link } from "react-router-dom";
 import { extravertedPaintingsImages } from "../data/extravertedpaintingsimg";
-
 type ExhibitImage = {
   src: string;
   alt?: string;
@@ -10,39 +9,24 @@ type ExhibitImage = {
   className?: string;
   inquireLink?: string;
 };
-
-const Figure: React.FC<{ img: ExhibitImage }> = ({ img }) => (
-  <figure className={img.className ?? "imagefull"}>
-    <img
-      src={img.src}
-      alt={img.alt ?? ""}
-      className="w-full object-cover"
-      loading="lazy"
-      decoding="async"
-    />
-    {img.caption && (
-      <div className="flex items-start justify-between gap-6 mt-2 py-4">
+const Figure: React.FC<{
+  img: ExhibitImage;
+}> = ({
+  img
+}) => <figure className={img.className ?? "imagefull"}>
+    <img src={img.src} alt={img.alt ?? ""} className="w-full object-cover" loading="lazy" decoding="async" />
+    {img.caption && <div className="flex items-start justify-between gap-6 mt-2 py-4">
         <figcaption className="legende_img text-sm text-muted-foreground">
           {img.caption}
         </figcaption>
-        {img.inquireLink && (
-          <Link
-            to={img.inquireLink}
-            className="bouton_inquire inline-block border border-foreground px-2 py-1 md:px-8 md:py-4 text-xs md:text-base hover:bg-foreground hover:text-background transition-colors whitespace-nowrap"
-          >
+        {img.inquireLink && <Link to={img.inquireLink} className="bouton_inquire inline-block border border-foreground px-2 py-1 md:px-8 md:py-4 text-xs md:text-base hover:bg-foreground hover:text-background transition-colors whitespace-nowrap">
             Inquire
-          </Link>
-        )}
-      </div>
-    )}
-  </figure>
-);
-
+          </Link>}
+      </div>}
+  </figure>;
 const NameDropping: React.FC = () => {
   const images = extravertedPaintingsImages;
-
-  return (
-    <>
+  return <>
       <Navigation />
 
       <main>
@@ -125,13 +109,7 @@ const NameDropping: React.FC = () => {
             <Figure key={2} img={images[2]} />
 
             <figure className="imagefull">
-              <img
-                src={images[5].src}
-                alt="Artwork 3"
-                className="w-full object-cover"
-                loading="lazy"
-                decoding="async"
-              />
+              <img src={images[5].src} alt="Artwork 3" className="w-full object-cover" loading="lazy" decoding="async" />
               <div className="legende_bouton flex items-start justify-between gap-6 mt-2 py-4">
                 <div className="legende_img text-sm text-muted-foreground">
                   <p>
@@ -140,51 +118,35 @@ const NameDropping: React.FC = () => {
                     canvas, magazines
                   </p>
                 </div>
-                <Link
-                  to="/artwork/how-to-be"
-                  className="bouton_inquire inline-block border border-foreground w-[100px] md:w-[260px] py-0.5 md:py-2 text-xs md:text-base text-center hover:bg-foreground hover:text-background transition-colors"
-                >
+                <Link to="/artwork/how-to-be" className="bouton_inquire inline-block border border-foreground w-[100px] md:w-[260px] md:py-2 text-xs md:text-base text-center hover:bg-foreground hover:text-background transition-colors py-0">
                   Inquire
                 </Link>
               </div>
             </figure>
 
-            {[6, 0, 7, 8].map((i) => (
-              <Figure key={i} img={images[i]} />
-            ))}
+            {[6, 0, 7, 8].map(i => <Figure key={i} img={images[i]} />)}
 
             {/* 🔹 Bloc 2 images côte à côte */}
             <div className="module_img_img grid md:grid-cols-2 gap-10 my-6">
-              {[
-                {
-                  src: "/assets/extraverted-paintings/extraverted-10.jpg",
-                  caption: `Details of America generates great artists and finest sales, 2023
-                            canvas, laser print, magazines`,
-                },
-                {
-                  src: "/assets/extraverted-paintings/extraverted-11.jpg",
-                  caption: `Details of Valéria, 2023
-                            canvas, magazines.`,
-                },
-              ].map((img, idx) => (
-                <div className="img_side" key={idx}>
-                  <img
-                    src={img.src}
-                    alt=""
-                    className="w-full"
-                    loading="lazy"
-                    decoding="async"
-                  />
+              {[{
+              src: "/assets/extraverted-paintings/extraverted-10.jpg",
+              caption: `Details of America generates great artists and finest sales, 2023
+                            canvas, laser print, magazines`
+            }, {
+              src: "/assets/extraverted-paintings/extraverted-11.jpg",
+              caption: `Details of Valéria, 2023
+                            canvas, magazines.`
+            }].map((img, idx) => <div className="img_side" key={idx}>
+                  <img src={img.src} alt="" className="w-full" loading="lazy" decoding="async" />
                   <p className="legende_img whitespace-pre-line">
                     {img.caption}
                   </p>
-                </div>
-              ))}
+                </div>)}
             </div>
             <Figure key={11} img={images[11]} />
 
             <div className="quotes_exhibition_full">
-              <p className="quotes_full text-[35px] px-[300px] text-left">
+              <p className="quotes_full px-0 py-0 text-2xl font-medium text-center">
                 D'une certaine manière, le carré renvoie davantage à la double
                 page qu'à la page simple. C'est un texte que l'on observe plus
                 qu'on ne le lit, que l'on a déjà parcouru et vers lequel on
@@ -193,9 +155,7 @@ const NameDropping: React.FC = () => {
               </p>
             </div>
 
-            {[12, 13].map((i) => (
-              <Figure key={i} img={images[i]} />
-            ))}
+            {[12, 13].map(i => <Figure key={i} img={images[i]} />)}
 
             <div className="mt-12">
               <Link to="/exhibitions" className="text-sm hover:underline">
@@ -212,19 +172,12 @@ const NameDropping: React.FC = () => {
             <p>© 2024 Raphaël Rossi - All Rights Reserved</p>
           </div>
           <div className="social-media">
-            <a
-              href="https://www.instagram.com/raphaaelrossi/"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:underline"
-            >
+            <a href="https://www.instagram.com/raphaaelrossi/" target="_blank" rel="noreferrer" className="hover:underline">
               Instagram
             </a>
           </div>
         </div>
       </footer>
-    </>
-  );
+    </>;
 };
-
 export default NameDropping;
