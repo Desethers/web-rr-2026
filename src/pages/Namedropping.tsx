@@ -21,7 +21,7 @@ const Figure: React.FC<{ img: ExhibitImage }> = ({ img }) => (
       decoding="async"
     />
     {img.caption && (
-      <figcaption className="legende_img mt-2 text-sm text-muted-foreground">
+      <figcaption className="legende_img mt-2 text-xs sm:text-sm text-muted-foreground">
         {img.caption}
       </figcaption>
     )}
@@ -39,27 +39,28 @@ const NameDropping: React.FC = () => {
 
       <main>
         <section className="title_exhibition">
-          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] pt-8 md:pt-12">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-4 leading-tight">
+          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] pt-4 sm:pt-6 md:pt-12">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-2 sm:mb-4 leading-tight">
               Name Dropping
             </h1>
-            <div className="h-px bg-border mb-8"></div>
+            <div className="h-px bg-border md:mb-8"></div>
           </div>
         </section>
 
         <section className="textandinfos">
-          <div className="containerintro grid md:grid-cols-2 gap-6 max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] py-0">
-            <div className="intro_exhibition">
-              <p>13 juin - 04 juillet 2025</p>
-              <p className="mt-4">
-                <p>Pauline Perplexe</p>
-                <p>90 Av. de la Convention, 94110 Arcueil</p>
-              </p>
+          <div className="containerintro grid md:grid-cols-2 gap-4 max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] py-4">
+            {/* Date et infos */}
+            <div className="intro_exhibition text-sm md:text-base">
+              <p className="mb-4 md:mb-6">13 juin - 04 juillet 2025</p>
+              <p className="">Pauline Perplexe</p>
+              <p>90 Av. de la Convention, 94110 Arcueil</p>
             </div>
 
+            {/* Ligne séparatrice visible uniquement sur mobile */}
             <div className="h-px bg-border md:hidden" />
 
-            <div className="intro_exhibition space-y-5">
+            {/* Description de l'exposition */}
+            <div className="intro_exhibition space-y-2 md:space-y-5 text-sm md:text-base">
               <p>
                 Name Dropping explores how cultural references shape belonging
                 and social codes by turning literary names into visual material.
@@ -79,12 +80,13 @@ const NameDropping: React.FC = () => {
               </p>
             </div>
 
-            <div className="filet_mobile md:col-span-2" />
+            {/* Filet / séparation sur mobile */}
+            <div className="h-px bg-border md:hidden" />
           </div>
         </section>
 
         <section className="gallery max-w-[1440px] mx-auto mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px]">
-          <div className="space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-24 xl:space-y-[100px]">
+          <div className="pt-6 sm:pt-10 md:pt-12 lg:pt-16 xl:pt-20 space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-24 xl:space-y-[100px]">
             <Figure key={4} img={images[4]} />
 
             <article className="texte_exhibition">
@@ -244,7 +246,7 @@ const NameDropping: React.FC = () => {
                   loading="lazy"
                   decoding="async"
                 />
-                <figcaption className="legende_img text-sm text-muted-foreground mt-2 text-left">
+                <figcaption className="legende_img mt-2 text-xs sm:text-sm md:text-base text-muted-foreground">
                   Franzen 02, 2025
                 </figcaption>
               </figure>
@@ -259,7 +261,7 @@ const NameDropping: React.FC = () => {
               </div>
             </div>
 
-            <div className="module_img_img grid md:grid-cols-2 gap-6 md:gap-8 lg:gap-10">
+            <div className="module_img_img grid md:grid-cols-2 gap-6 md:gap-8 lg:gap-10 ">
               {[
                 {
                   src: "/assets/name-dropping/013.jpg",
@@ -268,7 +270,7 @@ const NameDropping: React.FC = () => {
                 },
                 {
                   src: "/assets/name-dropping/012.jpg",
-                  caption: `Details of Valéria, 2023
+                  caption: `Kasischke-02, 2024
             canvas, magazines.`,
                   inquireLink: "/artwork/Kasischke-02",
                 },
@@ -283,7 +285,7 @@ const NameDropping: React.FC = () => {
                   />
 
                   <div className="flex items-start justify-between gap-6 mt-2">
-                    <figcaption className="legende_img text-sm text-muted-foreground">
+                    <figcaption className="legende_img text-xs sm:text-sm md:text-base text-muted-foreground">
                       {img.caption}
                     </figcaption>
 
@@ -319,12 +321,12 @@ const NameDropping: React.FC = () => {
               {[
                 {
                   src: "/assets/name-dropping/015.jpg",
-                  caption: `Don DeLillo`,
+                  caption: `Moshfegh,2024`,
                   inquireLink: "/artwork/ottessa-moshfegh-2024",
                 },
                 {
                   src: "/assets/name-dropping/014.jpg",
-                  caption: `Details of Valéria, 2023
+                  caption: `Foster Wallace, 2024
             canvas, magazines.`,
                   inquireLink: "/artwork/foster-wallace-2024",
                 },
@@ -339,7 +341,7 @@ const NameDropping: React.FC = () => {
                   />
 
                   <div className="flex items-start justify-between gap-6 mt-2">
-                    <figcaption className="legende_img text-sm text-muted-foreground">
+                    <figcaption className="legende_img text-xs sm:text-sm md:text-base text-muted-foreground">
                       {img.caption}
                     </figcaption>
 

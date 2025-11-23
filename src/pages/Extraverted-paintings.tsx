@@ -11,39 +11,54 @@ type ExhibitImage = {
 };
 const Figure: React.FC<{
   img: ExhibitImage;
-}> = ({
-  img
-}) => <figure className={img.className ?? "imagefull"}>
-    <img src={img.src} alt={img.alt ?? ""} className="w-full object-cover" loading="lazy" decoding="async" />
-    {img.caption && <div className="flex items-start justify-between gap-6 mt-2 py-4">
-        <figcaption className="legende_img text-sm text-muted-foreground">
+}> = ({ img }) => (
+  <figure className={img.className ?? "imagefull"}>
+    <img
+      src={img.src}
+      alt={img.alt ?? ""}
+      className="w-full object-cover"
+      loading="lazy"
+      decoding="async"
+    />
+    {img.caption && (
+      <div className="flex items-start justify-between gap-6 mt-2 py-4">
+        <figcaption className="legende_img mt-2 text-xs sm:text-sm text-muted-foreground">
           {img.caption}
         </figcaption>
-        {img.inquireLink && <Link to={img.inquireLink} className="bouton_inquire inline-block border border-foreground px-2 py-1 md:px-8 md:py-4 text-xs md:text-base hover:bg-foreground hover:text-background transition-colors whitespace-nowrap">
+        {img.inquireLink && (
+          <Link
+            to={img.inquireLink}
+            className="bouton_inquire inline-block border border-foreground px-2 py-1 md:px-8 md:py-4 text-xs md:text-base hover:bg-foreground hover:text-background transition-colors whitespace-nowrap"
+          >
             Inquire
-          </Link>}
-      </div>}
-  </figure>;
+          </Link>
+        )}
+      </div>
+    )}
+  </figure>
+);
 const NameDropping: React.FC = () => {
   const images = extravertedPaintingsImages;
-  return <>
+  return (
+    <>
       <Navigation />
 
       <main>
         <section className="title_exhibition">
-          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] pt-8 md:pt-12">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-4 leading-tight">
+          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] pt-4 sm:pt-6 md:pt-12">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-2 sm:mb-4 leading-tight">
               Extraverted Paintings / Introverting Pictures
             </h1>
-            <div className="h-px bg-border mb-5 md:mb-8"></div>
+            <div className="h-px bg-border md:mb-8"></div>
           </div>
         </section>
 
         <section className="textandinfos">
-          <div className="containerintro grid md:grid-cols-2 gap-6 max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] py-0">
-            <div className="intro_exhibition">
+          <div className="containerintro grid md:grid-cols-2 gap-4 max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] py-4">
+            {/* Date et infos */}
+            <div className="intro_exhibition space-y-1 md:space-y-2 text-sm md:text-base">
               <p>29 septembre - 22 octobre 2023</p>
-              <p className="mt-1">
+              <p>
                 Bagnoler, 46 rue Jules Ferry,
                 <br />
                 93170, Bagnolet
@@ -109,7 +124,13 @@ const NameDropping: React.FC = () => {
             <Figure key={2} img={images[2]} />
 
             <figure className="imagefull">
-              <img src={images[5].src} alt="Artwork 3" className="w-full object-cover" loading="lazy" decoding="async" />
+              <img
+                src={images[5].src}
+                alt="Artwork 3"
+                className="w-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
               <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-6 mt-2 py-4">
                 <div className="legende_img text-sm text-muted-foreground">
                   <p>
@@ -118,30 +139,46 @@ const NameDropping: React.FC = () => {
                     canvas, magazines
                   </p>
                 </div>
-                <Link to="/artwork/how-to-be" className="bouton_inquire block md:inline-block w-full md:w-[260px] border border-foreground px-4 py-2 md:py-4 text-xs md:text-base text-center hover:bg-foreground hover:text-background transition-colors">
+                <Link
+                  to="/artwork/how-to-be"
+                  className="bouton_inquire block md:inline-block w-full md:w-[260px] border border-foreground px-4 py-2 md:py-4 text-xs md:text-base text-center hover:bg-foreground hover:text-background transition-colors"
+                >
                   Inquire
                 </Link>
               </div>
             </figure>
 
-            {[6, 0, 7, 8].map(i => <Figure key={i} img={images[i]} />)}
+            {[6, 0, 7, 8].map((i) => (
+              <Figure key={i} img={images[i]} />
+            ))}
 
             {/* 🔹 Bloc 2 images côte à côte */}
             <div className="module_img_img grid md:grid-cols-2 gap-6 md:gap-10 my-6">
-              {[{
-              src: "/assets/extraverted-paintings/extraverted-10.jpg",
-              caption: `Details of America generates great artists and finest sales, 2023
-                            canvas, laser print, magazines`
-            }, {
-              src: "/assets/extraverted-paintings/extraverted-11.jpg",
-              caption: `Details of Valéria, 2023
-                            canvas, magazines.`
-            }].map((img, idx) => <div className="img_side" key={idx}>
-                  <img src={img.src} alt="" className="w-full" loading="lazy" decoding="async" />
+              {[
+                {
+                  src: "/assets/extraverted-paintings/extraverted-10.jpg",
+                  caption: `Details of America generates great artists and finest sales, 2023
+                            canvas, laser print, magazines`,
+                },
+                {
+                  src: "/assets/extraverted-paintings/extraverted-11.jpg",
+                  caption: `Details of Valéria, 2023
+                            canvas, magazines.`,
+                },
+              ].map((img, idx) => (
+                <div className="img_side" key={idx}>
+                  <img
+                    src={img.src}
+                    alt=""
+                    className="w-full"
+                    loading="lazy"
+                    decoding="async"
+                  />
                   <p className="legende_img whitespace-pre-line">
                     {img.caption}
                   </p>
-                </div>)}
+                </div>
+              ))}
             </div>
             <Figure key={11} img={images[11]} />
 
@@ -155,7 +192,9 @@ const NameDropping: React.FC = () => {
               </p>
             </div>
 
-            {[12, 13].map(i => <Figure key={i} img={images[i]} />)}
+            {[12, 13].map((i) => (
+              <Figure key={i} img={images[i]} />
+            ))}
 
             <div className="mt-12">
               <Link to="/exhibitions" className="text-sm hover:underline">
@@ -169,15 +208,23 @@ const NameDropping: React.FC = () => {
       <footer className="footer mt-12">
         <div className="footer-content max-w-[1440px] mx-auto px-4 md:px-[25px] py-6 flex flex-row justify-between items-center">
           <div className="legal">
-            <p className="text-xs md:text-base">© 2024 Raphaël Rossi - All Rights Reserved</p>
+            <p className="text-xs md:text-base">
+              © 2024 Raphaël Rossi - All Rights Reserved
+            </p>
           </div>
           <div className="social-media">
-            <a href="https://www.instagram.com/raphaaelrossi/" target="_blank" rel="noreferrer" className="hover:underline text-xs md:text-base">
+            <a
+              href="https://www.instagram.com/raphaaelrossi/"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:underline text-xs md:text-base"
+            >
               Instagram
             </a>
           </div>
         </div>
       </footer>
-    </>;
+    </>
+  );
 };
 export default NameDropping;
