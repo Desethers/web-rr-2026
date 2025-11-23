@@ -17,7 +17,6 @@ import LaCapitaleVolII from "./pages/La-capitale-vol-II";
 import LaCapitale from "./pages/La-capitale";
 import AuBordDeLAgeAdulte from "./pages/Au-bord-de-l-age-adulte";
 import LeVingtiemePrix from "./pages/Le-Vingtieme-Prix";
-import WhichDrinkingBuddyAreYou from "./pages/Which-drinking-buddy-are-you";
 
 
 const queryClient = new QueryClient();
@@ -41,7 +40,6 @@ const App = () => (
           <Route path="/exhibitions/La-capitale" element={<LaCapitale />} />
           <Route path="/exhibitions/Au-bord-de-l-age-adulte" element={<AuBordDeLAgeAdulte />} />
           <Route path="/exhibitions/Le-Vingtieme-Prix" element={<LeVingtiemePrix />} />
-          <Route path="/exhibitions/Which-drinking-buddy-are-you" element={<WhichDrinkingBuddyAreYou />} />
           <Route path="/about" element={<About />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
