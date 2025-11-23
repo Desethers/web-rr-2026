@@ -59,13 +59,13 @@ const Home = () => {
         {/* Featured Exhibition */}
         <section className="max-w-[1440px] mx-auto px-[25px]">
           <div className="max-w-3xl">
-            <h1 className="text-5xl lg:text-6xl font-semibold mb-4 animate-fade-in">
+            <h1 className="text-2xl lg:text-3xl font-semibold mb-4 animate-fade-in">
               Name dropping
             </h1>
-            <p className="text-2xl text-muted-foreground mb-2">
+            <p className="text-lg text-muted-foreground mb-2">
               Pauline Perplexe
             </p>
-            <p className="text-2xl text-muted-foreground mb-6">
+            <p className="text-lg text-muted-foreground mb-6">
               13 juin - 4 juillet 2025
             </p>
             <Link to="/exhibitions" className="btn-rounded">
