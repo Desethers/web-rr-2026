@@ -104,7 +104,7 @@ const Gallery = () => {
             </div>
           </div>
 
-          <h2 className="text-3xl font-semibold mb-8">Paintings</h2>
+          <h2 className="text-xl md-xxl font-semibold mb-8">Paintings</h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[25px]">
             {artworks.map((artwork, index) => (

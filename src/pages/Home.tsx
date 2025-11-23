@@ -46,7 +46,7 @@ const Home = () => {
 
       <main>
         {/* Hero Section */}
-        <section className="max-w-[1440px] mx-auto px-[25px] py-12">
+        <section className="max-w-[1440px] mx-auto px-[25px] pt-3 md:pt-4 pb-6 md:pb-8">
           <div className="overflow-hidden">
             <img
               src="/assets/name-dropping/006.jpg"
@@ -59,10 +59,10 @@ const Home = () => {
         {/* Featured Exhibition */}
         <section className="max-w-[1440px] mx-auto px-[25px]">
           <div className="max-w-3xl">
-            <h1 className="text-2xl lg:text-5xl xl:text-6xl font-semibold mb-2 animate-fade-in">
+            <h1 className="text-3xl lg:text-5xl xl:text-6xl font-semibold mb-2 animate-fade-in">
               Name dropping
             </h1>
-            <p className="text-lg lg:text-2xl text-muted-foreground mb-1">
+            <p className="text-lg lg:text-2xl text-muted-foreground ">
               Pauline Perplexe
             </p>
             <p className="text-lg lg:text-2xl text-muted-foreground mb-6">
