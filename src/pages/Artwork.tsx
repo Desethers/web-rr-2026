@@ -1,6 +1,7 @@
 import React from "react";
 import Navigation from "@/components/Navigation";
 import { Link, useParams } from "react-router-dom";
+import ArtworksCarousel from "@/components/ArtworksCarousel";
 
 const artworksData = [
   {
@@ -174,25 +175,10 @@ const Artwork: React.FC = () => {
       <Navigation />
 
       <main>
-        <section className="max-w-[1440px] mx-auto px-[25px] py-12">
+        <section className="max-w-[1440px] mx-auto px-[25px] pt-4 md:pt-12 pb-12">
           <div className="grid md:grid-cols-[2fr_1fr] gap-12 items-start">
             {/* Left column - Images */}
-            <div className="flex flex-col justify-start items-center gap-6">
-              {artwork.detailImages.slice(0, 4).map((img, index) => (
-                <figure
-                  key={index}
-                  className="flex justify-center items-center max-w-[700px] w-full"
-                >
-                  <img
-                    src={img || artwork.image}
-                    alt={`${artwork.title} detail ${index + 1}`}
-                    className="w-full object-cover"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </figure>
-              ))}
-            </div>
+            <ArtworksCarousel images={artwork.detailImages} />
 
             {/* Right column - Information */}
             <div className="space-y-6">

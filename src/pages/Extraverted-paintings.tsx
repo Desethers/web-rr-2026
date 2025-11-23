@@ -49,15 +49,15 @@ const NameDropping: React.FC = () => {
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-2 sm:mb-4 leading-tight">
               Extraverted Paintings / Introverting Pictures
             </h1>
-            <div className="h-px bg-border md:mb-8"></div>
+            <div className="h-px bg-border md:mb-2"></div>
           </div>
         </section>
 
         <section className="textandinfos">
           <div className="containerintro grid md:grid-cols-2 gap-4 max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] py-4">
             {/* Date et infos */}
-            <div className="intro_exhibition space-y-1 md:space-y-2 text-sm md:text-base">
-              <p>29 septembre - 22 octobre 2023</p>
+            <div className="intro_exhibition text-sm md:text-base lg:text-lg xl:text-xl">
+              <p className="mb-4 md:mb-6">29 septembre - 23 novembre 2024</p>
               <p>
                 Bagnoler, 46 rue Jules Ferry,
                 <br />
