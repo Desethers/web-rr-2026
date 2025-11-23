@@ -78,7 +78,7 @@ const Home = () => {
 
           <div>
             <h1 className="text-2xl lg:text-5xl xl:text-6xl font-semibold mb-4">Last artworks</h1>
-            <p className="text-xl text-muted-foreground mb-6">New pieces from the studio</p>
+            <p className="text-xl text-muted-foreground mb-8">New pieces from the studio</p>
             <Link to="/gallery" className="btn-rounded">
               Explore more artworks
             </Link>
