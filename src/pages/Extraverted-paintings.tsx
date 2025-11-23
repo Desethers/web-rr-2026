@@ -56,7 +56,7 @@ const NameDropping: React.FC = () => {
         <section className="textandinfos">
           <div className="containerintro grid md:grid-cols-2 gap-4 max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] py-4">
             {/* Date et infos */}
-            <div className="intro_exhibition text-sm md:text-base lg:text-lg xl:text-xl">
+            <div className="intro_exhibition text-base md:text-lg lg:text-xl xl:text-2xl">
               <p className="mb-4 md:mb-6">29 septembre - 23 novembre 2024</p>
               <p>
                 Bagnoler, 46 rue Jules Ferry,
@@ -65,9 +65,9 @@ const NameDropping: React.FC = () => {
               </p>
             </div>
 
-            <div className="h-px bg-border md:hidden" />
+            <div className="h-px bg-border md:hidden " />
 
-            <div className="intro_exhibition ">
+            <div className="intro_exhibition text-base md:text-lg lg:text-xl xl:text-2xl ">
               <p>
                 Extraverted paintings / Introverting pictures is a solo
                 exhibition in which a new set of wall and framed collages is
