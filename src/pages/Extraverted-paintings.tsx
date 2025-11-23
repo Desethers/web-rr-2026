@@ -67,12 +67,12 @@ const NameDropping: React.FC = () => {
           </div>
         </section>
 
-        <section className="max-w-[1440px] mx-auto text-[19px] px-[25px] py-12">
-          <div className="space-y-[100px]">
+        <section className="max-w-[1440px] mx-auto text-[19px] px-4 md:px-[25px] py-6 md:py-12">
+          <div className="space-y-12 md:space-y-[100px]">
             {images.length > 0 && <Figure img={images[0]} />}
 
             <article className="texte_exhibition">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[100px] px-[20px] md:px-[100px] max-w-[1440px] mx-auto text-justify">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] max-w-[1440px] mx-auto text-justify">
                 <div>
                   <p>
                     Sur le banc public s'échangent les mots et les images. La
@@ -127,7 +127,7 @@ const NameDropping: React.FC = () => {
             {[6, 0, 7, 8].map(i => <Figure key={i} img={images[i]} />)}
 
             {/* 🔹 Bloc 2 images côte à côte */}
-            <div className="module_img_img grid md:grid-cols-2 gap-10 my-6">
+            <div className="module_img_img grid md:grid-cols-2 gap-6 md:gap-10 my-6">
               {[{
               src: "/assets/extraverted-paintings/extraverted-10.jpg",
               caption: `Details of America generates great artists and finest sales, 2023
