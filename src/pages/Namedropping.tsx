@@ -44,7 +44,7 @@ const NameDropping: React.FC = () => {
         <section className="textandinfos">
           <div className="containerintro grid md:grid-cols-2 gap-4 max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] py-4">
             {/* Date et infos */}
-            <div className="intro_exhibition text-base md:text-lg lg:text-xl xl:text-2xl">
+            <div className="intro_exhibition text-base md:text-base lg:text-lg xl:text-2xl">
               <p className="mb-4 md:mb-6">13 juin - 04 juillet 2025</p>
               <p className="">Pauline Perplexe</p>
               <p>90 Av. de la Convention, 94110 Arcueil</p>
