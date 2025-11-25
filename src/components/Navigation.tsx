@@ -23,7 +23,7 @@ const Navigation = () => {
           </Link>
 
           {/* Navigation - Always visible */}
-          <div className="flex flex-wrap items-center pt-6 gap-8">
+          <div className="flex flex-wrap items-center pt-6 gap-4">
             {navLinks.map((link) => (
               <Link
                 key={link.to}
