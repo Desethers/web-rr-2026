@@ -233,7 +233,7 @@ const NameDropping: React.FC = () => {
                     decoding="async"
                   />
 
-                  <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-2 lg:gap-6 mt-2">
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-6 mt-2">
                     <figcaption className="legende_img text-xs sm:text-sm md:text-base text-muted-foreground">
                       {img.caption}
                     </figcaption>
@@ -241,7 +241,7 @@ const NameDropping: React.FC = () => {
                     {img.inquireLink && (
                       <Link
                         to={img.inquireLink}
-                        className="bouton_inquire block lg:inline-block border border-foreground w-full lg:w-[240px] xl:w-[260px] py-2 text-center hover:bg-foreground hover:text-background transition-colors text-sm md:text-base"
+                        className="bouton_inquire block sm:inline-block border border-foreground w-full sm:w-[240px] md:w-[260px] py-2 text-center hover:bg-foreground hover:text-background transition-colors text-sm md:text-base"
                       >
                         Inquire
                       </Link>
@@ -288,7 +288,7 @@ const NameDropping: React.FC = () => {
                     decoding="async"
                   />
 
-                  <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-2 lg:gap-6 mt-2">
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-6 mt-2">
                     <figcaption className="legende_img text-xs sm:text-sm md:text-base text-muted-foreground">
                       {img.caption}
                     </figcaption>
@@ -296,7 +296,7 @@ const NameDropping: React.FC = () => {
                     {img.inquireLink && (
                       <Link
                         to={img.inquireLink}
-                        className="bouton_inquire block lg:inline-block border border-foreground w-full lg:w-[240px] xl:w-[260px] py-2 text-center hover:bg-foreground hover:text-background transition-colors text-sm md:text-base"
+                        className="bouton_inquire block sm:inline-block border border-foreground w-full sm:w-[240px] md:w-[260px] py-2 text-center hover:bg-foreground hover:text-background transition-colors text-sm md:text-base"
                       >
                         Inquire
                       </Link>
