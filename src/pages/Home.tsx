@@ -44,7 +44,7 @@ const Home = () => {
 
       <main>
         {/* Hero Section */}
-        <section className="max-w-[1440px] mx-auto px-[25px] pt-3 md:pt-4 pb-6 md:pb-8">
+        <section className="max-w-[1440px] mx-auto px-4 md:px-[25px] pt-3 md:pt-4 pb-6 md:pb-8">
           <div className="overflow-hidden">
             <img
               src="/assets/name-dropping/006.jpg"
