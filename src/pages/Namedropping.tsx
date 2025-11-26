@@ -316,7 +316,7 @@ const NameDropping: React.FC = () => {
         </section>
       </main>
 
-      <footer className="footer mt-6">
+      <footer className="footer mt-2 md:mt-8">
         <div className="footer-content max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-6 flex flex-row justify-between items-center gap-4">
           <div className="legal text-left">
             <p className="text-xs md:text-base">© 2024 Raphaël Rossi - All Rights Reserved</p>
