@@ -13,7 +13,7 @@ const Navigation = () => {
 
   return (
     <nav className="bg-background">
-      <div className="max-w-[1440px] mx-auto px-[25px] pt-6 pb-1 md:pt-6 md:pb-4">
+      <div className="max-w-[1440px] mx-auto px-4 md:px-[25px] pt-6 pb-1 md:pt-6 md:pb-4">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-">
           <Link
             to="/"
@@ -25,13 +25,7 @@ const Navigation = () => {
           {/* Navigation - Always visible */}
           <div className="flex flex-wrap items-center pt-6 gap-4">
             {navLinks.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                className={`nav-pill ${
-                  isActive(link.to) ? "bg-secondary" : ""
-                }`}
-              >
+              <Link key={link.to} to={link.to} className={`nav-pill ${isActive(link.to) ? "bg-secondary" : ""}`}>
                 {link.label}
               </Link>
             ))}
