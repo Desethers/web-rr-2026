@@ -284,7 +284,7 @@ const NameDropping: React.FC = () => {
                     decoding="async"
                   />
 
-                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 sm:gap-6 mt-2 md:mt-4 mb-16 sm:mb-0">
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 sm:gap-6 mt-2 md:mt-4 pb-2 sm:pb-0">
                     <figcaption className="legende_img text-xs sm:text-sm md:text-base text-muted-foreground">
                       {img.caption}
                     </figcaption>
@@ -340,7 +340,7 @@ const NameDropping: React.FC = () => {
                     decoding="async"
                   />
 
-                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 sm:gap-6 md:mt-4 mb-16 sm:mb-0">
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 sm:gap-6 md:mt-4 pb-2 sm:pb-0">
                     <figcaption className="legende_img text-xs sm:text-sm md:text-base text-muted-foreground">
                       {img.caption}
                     </figcaption>
