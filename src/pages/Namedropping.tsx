@@ -10,31 +10,21 @@ type ExhibitImage = {
   caption?: string | JSX.Element;
   className?: string;
 };
-
-const Figure: React.FC<{ img: ExhibitImage }> = ({ img }) => (
-  <figure className={img.className ?? "imagefull"}>
-    <img
-      src={img.src}
-      alt={img.alt ?? ""}
-      className="w-full object-cover"
-      loading="lazy"
-      decoding="async"
-    />
-    {img.caption && (
-      <figcaption className="legende_img mt-2 text-xs sm:text-sm md:text-base text-muted-foreground">
+const Figure: React.FC<{
+  img: ExhibitImage;
+}> = ({
+  img
+}) => <figure className={img.className ?? "imagefull"}>
+    <img src={img.src} alt={img.alt ?? ""} className="w-full object-cover" loading="lazy" decoding="async" />
+    {img.caption && <figcaption className="legende_img mt-2 text-xs sm:text-sm md:text-base text-muted-foreground">
         {img.caption}
-      </figcaption>
-    )}
-  </figure>
-);
-
+      </figcaption>}
+  </figure>;
 const NameDropping: React.FC = () => {
   const images = nameDroppingImages;
   const isMobile = useIsMobile();
   const [isTextExpanded, setIsTextExpanded] = useState(false);
-
-  return (
-    <>
+  return <>
       <Navigation />
 
       <main>
@@ -91,13 +81,7 @@ const NameDropping: React.FC = () => {
 
             <article className="texte_exhibition">
               <div className="relative">
-                <div
-                  className={`grid md:grid-cols-2 gap-x-6 md:gap-x-8 lg:gap-x-12 xl:gap-x-16 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 max-w-[1440px] mx-auto text-justify overflow-hidden transition-all duration-500 ${
-                    isMobile && !isTextExpanded
-                      ? "max-h-[10em]"
-                      : "max-h-[5000px]"
-                  }`}
-                >
+                <div className={`grid md:grid-cols-2 gap-x-6 md:gap-x-8 lg:gap-x-12 xl:gap-x-16 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 max-w-[1440px] mx-auto text-justify overflow-hidden transition-all duration-500 ${isMobile && !isTextExpanded ? "max-h-[10em]" : "max-h-[5000px]"}`}>
                   <div>
                     <p className="mb-4 italic">Madame Bovary, c'est vous.</p>
                     <p className="mb-4">
@@ -208,44 +192,24 @@ const NameDropping: React.FC = () => {
                   </div>
                 </div>
 
-                {isMobile && !isTextExpanded && (
-                  <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none" />
-                )}
+                {isMobile && !isTextExpanded && <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none" />}
               </div>
 
-              {isMobile && (
-                <button
-                  onClick={() => setIsTextExpanded(!isTextExpanded)}
-                  className="flex items-center justify-center gap-2 w-full mt-4 py-3 text-foreground hover:bg-secondary transition-colors rounded-lg"
-                >
-                  <span className="font-medium">
+              {isMobile && <button onClick={() => setIsTextExpanded(!isTextExpanded)} className="flex items-center justify-center gap-2 w-full mt-4 py-3 text-foreground hover:bg-secondary transition-colors rounded-lg">
+                  <span className="font-medium text-xs">
                     {isTextExpanded ? "Masquer le texte" : "Lire la suite"}
                   </span>
-                  <ChevronDown
-                    className={`transition-transform duration-300 ${
-                      isTextExpanded ? "rotate-180" : ""
-                    }`}
-                    size={20}
-                  />
-                </button>
-              )}
+                  <ChevronDown className={`transition-transform duration-300 ${isTextExpanded ? "rotate-180" : ""}`} size={20} />
+                </button>}
             </article>
 
-            {[2, 3].map((i) => (
-              <Figure key={i} img={images[i]} />
-            ))}
+            {[2, 3].map(i => <Figure key={i} img={images[i]} />)}
 
             {/* 🔹 Bloc image + citation côte à côte */}
             <div className="module_img_quote grid md:grid-cols-2 gap-6 md:gap-8 lg:gap-10">
               {/* Image à gauche */}
               <figure className="img_side">
-                <img
-                  src="/assets/artworks-img/Franzen-01-detail.jpg"
-                  alt="view of exhibition"
-                  className="w-full"
-                  loading="lazy"
-                  decoding="async"
-                />
+                <img src="/assets/artworks-img/Franzen-01-detail.jpg" alt="view of exhibition" className="w-full" loading="lazy" decoding="async" />
                 <figcaption className="legende_img mt-2 text-xs sm:text-sm md:text-base text-muted-foreground">
                   Franzen 02, 2025
                 </figcaption>
@@ -262,48 +226,30 @@ const NameDropping: React.FC = () => {
             </div>
 
             <div className="module_img_img grid md:grid-cols-2 gap-12 md:gap-8 lg:gap-8 ">
-              {[
-                {
-                  src: "/assets/name-dropping/013.jpg",
-                  caption: `Don DeLillo 02, 2025`,
-                  inquireLink: "/artwork/De-Lillo-02",
-                },
-                {
-                  src: "/assets/name-dropping/012.jpg",
-                  caption: `Kasischke-02, 2024
+              {[{
+              src: "/assets/name-dropping/013.jpg",
+              caption: `Don DeLillo 02, 2025`,
+              inquireLink: "/artwork/De-Lillo-02"
+            }, {
+              src: "/assets/name-dropping/012.jpg",
+              caption: `Kasischke-02, 2024
             canvas, magazines.`,
-                  inquireLink: "/artwork/Kasischke-02",
-                },
-              ].map((img, idx) => (
-                <figure className="imagefull" key={idx}>
-                  <img
-                    src={img.src}
-                    alt="view of exhibition"
-                    className="w-full object-cover"
-                    loading="lazy"
-                    decoding="async"
-                  />
+              inquireLink: "/artwork/Kasischke-02"
+            }].map((img, idx) => <figure className="imagefull" key={idx}>
+                  <img src={img.src} alt="view of exhibition" className="w-full object-cover" loading="lazy" decoding="async" />
 
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 sm:gap-6 mt-2 md:mt-4">
                     <figcaption className="legende_img text-xs sm:text-sm md:text-base text-muted-foreground">
                       {img.caption}
                     </figcaption>
 
-                    {img.inquireLink && (
-                      <Link
-                        to={img.inquireLink}
-                        className="bouton_inquire block sm:inline-block border border-foreground w-full sm:w-[240px] md:w-[260px] py-2 text-center hover:bg-foreground hover:text-background transition-colors text-sm md:text-base"
-                      >
+                    {img.inquireLink && <Link to={img.inquireLink} className="bouton_inquire block sm:inline-block border border-foreground w-full sm:w-[240px] md:w-[260px] py-2 text-center hover:bg-foreground hover:text-background transition-colors text-sm md:text-base">
                         Inquire
-                      </Link>
-                    )}
+                      </Link>}
                   </div>
-                </figure>
-              ))}
+                </figure>)}
             </div>
-            {[8, 1].map((i) => (
-              <Figure key={i} img={images[i]} />
-            ))}
+            {[8, 1].map(i => <Figure key={i} img={images[i]} />)}
 
             <div className="quotes_exhibition_full">
               <p className="quotes_full text-xl sm:text-2xl md:text-3xl lg:text-4xl px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 2xl:px-32 text-left leading-tight">
@@ -313,54 +259,34 @@ const NameDropping: React.FC = () => {
                 lequel, à défaut des autres, d'inconnus restés hors-champs.
               </p>
             </div>
-            {[5].map((i) => (
-              <Figure key={i} img={images[i]} />
-            ))}
+            {[5].map(i => <Figure key={i} img={images[i]} />)}
 
             <div className="module_img_img grid md:grid-cols-2 gap-12 md:gap-8 lg:gap-10">
-              {[
-                {
-                  src: "/assets/name-dropping/015.jpg",
-                  caption: `Moshfegh,2024`,
-                  inquireLink: "/artwork/ottessa-moshfegh-2024",
-                },
-                {
-                  src: "/assets/name-dropping/014.jpg",
-                  caption: `Foster Wallace, 2024
+              {[{
+              src: "/assets/name-dropping/015.jpg",
+              caption: `Moshfegh,2024`,
+              inquireLink: "/artwork/ottessa-moshfegh-2024"
+            }, {
+              src: "/assets/name-dropping/014.jpg",
+              caption: `Foster Wallace, 2024
             canvas, magazines.`,
-                  inquireLink: "/artwork/foster-wallace-2024",
-                },
-              ].map((img, idx) => (
-                <figure className="imagefull" key={idx}>
-                  <img
-                    src={img.src}
-                    alt="view of exhibition"
-                    className="w-full object-cover"
-                    loading="lazy"
-                    decoding="async"
-                  />
+              inquireLink: "/artwork/foster-wallace-2024"
+            }].map((img, idx) => <figure className="imagefull" key={idx}>
+                  <img src={img.src} alt="view of exhibition" className="w-full object-cover" loading="lazy" decoding="async" />
 
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 sm:gap-6 mt-2 md:mt-4">
                     <figcaption className="legende_img text-xs sm:text-sm md:text-base text-muted-foreground">
                       {img.caption}
                     </figcaption>
 
-                    {img.inquireLink && (
-                      <Link
-                        to={img.inquireLink}
-                        className="bouton_inquire block sm:inline-block border border-foreground w-full sm:w-[240px] md:w-[260px] py-2 text-center hover:bg-foreground hover:text-background transition-colors text-sm md:text-base"
-                      >
+                    {img.inquireLink && <Link to={img.inquireLink} className="bouton_inquire block sm:inline-block border border-foreground w-full sm:w-[240px] md:w-[260px] py-2 text-center hover:bg-foreground hover:text-background transition-colors text-sm md:text-base">
                         Inquire
-                      </Link>
-                    )}
+                      </Link>}
                   </div>
-                </figure>
-              ))}
+                </figure>)}
             </div>
 
-            {[16, 9, 6].map((i) => (
-              <Figure key={i} img={images[i]} />
-            ))}
+            {[16, 9, 6].map(i => <Figure key={i} img={images[i]} />)}
 
             <div className="mt-12">
               <Link to="/exhibitions" className="text-sm hover:underline">
@@ -379,19 +305,12 @@ const NameDropping: React.FC = () => {
             </p>
           </div>
           <div className="social-media text-center sm:text-right">
-            <a
-              href="https://www.instagram.com/raphaaelrossi/"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:underline text-sm md:text-base"
-            >
+            <a href="https://www.instagram.com/raphaaelrossi/" target="_blank" rel="noreferrer" className="hover:underline text-sm md:text-base">
               Instagram
             </a>
           </div>
         </div>
       </footer>
-    </>
-  );
+    </>;
 };
-
 export default NameDropping;
