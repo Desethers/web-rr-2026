@@ -261,7 +261,7 @@ const NameDropping: React.FC = () => {
               </div>
             </div>
 
-            <div className="module_img_img grid md:grid-cols-2 gap-8 md:gap-8 lg:gap-8 ">
+            <div className="module_img_img grid md:grid-cols-2 gap-12 md:gap-8 lg:gap-8 ">
               {[
                 {
                   src: "/assets/name-dropping/013.jpg",
@@ -317,7 +317,7 @@ const NameDropping: React.FC = () => {
               <Figure key={i} img={images[i]} />
             ))}
 
-            <div className="module_img_img grid md:grid-cols-2 gap-8 md:gap-8 lg:gap-10">
+            <div className="module_img_img grid md:grid-cols-2 gap-12 md:gap-8 lg:gap-10">
               {[
                 {
                   src: "/assets/name-dropping/015.jpg",
