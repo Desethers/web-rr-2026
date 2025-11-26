@@ -317,7 +317,7 @@ const NameDropping: React.FC = () => {
               <Figure key={i} img={images[i]} />
             ))}
 
-            <div className="module_img_img grid md:grid-cols-2 gap-6 md:gap-8 lg:gap-10">
+            <div className="module_img_img grid md:grid-cols-2 gap-8 md:gap-8 lg:gap-10">
               {[
                 {
                   src: "/assets/name-dropping/015.jpg",
@@ -340,7 +340,7 @@ const NameDropping: React.FC = () => {
                     decoding="async"
                   />
 
-                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 sm:gap-6 md:mt-4">
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 sm:gap-6 mt-2 md:mt-4">
                     <figcaption className="legende_img text-xs sm:text-sm md:text-base text-muted-foreground">
                       {img.caption}
                     </figcaption>
