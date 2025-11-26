@@ -307,7 +307,7 @@ const NameDropping: React.FC = () => {
               <Figure key={i} img={images[i]} />
             ))}
 
-            <div className="mt-5 md:mt-12">
+            <div className="mt-2 md:mt-12">
               <Link to="/exhibitions" className="text-sm hover:underline">
                 ← Retour aux expositions
               </Link>
