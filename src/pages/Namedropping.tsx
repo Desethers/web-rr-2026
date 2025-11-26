@@ -86,7 +86,7 @@ const NameDropping: React.FC = () => {
         </section>
 
         <section className="gallery max-w-[1440px] mx-auto mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px]">
-          <div className="pt-2 sm:pt-10 md:pt-12 lg:pt-16 xl:pt-20 space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-24 xl:space-y-[100px]">
+          <div className="pt-2 sm:pt-10 md:pt-12 lg:pt-16 xl:pt-20 space-y-16 sm:space-y-16 md:space-y-20 lg:space-y-24 xl:space-y-[100px]">
             <Figure key={4} img={images[4]} />
 
             <article className="texte_exhibition">
