@@ -29,8 +29,7 @@ const Gallery = () => {
     },
     {
       id: "foster-wallace-2024",
-      image:
-        "https://raphaelrossi.com/assets/last-artworks/Foster-Wallace-2024-detoure.png",
+      image: "https://raphaelrossi.com/assets/last-artworks/Foster-Wallace-2024-detoure.png",
       title: "Foster Wallace",
       year: 2024,
       medium: "Acrylic on canvas",
@@ -38,8 +37,7 @@ const Gallery = () => {
     },
     {
       id: "ottessa-moshfegh-2024",
-      image:
-        "https://raphaelrossi.com/assets/last-artworks/ottessa-moshfegh-2024-detoure.png",
+      image: "https://raphaelrossi.com/assets/last-artworks/ottessa-moshfegh-2024-detoure.png",
       title: "Ottessa Moshfegh",
       year: 2024,
       medium: "Acrylic on canvas",
@@ -55,8 +53,7 @@ const Gallery = () => {
     },
     {
       id: "laura-kasischke-2023",
-      image:
-        "https://raphaelrossi.com/assets/last-artworks/kasischke-face-2023.png",
+      image: "https://raphaelrossi.com/assets/last-artworks/kasischke-face-2023.png",
       title: "Laura Kasischke",
       year: 2023,
       medium: "Acrylic on canvas",
@@ -64,8 +61,7 @@ const Gallery = () => {
     },
     {
       id: "joan-didion-2023",
-      image:
-        "https://raphaelrossi.com/assets/last-artworks/joan-didion-face-2023.png",
+      image: "https://raphaelrossi.com/assets/last-artworks/joan-didion-face-2023.png",
       title: "Joan Didion",
       year: 2023,
       medium: "Acrylic on canvas",
@@ -80,26 +76,17 @@ const Gallery = () => {
       <main>
         <section className="max-w-[1440px] mx-auto px-[25px] py-12">
           <div className="mb-12">
-            <h1 className="text-5xl lg:text-6xl font-semibold mb-6 animate-fade-in">
-              Gallery
-            </h1>
+            <h1 className="text-5xl lg:text-6xl font-semibold mb-6 animate-fade-in">Gallery</h1>
             <div className="grid md:grid-cols-2 gap-8 mb-8">
-              <p className="text-lg text-muted-foreground">
-                New pieces from the studio
-              </p>
+              <p className="text-lg text-muted-foreground">New pieces from the studio</p>
 
               <div className="text-base text-muted-foreground leading-relaxed mb-4">
                 <p className="mb-4">
-                  The Gallery is the straight line from my studio to you—no
-                  intermediates. You’re plugged straight into my production.
-                  Each piece—painting, collage, collectible—comes out of my
-                  hands.
+                  The Gallery is the straight line from my studio to you—no intermediates. You’re plugged straight into
+                  my production. Each piece—painting, collage, collectible—comes out of my hands.
                 </p>
 
-                <p className="mb-4">
-                  Questions, commissions, or thoughts on a piece? Hit me up
-                  directly.
-                </p>
+                <p className="mb-4">Questions, commissions, or thoughts on a piece? Hit me up directly.</p>
               </div>
             </div>
           </div>
@@ -108,17 +95,30 @@ const Gallery = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[25px]">
             {artworks.map((artwork, index) => (
-              <div
-                key={artwork.id}
-                className="animate-fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
+              <div key={artwork.id} className="animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
                 <ArtworkCard {...artwork} />
               </div>
             ))}
           </div>
         </section>
       </main>
+      <footer className="footer mt-1 md:mt-8">
+        <div className="footer-content max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-6 flex flex-row justify-between items-center gap-2">
+          <div className="legal text-left">
+            <p className="text-xs md:text-base">© 2024 Raphaël Rossi - All Rights Reserved</p>
+          </div>
+          <div className="social-media text-right">
+            <a
+              href="https://www.instagram.com/raphaaelrossi/"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:underline text-xs md:text-base"
+            >
+              Instagram
+            </a>
+          </div>
+        </div>
+      </footer>
     </>
   );
 };
