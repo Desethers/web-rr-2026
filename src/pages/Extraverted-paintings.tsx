@@ -21,7 +21,7 @@ const Figure: React.FC<{
       decoding="async"
     />
     {img.caption && (
-      <div className="flex items-start justify-between gap-6 mt-2 py-4">
+      <div className="flex items-start justify-between gap-6 md:mt-2">
         <figcaption className="legende_img mt-2 text-xs sm:text-sm text-muted-foreground">
           {img.caption}
         </figcaption>
@@ -56,7 +56,7 @@ const NameDropping: React.FC = () => {
         <section className="textandinfos">
           <div className="containerintro grid md:grid-cols-2 gap-4 max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] py-4">
             {/* Date et infos */}
-            <div className="intro_exhibition text-base md:text-lg lg:text-xl xl:text-2xl">
+            <div className="intro_exhibition text-base md:text-base lg:text-xl xl:text-2xl">
               <p className="mb-4 md:mb-6">29 septembre - 23 novembre 2024</p>
               <p>
                 Bagnoler, 46 rue Jules Ferry,
@@ -67,7 +67,7 @@ const NameDropping: React.FC = () => {
 
             <div className="h-px bg-border md:hidden " />
 
-            <div className="intro_exhibition text-base md:text-lg lg:text-xl xl:text-2xl ">
+            <div className="intro_exhibition text-base md:text-base lg:text-xl xl:text-2xl ">
               <p>
                 Extraverted paintings / Introverting pictures is a solo
                 exhibition in which a new set of wall and framed collages is
@@ -82,14 +82,14 @@ const NameDropping: React.FC = () => {
           </div>
         </section>
 
-        <section className="max-w-[1440px] mx-auto text-[19px] px-4 md:px-[25px] py-6 md:py-12">
+        <section className="max-w-[1440px] mx-auto px-4 md:px-[25px] py-6 md:py-12">
           <div className="space-y-12 md:space-y-[100px]">
             {images.length > 0 && <Figure img={images[0]} />}
 
             <article className="texte_exhibition">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] max-w-[1440px] mx-auto text-justify">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] max-w-[1440px] text-base mx-auto text-justify">
                 <div>
-                  <p>
+                  <p className="mb-6">
                     Sur le banc public s'échangent les mots et les images. La
                     réification du sens en unités manipulables introduit dans
                     l'esprit du collectionneur la possibilité d'articuler ses
@@ -116,7 +116,7 @@ const NameDropping: React.FC = () => {
                     inconnu: J'ai lu ton prénom dans un livre, je t'ai déjà vu
                     par ici.
                   </p>
-                  <p className="mb-4 italic">Manuel Vieillot</p>
+                  <p className="mt-4 italic">Manuel Vieillot</p>
                 </div>
               </div>
             </article>
@@ -153,11 +153,11 @@ const NameDropping: React.FC = () => {
             ))}
 
             {/* 🔹 Bloc 2 images côte à côte */}
-            <div className="module_img_img grid md:grid-cols-2 gap-6 md:gap-10 my-6">
+            <div className="module_img_img grid md:grid-cols-2 gap-6 md:gap-10 my-6 mt-2 whitespace-pre-line">
               {[
                 {
                   src: "/assets/extraverted-paintings/extraverted-10.jpg",
-                  caption: `Details of America generates great artists and finest sales, 2023
+                  caption: `Details of America generates great artists and finest sales, 2023 
                             canvas, laser print, magazines`,
                 },
                 {
@@ -174,9 +174,9 @@ const NameDropping: React.FC = () => {
                     loading="lazy"
                     decoding="async"
                   />
-                  <p className="legende_img whitespace-pre-line">
+                  <figcaption className="legende_img text-xs sm:text-sm md:text-base mt-2 text-muted-foreground">
                     {img.caption}
-                  </p>
+                  </figcaption>
                 </div>
               ))}
             </div>
@@ -196,7 +196,7 @@ const NameDropping: React.FC = () => {
               <Figure key={i} img={images[i]} />
             ))}
 
-            <div className="mt-1 md:mt-12">
+            <div className="mt-12">
               <Link to="/exhibitions" className="text-sm hover:underline">
                 ← Retour aux expositions
               </Link>
@@ -205,14 +205,14 @@ const NameDropping: React.FC = () => {
         </section>
       </main>
 
-      <footer className="footer mt-1 md:mt-8">
-        <div className="footer-content max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-6 flex flex-row justify-between items-center gap-2">
-          <div className="legal text-left">
+      <footer className="footer mt-12">
+        <div className="footer-content max-w-[1440px] mx-auto px-4 md:px-[25px] py-6 flex flex-row justify-between items-center">
+          <div className="legal">
             <p className="text-xs md:text-base">
               © 2024 Raphaël Rossi - All Rights Reserved
             </p>
           </div>
-          <div className="social-media text-right">
+          <div className="social-media">
             <a
               href="https://www.instagram.com/raphaaelrossi/"
               target="_blank"
