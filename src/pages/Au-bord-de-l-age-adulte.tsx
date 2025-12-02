@@ -36,7 +36,7 @@ const AuBordDeLAgeAdulte: React.FC = () => {
 
       <main>
         <section className="title_exhibition">
-          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] pt-4 sm:pt-6 md:pt-12">
+          <div className="mx-auto px-4 md:px-[25px] pt-4 sm:pt-6 md:pt-12">
             <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-2 sm:mb-4 leading-tight">
               Au bord de l'âge adulte
             </h1>
@@ -45,7 +45,7 @@ const AuBordDeLAgeAdulte: React.FC = () => {
         </section>
 
         <section className="textandinfos">
-          <div className="containerintro grid md:grid-cols-2 gap-4 max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] py-4">
+          <div className="containerintro grid md:grid-cols-2 gap-4 mx-auto px-4 md:px-[25px] py-4">
             <div className="intro_exhibition">
               <p>23 janvier - 21 avril 2020</p>
               <p className="mt-2">
@@ -74,12 +74,12 @@ const AuBordDeLAgeAdulte: React.FC = () => {
           </div>
         </section>
 
-        <section className="gallery max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px]">
+        <section className="gallery mx-auto px-4 md:px-[25px]">
           <div className="pt-2 sm:pt-10 md:pt-12 lg:pt-16 xl:pt-20 space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-24 xl:space-y-[100px]">
             <Figure key={4} img={images[4]} />
 
             <article className="texte_exhibition">
-              <div className="grid md:grid-cols-2 gap-x-[100px] px-[100px] max-w-[1440px] mx-auto text-justify">
+              <div className="grid md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] mx-auto text-justify">
                 <div>
                   <p className="mb-4">
                     Raphaël Rossi is interested in public space furniture,
@@ -98,7 +98,7 @@ const AuBordDeLAgeAdulte: React.FC = () => {
                     perspective on the world.
                   </p>
                   <p className="mb-4">
-                    The posters of L’âge des possibles by Pascale Ferrand and
+                    The posters of L'âge des possibles by Pascale Ferrand and
                     Comment je me suis disputé by Arnaud Desplechin, which he
                     places on these benches, share a common theme of addressing
                     the generation of 25-35-year-olds, the pivotal moment
@@ -151,12 +151,12 @@ const AuBordDeLAgeAdulte: React.FC = () => {
               </figure>
 
               <div className="quote_side flex items-center">
-                <p className="text-2xl md:text-3xl lg:text-3xl font-medium leading-tight px-[100px]">
+                <p className="text-2xl md:text-3xl lg:text-3xl font-medium leading-tight px-4 md:px-[100px]">
                   «Cette pratique décousue et éclatée du collage est une façon
                   de classer, de rassembler, de hiérarchiser ses goûts, de
                   donner de la valeur aux expériences qui comptent pour lui.»
-                  Marie Griffay, extrait du texte de l’exposition Au bord de
-                  l’âge adulte.
+                  Marie Griffay, extrait du texte de l'exposition Au bord de
+                  l'âge adulte.
                 </p>
               </div>
             </div>
@@ -175,7 +175,7 @@ const AuBordDeLAgeAdulte: React.FC = () => {
       </main>
 
       <footer className="footer mt-1 md:mt-8">
-        <div className="footer-content max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-6 flex flex-row justify-between items-center gap-2">
+        <div className="footer-content mx-auto px-4 md:px-[25px] py-6 flex flex-row justify-between items-center gap-2">
           <div className="legal text-left">
             <p className="text-xs md:text-base">© 2024 Raphaël Rossi - All Rights Reserved</p>
           </div>

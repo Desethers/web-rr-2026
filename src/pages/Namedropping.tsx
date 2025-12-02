@@ -32,7 +32,7 @@ const NameDropping: React.FC = () => {
 
       <main>
         <section className="title_exhibition">
-          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] pt-4 sm:pt-6 md:pt-12">
+          <div className="mx-auto px-4 md:px-[25px] pt-4 sm:pt-6 md:pt-12">
             <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-2 sm:mb-4 leading-tight">
               Name Dropping
             </h1>
@@ -41,7 +41,7 @@ const NameDropping: React.FC = () => {
         </section>
 
         <section className="textandinfos">
-          <div className="containerintro grid md:grid-cols-2 gap-4 max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] py-4">
+          <div className="containerintro grid md:grid-cols-2 gap-4 mx-auto px-4 md:px-[25px] py-4">
             {/* Date et infos */}
             <div className="intro_exhibition text-base md:text-base lg:text-lg xl:text-2xl">
               <p className="mb-4 md:mb-6">13 juin - 04 juillet 2025</p>
@@ -59,8 +59,8 @@ const NameDropping: React.FC = () => {
                 names into visual material.
               </p>
               <p>
-                Writers’ names — from Houellebecq to Despentes — appear stencilled on canvases, both visible and erased,
-                creating a play of inclusion and exclusion: what we recognise invites us in, what we don’t leaves us
+                Writers' names — from Houellebecq to Despentes — appear stencilled on canvases, both visible and erased,
+                creating a play of inclusion and exclusion: what we recognise invites us in, what we don't leaves us
                 out. The works reveal how references act as passwords, status signals, or emotional markers.
               </p>
               <p>
@@ -75,14 +75,14 @@ const NameDropping: React.FC = () => {
           </div>
         </section>
 
-        <section className="gallery max-w-[1440px] mx-auto mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px]">
+        <section className="gallery mx-auto px-4 md:px-[25px]">
           <div className="pt-2 sm:pt-10 md:pt-12 lg:pt-16 xl:pt-20 space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-24 xl:space-y-[100px]">
             <Figure key={4} img={images[4]} />
 
             <article className="texte_exhibition">
               <div className="relative">
                 <div
-                  className={`grid md:grid-cols-2 gap-x-6 md:gap-x-8 lg:gap-x-12 xl:gap-x-16 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 max-w-[1440px] mx-auto text-justify overflow-hidden transition-all duration-500 ${isMobile && !isTextExpanded ? "max-h-[10em]" : "max-h-[5000px]"}`}
+                  className={`grid md:grid-cols-2 gap-x-6 md:gap-x-8 lg:gap-x-12 xl:gap-x-16 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 mx-auto text-justify overflow-hidden transition-all duration-500 ${isMobile && !isTextExpanded ? "max-h-[10em]" : "max-h-[5000px]"}`}
                 >
                   <div>
                     <p className="mb-4 italic">Madame Bovary, c'est vous.</p>
@@ -317,7 +317,7 @@ const NameDropping: React.FC = () => {
       </main>
 
       <footer className="footer mt-1 md:mt-8">
-        <div className="footer-content max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-6 flex flex-row justify-between items-center gap-2">
+        <div className="footer-content mx-auto px-4 md:px-[25px] py-6 flex flex-row justify-between items-center gap-2">
           <div className="legal text-left">
             <p className="text-xs md:text-base">© 2024 Raphaël Rossi - All Rights Reserved</p>
           </div>

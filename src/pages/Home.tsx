@@ -44,7 +44,7 @@ const Home = () => {
 
       <main>
         {/* Hero Section */}
-        <section className="max-w-[1440px] mx-auto px-4 md:px-[25px] pt-3 md:pt-4 pb-6 md:pb-8">
+        <section className="mx-auto px-4 md:px-[25px] pt-3 md:pt-4 pb-6 md:pb-8">
           <div className="overflow-hidden">
             <img
               src="/assets/name-dropping/006.jpg"
@@ -55,7 +55,7 @@ const Home = () => {
         </section>
 
         {/* Featured Exhibition */}
-        <section className="max-w-[1440px] mx-auto px-4 md:px-[25px]">
+        <section className="mx-auto px-4 md:px-[25px]">
           <div className="max-w-3xl">
             <h1 className="text-3xl lg:text-5xl xl:text-6xl font-semibold mb-2 animate-fade-in">Name dropping</h1>
             <p className="text-lg lg:text-2xl text-muted-foreground ">Pauline Perplexe</p>
@@ -67,7 +67,7 @@ const Home = () => {
         </section>
 
         {/* Last Artworks */}
-        <section className="max-w-[1440px] mx-auto px-4 md:px-[25px] py-12">
+        <section className="mx-auto px-4 md:px-[25px] py-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 justify-items-center">
             {artworks.map((artwork, index) => (
               <div key={artwork.id} className="animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
@@ -87,7 +87,7 @@ const Home = () => {
       </main>
 
       <footer className="footer mt-1 md:mt-8">
-        <div className="footer-content max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-6 flex flex-row justify-between items-center gap-2">
+        <div className="footer-content mx-auto px-4 md:px-[25px] py-6 flex flex-row justify-between items-center gap-2">
           <div className="legal text-left">
             <p className="text-xs md:text-base">© 2024 Raphaël Rossi - All Rights Reserved</p>
           </div>
