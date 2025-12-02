@@ -35,7 +35,7 @@ const MadameBovary: React.FC = () => {
 
       <main>
         <section className="title_exhibition">
-          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] pt-4 sm:pt-6 md:pt-12">
+          <div className="mx-auto px-4 md:px-[25px] pt-4 sm:pt-6 md:pt-12">
             <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-2 sm:mb-4 leading-tight">
               Madame Bovary
             </h1>
@@ -44,7 +44,7 @@ const MadameBovary: React.FC = () => {
         </section>
 
         <section className="textandinfos">
-          <div className="containerintro grid md:grid-cols-2 gap-4 max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] py-4">
+          <div className="containerintro grid md:grid-cols-2 gap-4 mx-auto px-4 md:px-[25px] py-4">
             <div className="intro_exhibition">
               <p>08 mars - 28 mars 2024</p>
               <p className="mt-2">
@@ -79,7 +79,7 @@ const MadameBovary: React.FC = () => {
             <div className="filet_mobile md:col-span-2" />
           </div>
 
-          <section className="max-w-[1440px] mx-auto py-12 px-[25px]">
+          <section className="mx-auto py-12 px-4 md:px-[25px]">
             <div className="space-y-[100px]">
               {[8, 12, 10].map((i) => (
                 <Figure key={i} img={images[i]} />
@@ -100,7 +100,7 @@ const MadameBovary: React.FC = () => {
 
                 {/* Citation à droite */}
                 <div className="quote_side flex items-center">
-                  <p className="text-2xl md:text-4xl lg:text-5xl font-medium leading-tight px-[100px]">
+                  <p className="text-2xl md:text-4xl lg:text-5xl font-medium leading-tight px-4 md:px-[100px]">
                     "Le name dropping scripte le niveau social de la
                     conversation comme une pratique sociale en soi"
                   </p>
@@ -152,7 +152,7 @@ const MadameBovary: React.FC = () => {
       </main>
 
       <footer className="footer mt-1 md:mt-8">
-        <div className="footer-content max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-6 flex flex-row justify-between items-center gap-2">
+        <div className="footer-content mx-auto px-4 md:px-[25px] py-6 flex flex-row justify-between items-center gap-2">
           <div className="legal text-left">
             <p className="text-xs md:text-base">© 2024 Raphaël Rossi - All Rights Reserved</p>
           </div>

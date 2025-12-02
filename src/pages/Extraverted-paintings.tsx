@@ -45,7 +45,7 @@ const NameDropping: React.FC = () => {
 
       <main>
         <section className="title_exhibition">
-          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] pt-4 sm:pt-6 md:pt-12">
+          <div className="mx-auto px-4 md:px-[25px] pt-4 sm:pt-6 md:pt-12">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-2 sm:mb-4 leading-tight">
               Extraverted Paintings / Introverting Pictures
             </h1>
@@ -54,7 +54,7 @@ const NameDropping: React.FC = () => {
         </section>
 
         <section className="textandinfos">
-          <div className="containerintro grid md:grid-cols-2 gap-4 max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] py-4">
+          <div className="containerintro grid md:grid-cols-2 gap-4 mx-auto px-4 md:px-[25px] py-4">
             {/* Date et infos */}
             <div className="intro_exhibition text-base md:text-base lg:text-xl xl:text-2xl">
               <p className="mb-4 md:mb-6">29 septembre - 23 novembre 2024</p>
@@ -82,12 +82,12 @@ const NameDropping: React.FC = () => {
           </div>
         </section>
 
-        <section className="max-w-[1440px] mx-auto px-4 md:px-[25px] py-6 md:py-12">
+        <section className="mx-auto px-4 md:px-[25px] py-6 md:py-12">
           <div className="space-y-12 md:space-y-[100px]">
             {images.length > 0 && <Figure img={images[0]} />}
 
             <article className="texte_exhibition">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] max-w-[1440px] text-base mx-auto text-justify">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] text-base mx-auto text-justify">
                 <div>
                   <p className="mb-6">
                     Sur le banc public s'échangent les mots et les images. La
@@ -183,7 +183,7 @@ const NameDropping: React.FC = () => {
             <Figure key={11} img={images[11]} />
 
             <div className="quotes_exhibition_full">
-              <p className="quotes_full font-medium text-lg md:text-4xl md:px-[250px] text-left md:py-[200px]">
+              <p className="quotes_full font-medium text-lg md:text-4xl px-4 md:px-[250px] text-left md:py-[200px]">
                 D'une certaine manière, le carré renvoie davantage à la double
                 page qu'à la page simple. C'est un texte que l'on observe plus
                 qu'on ne le lit, que l'on a déjà parcouru et vers lequel on
@@ -206,7 +206,7 @@ const NameDropping: React.FC = () => {
       </main>
 
       <footer className="footer mt-12">
-        <div className="footer-content max-w-[1440px] mx-auto px-4 md:px-[25px] py-6 flex flex-row justify-between items-center">
+        <div className="footer-content mx-auto px-4 md:px-[25px] py-6 flex flex-row justify-between items-center">
           <div className="legal">
             <p className="text-xs md:text-base">
               © 2024 Raphaël Rossi - All Rights Reserved

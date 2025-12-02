@@ -13,7 +13,7 @@ const Navigation = () => {
 
   return (
     <nav className="bg-background">
-      <div className="max-w-[1440px] mx-auto px-4 md:px-[25px] pt-6 pb-1 md:pt-6 md:pb-4">
+      <div className="mx-auto px-4 md:px-[25px] pt-6 pb-1 md:pt-6 md:pb-4">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-">
           <Link
             to="/"

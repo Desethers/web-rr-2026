@@ -36,7 +36,7 @@ const LeVingtiemePrix: React.FC = () => {
 
       <main>
         <section className="title_exhibition">
-          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] pt-4 sm:pt-6 md:pt-12">
+          <div className="mx-auto px-4 md:px-[25px] pt-4 sm:pt-6 md:pt-12">
             <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-medium mb-2 sm:mb-4 leading-tight">
               Le Vingtième Prix De La Fondation Ricard
             </h1>

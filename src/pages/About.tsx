@@ -6,7 +6,7 @@ const About = () => {
       <Navigation />
       
       <main>
-        <section className="max-w-[1440px] mx-auto px-4 md:px-[25px] py-12">
+        <section className="mx-auto px-4 md:px-[25px] py-12">
           <div className="max-w-3xl animate-fade-in">
             <h1 className="text-5xl lg:text-6xl font-semibold mb-12">About</h1>
             
@@ -37,7 +37,7 @@ const About = () => {
       </main>
 
       <footer className="footer mt-1 md:mt-8">
-        <div className="footer-content max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] py-6 flex flex-row justify-between items-center gap-2">
+        <div className="footer-content mx-auto px-4 md:px-[25px] py-6 flex flex-row justify-between items-center gap-2">
           <div className="legal text-left">
             <p className="text-xs md:text-base">© 2024 Raphaël Rossi - All Rights Reserved</p>
           </div>
