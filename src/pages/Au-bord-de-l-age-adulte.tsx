@@ -151,7 +151,7 @@ const AuBordDeLAgeAdulte: React.FC = () => {
               </figure>
 
               <div className="quote_side flex items-center">
-                <p className="text-2xl md:text-3xl lg:text-3xl font-medium leading-tight px-4 md:px-[100px]">
+                <p className="text-xl md:text-3xl lg:text-3xl font-medium leading-tight px-4 md:px-[100px]">
                   «Cette pratique décousue et éclatée du collage est une façon
                   de classer, de rassembler, de hiérarchiser ses goûts, de
                   donner de la valeur aux expériences qui comptent pour lui.»

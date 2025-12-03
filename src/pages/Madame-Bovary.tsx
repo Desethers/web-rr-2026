@@ -100,7 +100,7 @@ const MadameBovary: React.FC = () => {
 
                 {/* Citation à droite */}
                 <div className="quote_side flex items-center">
-                  <p className="text-2xl md:text-4xl lg:text-5xl font-medium leading-tight px-4 md:px-[100px]">
+                  <p className="text-xl md:text-4xl lg:text-5xl font-medium leading-tight px-4 md:px-[100px]">
                     "Le name dropping scripte le niveau social de la
                     conversation comme une pratique sociale en soi"
                   </p>
