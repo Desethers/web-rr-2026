@@ -175,7 +175,7 @@ const Artwork: React.FC = () => {
       </main>
 
       <footer className="footer mt-1 md:mt-8">
-        <div className="footer-content mx-auto px-4 md:px-[25px] py-6 flex flex-row justify-between items-center gap-2">
+        <div className="footer-content max-w-[1440px] mx-auto px-4 md:px-[25px] py-6 flex flex-row justify-between items-center gap-2">
           <div className="legal text-left">
             <p className="text-xs md:text-base">© 2024 Raphaël Rossi - All Rights Reserved</p>
           </div>
