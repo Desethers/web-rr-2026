@@ -9,7 +9,7 @@ export default function ArtworkCarousel({ images = [] }) {
 
   return (
     <div className="w-full flex flex-col items-center">
-      <div className="relative w-full max-w-[700px] overflow-hidden rounded-lg">
+      <div className="relative w-full max-w-[810px] overflow-hidden rounded-lg">
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${index * 100}%)`, width: `${images.length * 100}%` }}
