@@ -70,7 +70,7 @@ const Home = () => {
         <section className="mx-auto px-4 md:px-[25px] py-12">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 justify-items-center">
             {artworks.map((artwork, index) => (
-              <div key={artwork.id} className="animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
+              <div key={artwork.id} className="animate-fade-in w-full max-w-sm" style={{ animationDelay: `${index * 100}ms` }}>
                 <ArtworkCard {...artwork} />
               </div>
             ))}
