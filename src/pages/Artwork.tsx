@@ -115,8 +115,8 @@ const Artwork: React.FC = () => {
       <Navigation />
 
       <main>
-        <section className="max-w-[1440px] mx-auto px-[25px] pt-4 md:pt-12 pb-12">
-          <div className="grid md:grid-cols-[2fr_1fr] gap-16 lg:gap-20 items-start pr-[30px] px-0">
+        <section className="max-w-[1440px] mx-auto px-0 md:px-[25px] pt-4 md:pt-12 pb-12">
+          <div className="grid md:grid-cols-[2fr_1fr] gap-8 md:gap-16 lg:gap-20 items-start px-4 md:px-0 md:pr-[30px]">
             {/* Left column - Images */}
             <ArtworksCarousel images={artwork.detailImages} />
 
