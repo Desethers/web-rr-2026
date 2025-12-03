@@ -9,7 +9,7 @@ export default function ArtworkCarousel({ images = [] }) {
 
   return (
     <div className="w-full flex flex-col items-center">
-      <div className="relative w-full max-w-[700px] overflow-hidden rounded-lg">
+      <div className="relative w-full max-w-[900px] overflow-hidden rounded-lg">
 
         <div
           className="flex transition-transform duration-500 ease-in-out"
@@ -20,7 +20,7 @@ export default function ArtworkCarousel({ images = [] }) {
               key={i}
               src={img}
               alt={`Image ${i + 1}`}
-              className="w-full flex-shrink-0 object-cover"
+              className="w-full min-w-full flex-shrink-0 object-contain"
               loading="lazy"
             />
           ))}
