@@ -60,7 +60,7 @@ const NameDropping: React.FC = () => {
         <section className="textandinfos">
           <div className="containerintro grid md:grid-cols-2 gap-4 mx-auto px-4 md:px-[25px] py-4">
             {/* Date et infos */}
-            <div className="intro_exhibition text-base md:text-base lg:text-xl xl:text-2xl">
+            <div className="intro_exhibition text-sm md:text-base lg:text-xl xl:text-2xl">
               <p className="mb-4 md:mb-6">29 septembre - 23 novembre 2024</p>
               <p>
                 Bagnoler, 46 rue Jules Ferry,
@@ -71,7 +71,7 @@ const NameDropping: React.FC = () => {
 
             <div className="h-px bg-border md:hidden " />
 
-            <div className="intro_exhibition text-base md:text-base lg:text-xl xl:text-2xl ">
+            <div className="intro_exhibition text-sm md:text-base lg:text-xl xl:text-2xl ">
               <p>
                 Extraverted paintings / Introverting pictures is a solo
                 exhibition in which a new set of wall and framed collages is
@@ -93,7 +93,7 @@ const NameDropping: React.FC = () => {
             <article className="texte_exhibition">
               <div className="relative">
                 <div
-                  className={`grid grid-cols-1 md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] text-base mx-auto text-justify overflow-hidden transition-all duration-500 ${isMobile && !isTextExpanded ? "max-h-[10em]" : "max-h-[5000px]"}`}
+                  className={`grid grid-cols-1 md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] text-sm md:text-base mx-auto text-justify overflow-hidden transition-all duration-500 ${isMobile && !isTextExpanded ? "max-h-[10em]" : "max-h-[5000px]"}`}
                 >
                   <div>
                     <p className="mb-6">
