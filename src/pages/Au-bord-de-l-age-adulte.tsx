@@ -46,7 +46,7 @@ const AuBordDeLAgeAdulte: React.FC = () => {
 
         <section className="textandinfos">
           <div className="containerintro grid md:grid-cols-2 gap-4 mx-auto px-4 md:px-[25px] py-4">
-            <div className="intro_exhibition">
+            <div className="intro_exhibition text-sm md:text-base">
               <p>23 janvier - 21 avril 2020</p>
               <p className="mt-2">
                 FRAC Champagne-Ardennes,
@@ -55,7 +55,7 @@ const AuBordDeLAgeAdulte: React.FC = () => {
               </p>
             </div>
 
-            <div className="intro_exhibition space-y-5">
+            <div className="intro_exhibition text-sm md:text-base space-y-5">
               <p>
                 The FRAC Champagne-Ardenne hosts, as part of the exhibition
                 Plein Jeu #2, Camille Beson, Raphaël Rossi, Maxime Testu, and
@@ -79,7 +79,7 @@ const AuBordDeLAgeAdulte: React.FC = () => {
             <Figure key={4} img={images[4]} />
 
             <article className="texte_exhibition">
-              <div className="grid md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] mx-auto text-justify">
+              <div className="grid md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] mx-auto text-justify text-sm md:text-base">
                 <div>
                   <p className="mb-4">
                     Raphaël Rossi is interested in public space furniture,
