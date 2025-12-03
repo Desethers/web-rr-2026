@@ -137,7 +137,7 @@ const LaCapitaleVolII: React.FC = () => {
 
               {/* Citation à droite */}
               <div className="quote_side flex items-center">
-                <p className="text-2xl md:text-3xl lg:text-3xl font-medium leading-tight px-4 md:px-[100px]">
+                <p className="text-xl md:text-3xl lg:text-3xl font-medium leading-tight px-4 md:px-[100px]">
                   Laboratoire de formes et d'associations comme de formes
                   d'associations, l'espace-temps de La Capitale, Tomes I et II,
                   vol. II met ainsi en lumière l'intérêt partagé par les quatre
