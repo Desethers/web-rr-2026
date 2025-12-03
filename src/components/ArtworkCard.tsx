@@ -20,11 +20,11 @@ const ArtworkCard = ({
   return (
     <Link to={`/artwork/${id}`} className="group block w-full max-w-sm">
       <div className="artwork-card bg-secondary p-5 w-full rounded-lg h-full">
-        <div className="overflow-hidden mb-6 w-full aspect-square bg-muted flex items-center justify-center rounded">
+        <div className="overflow-hidden mb-6 w-full aspect-square bg-muted rounded">
           <img
             src={image}
             alt={title}
-            className="max-w-full max-h-full object-contain image-filtered transition-elegant group-hover:scale-105"
+            className="w-full h-full object-cover image-filtered transition-elegant group-hover:scale-105"
           />
         </div>
         <div className="space-y-1">
