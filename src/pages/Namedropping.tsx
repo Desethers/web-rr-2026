@@ -43,7 +43,7 @@ const NameDropping: React.FC = () => {
         <section className="textandinfos">
           <div className="containerintro grid md:grid-cols-2 gap-4 mx-auto px-4 md:px-[25px] py-4">
             {/* Date et infos */}
-            <div className="intro_exhibition text-sm md:text-base lg:text-lg xl:text-2xl">
+            <div className="intro_exhibition text-sm md:text-base lg:text-base xl:text-2xl">
               <p className="mb-4 md:mb-6">13 juin - 04 juillet 2025</p>
               <p className="">Pauline Perplexe</p>
               <p>90 Av. de la Convention, 94110 Arcueil</p>
@@ -53,7 +53,7 @@ const NameDropping: React.FC = () => {
             <div className="h-px bg-border md:hidden" />
 
             {/* Description de l'exposition */}
-            <div className="intro_exhibition space-y-2 md:space-y-5 text-sm md:text-lg lg:text-xl xl:text-2xl">
+            <div className="intro_exhibition space-y-2 md:space-y-5 text-sm md:text-base lg:text-base xl:text-2xl">
               <p>
                 Name Dropping explores how cultural references shape belonging and social codes by turning literary
                 names into visual material.
