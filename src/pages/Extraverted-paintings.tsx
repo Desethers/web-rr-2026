@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Navigation from "@/components/Navigation";
 import { Link } from "react-router-dom";
+import { ChevronDown } from "lucide-react";
 import { extravertedPaintingsImages } from "../data/extravertedpaintingsimg";
+import { useIsMobile } from "@/hooks/use-mobile";
 type ExhibitImage = {
   src: string;
   alt?: string;
@@ -39,6 +41,8 @@ const Figure: React.FC<{
 );
 const NameDropping: React.FC = () => {
   const images = extravertedPaintingsImages;
+  const isMobile = useIsMobile();
+  const [isTextExpanded, setIsTextExpanded] = useState(false);
   return (
     <>
       <Navigation />
@@ -87,38 +91,59 @@ const NameDropping: React.FC = () => {
             {images.length > 0 && <Figure img={images[0]} />}
 
             <article className="texte_exhibition">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] text-base mx-auto text-justify">
-                <div>
-                  <p className="mb-6">
-                    Sur le banc public s'échangent les mots et les images. La
-                    réification du sens en unités manipulables introduit dans
-                    l'esprit du collectionneur la possibilité d'articuler ses
-                    fétiches. Le partage des objets appelle une économie du
-                    signe. À la rue du commerce se traduit le modelé du masque
-                    par la griffe du chapeau. Les noms et les visages
-                    n'appartiennent plus tant à leur porteur qu'à celui ou celle
-                    qui leur imposera une place dans l'énonciation d'un désir.
-                    La séquence qui en résulte enchaîne le modèle à une
-                    succession d'instantanés et d'inscriptions auxquelles son
-                    identité se doit de répondre.
-                  </p>
+              <div className="relative">
+                <div
+                  className={`grid grid-cols-1 md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] text-base mx-auto text-justify overflow-hidden transition-all duration-500 ${isMobile && !isTextExpanded ? "max-h-[10em]" : "max-h-[5000px]"}`}
+                >
+                  <div>
+                    <p className="mb-6">
+                      Sur le banc public s'échangent les mots et les images. La
+                      réification du sens en unités manipulables introduit dans
+                      l'esprit du collectionneur la possibilité d'articuler ses
+                      fétiches. Le partage des objets appelle une économie du
+                      signe. À la rue du commerce se traduit le modelé du masque
+                      par la griffe du chapeau. Les noms et les visages
+                      n'appartiennent plus tant à leur porteur qu'à celui ou celle
+                      qui leur imposera une place dans l'énonciation d'un désir.
+                      La séquence qui en résulte enchaîne le modèle à une
+                      succession d'instantanés et d'inscriptions auxquelles son
+                      identité se doit de répondre.
+                    </p>
+                  </div>
+                  <div>
+                    <p>
+                      Le film décomposé en photographies découpe son existence en
+                      une multitude de vies possibles et alternatives qui toutes
+                      pourtant témoignent dans leur apparition même que cela a
+                      bien dû avoir été ainsi. La conformité de ses traits est
+                      celle d'un personnage de bande dessinée à qui on prête la
+                      persistance de l'être à mesure que de case en case il se
+                      fasse bien reconnaître. De celui qui se vérifie alors se
+                      sait dire la lettre manquante, se sait montrer le profil
+                      inconnu: J'ai lu ton prénom dans un livre, je t'ai déjà vu
+                      par ici.
+                    </p>
+                    <p className="mt-4 italic">Manuel Vieillot</p>
+                  </div>
                 </div>
-                <div>
-                  <p>
-                    Le film décomposé en photographies découpe son existence en
-                    une multitude de vies possibles et alternatives qui toutes
-                    pourtant témoignent dans leur apparition même que cela a
-                    bien dû avoir été ainsi. La conformité de ses traits est
-                    celle d'un personnage de bande dessinée à qui on prête la
-                    persistance de l'être à mesure que de case en case il se
-                    fasse bien reconnaître. De celui qui se vérifie alors se
-                    sait dire la lettre manquante, se sait montrer le profil
-                    inconnu: J'ai lu ton prénom dans un livre, je t'ai déjà vu
-                    par ici.
-                  </p>
-                  <p className="mt-4 italic">Manuel Vieillot</p>
-                </div>
+
+                {isMobile && !isTextExpanded && (
+                  <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none" />
+                )}
               </div>
+
+              {isMobile && (
+                <button
+                  onClick={() => setIsTextExpanded(!isTextExpanded)}
+                  className="flex items-center justify-center gap-2 w-full mt-4 py-3 text-foreground hover:bg-secondary transition-colors rounded-lg"
+                >
+                  <span className="font-medium text-xs">{isTextExpanded ? "Masquer le texte" : "Lire la suite"}</span>
+                  <ChevronDown
+                    className={`transition-transform duration-300 ${isTextExpanded ? "rotate-180" : ""}`}
+                    size={20}
+                  />
+                </button>
+              )}
             </article>
 
             <Figure key={2} img={images[2]} />
