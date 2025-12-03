@@ -79,7 +79,7 @@ const Home = () => {
           <div className="legal text-left">
             <p className="text-xs md:text-base">© 2024 Raphaël Rossi - All Rights Reserved</p>
           </div>
-          <div className="social-media text-right">
+          <div className="social-media text-right font-normal">
             <a href="https://www.instagram.com/raphaaelrossi/" target="_blank" rel="noreferrer" className="hover:underline text-xs md:text-base">
               Instagram
             </a>
