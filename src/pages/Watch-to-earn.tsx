@@ -46,7 +46,7 @@ const WatchToEarn: React.FC = () => {
 
         <section className="textandinfos">
           <div className="containerintro grid md:grid-cols-2 gap-4 mx-auto px-4 md:px-[25px] py-4">
-            <div className="intro_exhibition">
+            <div className="intro_exhibition text-sm md:text-base">
               <p>29 septembre - 22 octobre 2023</p>
               <p className="mt-4">
                 <p>FRAC Bourgogne</p>
@@ -56,7 +56,7 @@ const WatchToEarn: React.FC = () => {
 
             <div className="h-px bg-border md:hidden" />
 
-            <div className="intro_exhibition">
+            <div className="intro_exhibition text-sm md:text-base">
               <p>
                 Watch to earn is an exhibition conceived following my
                 participation in the research and production residency,
@@ -75,7 +75,7 @@ const WatchToEarn: React.FC = () => {
             <Figure key={8} img={images[8]} />
 
             <article className="texte_exhibition">
-              <div className="grid md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] mx-auto text-justify">
+              <div className="grid md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] mx-auto text-justify text-sm md:text-base">
                 <div>
                   <p className="mb-4">
                     L'Eldorado, c'est la quête effrénée d'une liberté

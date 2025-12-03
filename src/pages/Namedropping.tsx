@@ -43,7 +43,7 @@ const NameDropping: React.FC = () => {
         <section className="textandinfos">
           <div className="containerintro grid md:grid-cols-2 gap-4 mx-auto px-4 md:px-[25px] py-4">
             {/* Date et infos */}
-            <div className="intro_exhibition text-base md:text-base lg:text-lg xl:text-2xl">
+            <div className="intro_exhibition text-sm md:text-base lg:text-lg xl:text-2xl">
               <p className="mb-4 md:mb-6">13 juin - 04 juillet 2025</p>
               <p className="">Pauline Perplexe</p>
               <p>90 Av. de la Convention, 94110 Arcueil</p>
@@ -82,7 +82,7 @@ const NameDropping: React.FC = () => {
             <article className="texte_exhibition">
               <div className="relative">
                 <div
-                  className={`grid md:grid-cols-2 gap-x-6 md:gap-x-8 lg:gap-x-12 xl:gap-x-16 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 mx-auto text-justify overflow-hidden transition-all duration-500 ${isMobile && !isTextExpanded ? "max-h-[10em]" : "max-h-[5000px]"}`}
+                  className={`grid md:grid-cols-2 gap-x-6 md:gap-x-8 lg:gap-x-12 xl:gap-x-16 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 mx-auto text-justify text-sm md:text-base overflow-hidden transition-all duration-500 ${isMobile && !isTextExpanded ? "max-h-[10em]" : "max-h-[5000px]"}`}
                 >
                   <div>
                     <p className="mb-4 italic">Madame Bovary, c'est vous.</p>

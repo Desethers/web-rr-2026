@@ -46,7 +46,7 @@ const LaCapitale: React.FC = () => {
 
         <section className="textandinfos">
           <div className="containerintro grid md:grid-cols-2 gap-4 mx-auto px-4 md:px-[25px] py-4">
-            <div className="intro_exhibition">
+            <div className="intro_exhibition text-sm md:text-base">
               <p>11 janvier - 22 mars 2020</p>
               <p className="mt-2">
                 Centre d'art les Tanneries,
@@ -55,7 +55,7 @@ const LaCapitale: React.FC = () => {
               </p>
             </div>
 
-            <div className="intro_exhibition">
+            <div className="intro_exhibition text-sm md:text-base">
               <p className="mb-4">
                 For their first exhibition, both collective and individual, at
                 the Tanneries, Camille Besson, Raphaël Rossi, Maxime Testu, and
@@ -78,7 +78,7 @@ const LaCapitale: React.FC = () => {
         <section className="gallery mx-auto px-4 md:px-[25px]">
           <div className="pt-2 sm:pt-10 md:pt-12 lg:pt-16 xl:pt-20 space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-24 xl:space-y-[100px]">
             <article className="texte_exhibition">
-              <div className="grid md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] mx-auto text-justify">
+              <div className="grid md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] mx-auto text-justify text-sm md:text-base">
                 <div>
                   <p className="mb-4">
                     Cinema, its history, the images it produces, both as they

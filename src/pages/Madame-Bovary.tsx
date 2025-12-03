@@ -45,7 +45,7 @@ const MadameBovary: React.FC = () => {
 
         <section className="textandinfos">
           <div className="containerintro grid md:grid-cols-2 gap-4 mx-auto px-4 md:px-[25px] py-4">
-            <div className="intro_exhibition">
+            <div className="intro_exhibition text-sm md:text-base">
               <p>08 mars - 28 mars 2024</p>
               <p className="mt-2">
                 Poush,
@@ -55,7 +55,7 @@ const MadameBovary: React.FC = () => {
             </div>
             <div className="h-px bg-border md:hidden" />
 
-            <div className="intro_exhibition">
+            <div className="intro_exhibition text-sm md:text-base">
               <p className="mb-4">
                 Madame Bovary is a solo exhibition in which a new set of wall
                 and framed collages is presented.
