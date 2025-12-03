@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Navigation from "@/components/Navigation";
 import { Link } from "react-router-dom";
+import { ChevronDown } from "lucide-react";
 import { watchToEarnImages } from "../data/watchtoearnimg";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 type ExhibitImage = {
   src: string;
@@ -29,6 +31,8 @@ const Figure: React.FC<{ img: ExhibitImage }> = ({ img }) => (
 
 const WatchToEarn: React.FC = () => {
   const images = watchToEarnImages;
+  const isMobile = useIsMobile();
+  const [isTextExpanded, setIsTextExpanded] = useState(false);
 
   return (
     <>
@@ -75,97 +79,118 @@ const WatchToEarn: React.FC = () => {
             <Figure key={8} img={images[8]} />
 
             <article className="texte_exhibition">
-              <div className="grid md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] mx-auto text-justify text-sm md:text-base">
-                <div>
-                  <p className="mb-4">
-                    L'Eldorado, c'est la quête effrénée d'une liberté
-                    financière, un mirage collectif qui déguise un trajet
-                    spéculatif vers les possibles de nos existences. Une ruée
-                    vers l'or qui n'en est pas vraiment une, mais plutôt une
-                    course insatiable vers le temps. C'est une promesse,
-                    toujours plus lointaine, d'un avenir où le temps serait
-                    enfin disponible à profusion. Paradoxalement, c'est aussi un
-                    lieu, une salle de cinéma située rue Alfred de Musset, à
-                    Dijon.Là, passé immobile et futur illusoire se rencontrent,
-                    l'Eldorado devient une intersection entre le réel et
-                    l'imaginaire, entre le tangible et l'intangible.
-                  </p>
-                  <p className="mb-4">
-                    Sur la façade droite du bâtiment trône La femme au miroir de
-                    Loïc Raguénès (1968-2022), une œuvre à mi-chemin entre la
-                    peinture et l'affiche publicitaire. En pointillé bleu,
-                    s'immortalise une scène du film Eyes Wide Shut, où Nicole
-                    Kidman se dévoile nue devant son miroir. Un jeu de reflets,
-                    d'ombres et de lumière. Une image saisie dans l'intimité du
-                    cinéma, transposée dans l'espace public, offerte à la
-                    contemplation des passants rue d'Auxonne. Raguénès, en 2010,
-                    avait déjà balisé la direction de cette circulation des
-                    images : des films à la rue, du privé au commun, du cinéma à
-                    la peinture.
-                  </p>
-                  <p className="mb-4">
-                    L'exposition Watch to Earn, présentée à l'Eldorado et née
-                    d'une résidence au sein du Frac Bourgogne, explore cette
-                    fusion entre regard et économie. Le titre même de
-                    l'exposition est un emprunt à un modèle économique propre à
-                    l'ère digitale, où chaque visionnage devient un acte
-                    monétisé. Dans cette configuration, le spectateur n'est plus
-                    seulement récepteur, il est également acteur d'une
-                    transaction subtile : son attention, son temps, contre des
-                    Tokens, ces jetons virtuels qui transforment la consommation
-                    en échange marchand. Ici, le visionnage devient une
-                    marchandise, et l'on abolit le privilège des accréditations,
-                    l'élitisme des avant-premières. Désormais, chacun est payé
-                    pour voir, car voir, c'est déjà communiquer, et communiquer,
-                    c'est vendre.
-                  </p>
+              <div className="relative">
+                <div
+                  className={`grid md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] mx-auto text-justify text-sm md:text-base overflow-hidden transition-all duration-500 ${isMobile && !isTextExpanded ? "max-h-[10em]" : "max-h-[5000px]"}`}
+                >
+                  <div>
+                    <p className="mb-4">
+                      L'Eldorado, c'est la quête effrénée d'une liberté
+                      financière, un mirage collectif qui déguise un trajet
+                      spéculatif vers les possibles de nos existences. Une ruée
+                      vers l'or qui n'en est pas vraiment une, mais plutôt une
+                      course insatiable vers le temps. C'est une promesse,
+                      toujours plus lointaine, d'un avenir où le temps serait
+                      enfin disponible à profusion. Paradoxalement, c'est aussi un
+                      lieu, une salle de cinéma située rue Alfred de Musset, à
+                      Dijon.Là, passé immobile et futur illusoire se rencontrent,
+                      l'Eldorado devient une intersection entre le réel et
+                      l'imaginaire, entre le tangible et l'intangible.
+                    </p>
+                    <p className="mb-4">
+                      Sur la façade droite du bâtiment trône La femme au miroir de
+                      Loïc Raguénès (1968-2022), une œuvre à mi-chemin entre la
+                      peinture et l'affiche publicitaire. En pointillé bleu,
+                      s'immortalise une scène du film Eyes Wide Shut, où Nicole
+                      Kidman se dévoile nue devant son miroir. Un jeu de reflets,
+                      d'ombres et de lumière. Une image saisie dans l'intimité du
+                      cinéma, transposée dans l'espace public, offerte à la
+                      contemplation des passants rue d'Auxonne. Raguénès, en 2010,
+                      avait déjà balisé la direction de cette circulation des
+                      images : des films à la rue, du privé au commun, du cinéma à
+                      la peinture.
+                    </p>
+                    <p className="mb-4">
+                      L'exposition Watch to Earn, présentée à l'Eldorado et née
+                      d'une résidence au sein du Frac Bourgogne, explore cette
+                      fusion entre regard et économie. Le titre même de
+                      l'exposition est un emprunt à un modèle économique propre à
+                      l'ère digitale, où chaque visionnage devient un acte
+                      monétisé. Dans cette configuration, le spectateur n'est plus
+                      seulement récepteur, il est également acteur d'une
+                      transaction subtile : son attention, son temps, contre des
+                      Tokens, ces jetons virtuels qui transforment la consommation
+                      en échange marchand. Ici, le visionnage devient une
+                      marchandise, et l'on abolit le privilège des accréditations,
+                      l'élitisme des avant-premières. Désormais, chacun est payé
+                      pour voir, car voir, c'est déjà communiquer, et communiquer,
+                      c'est vendre.
+                    </p>
+                  </div>
+                  <div>
+                    <p className="mb-4">
+                      L'exposition Watch to Earn, présentée à l'Eldorado et née
+                      d'une résidence au sein du Frac Bourgogne, explore cette
+                      fusion entre regard et économie. Le titre même de
+                      l'exposition est un emprunt à un modèle économique propre à
+                      l'ère digitale, où chaque visionnage devient un acte
+                      monétisé. Dans cette configuration, le spectateur n'est plus
+                      seulement récepteur, il est également acteur d'une
+                      transaction subtile : son attention, son temps, contre des
+                      Tokens, ces jetons virtuels qui transforment la consommation
+                      en échange marchand. Ici, le visionnage devient une
+                      marchandise, et l'on abolit le privilège des accréditations,
+                      l'élitisme des avant-premières. Désormais, chacun est payé
+                      pour voir, car voir, c'est déjà communiquer, et communiquer,
+                      c'est vendre.
+                    </p>
+                    <p className="mb-4">
+                      Cette réflexion prend racine dans un désir plus profond :
+                      replacer le spectateur au cœur du processus créatif.
+                      Fusionner son temps de contemplation avec le temps de
+                      création artistique, abolir la distance entre l'œuvre et
+                      celui qui la regarde. Il s'agit d'interroger la possibilité
+                      d'une économie du regard, née de la rencontre entre l'objet
+                      regardé et l'impact que ce dernier laisse dans la mémoire
+                      intime de celui qui l'observe. L'économie du spectateur, une
+                      formule qui ne laisse rien au hasard : il s'agit de
+                      comptabiliser l'échange subtil entre deux mondes – celui de
+                      l'image et celui du souvenir.
+                    </p>
+                    <p className="mb-4">
+                      L'exposition Watch to Earn incarne donc une réflexion sur la
+                      marchandisation du regard, où le spectateur devient partie
+                      prenante d'un système d'échanges, non seulement récepteur
+                      passif, mais un participant actif dans l'économie moderne du
+                      numérique. Ici, "earn" appartient au lexique de
+                      l'enrichissement et de l'argent, soulignant la manière dont
+                      l'acte de regarder, autrefois passif ou introspectif, est
+                      désormais intégré dans un mécanisme économique. La
+                      consommation d'images devient non seulement un moyen
+                      d'évasion ou d'émancipation, mais aussi un acte monétisé, où
+                      l'attention du spectateur est transformée en une forme de
+                      capital, un produit valorisé dans l'économie numérique.
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <p className="mb-4">
-                    L'exposition Watch to Earn, présentée à l'Eldorado et née
-                    d'une résidence au sein du Frac Bourgogne, explore cette
-                    fusion entre regard et économie. Le titre même de
-                    l'exposition est un emprunt à un modèle économique propre à
-                    l'ère digitale, où chaque visionnage devient un acte
-                    monétisé. Dans cette configuration, le spectateur n'est plus
-                    seulement récepteur, il est également acteur d'une
-                    transaction subtile : son attention, son temps, contre des
-                    Tokens, ces jetons virtuels qui transforment la consommation
-                    en échange marchand. Ici, le visionnage devient une
-                    marchandise, et l'on abolit le privilège des accréditations,
-                    l'élitisme des avant-premières. Désormais, chacun est payé
-                    pour voir, car voir, c'est déjà communiquer, et communiquer,
-                    c'est vendre.
-                  </p>
-                  <p className="mb-4">
-                    Cette réflexion prend racine dans un désir plus profond :
-                    replacer le spectateur au cœur du processus créatif.
-                    Fusionner son temps de contemplation avec le temps de
-                    création artistique, abolir la distance entre l'œuvre et
-                    celui qui la regarde. Il s'agit d'interroger la possibilité
-                    d'une économie du regard, née de la rencontre entre l'objet
-                    regardé et l'impact que ce dernier laisse dans la mémoire
-                    intime de celui qui l'observe. L'économie du spectateur, une
-                    formule qui ne laisse rien au hasard : il s'agit de
-                    comptabiliser l'échange subtil entre deux mondes – celui de
-                    l'image et celui du souvenir.
-                  </p>
-                  <p className="mb-4">
-                    L'exposition Watch to Earn incarne donc une réflexion sur la
-                    marchandisation du regard, où le spectateur devient partie
-                    prenante d'un système d'échanges, non seulement récepteur
-                    passif, mais un participant actif dans l'économie moderne du
-                    numérique. Ici, "earn" appartient au lexique de
-                    l'enrichissement et de l'argent, soulignant la manière dont
-                    l'acte de regarder, autrefois passif ou introspectif, est
-                    désormais intégré dans un mécanisme économique. La
-                    consommation d'images devient non seulement un moyen
-                    d'évasion ou d'émancipation, mais aussi un acte monétisé, où
-                    l'attention du spectateur est transformée en une forme de
-                    capital, un produit valorisé dans l'économie numérique.
-                  </p>
-                </div>
+
+                {isMobile && !isTextExpanded && (
+                  <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none" />
+                )}
               </div>
+
+              {isMobile && (
+                <button
+                  onClick={() => setIsTextExpanded(!isTextExpanded)}
+                  className="flex items-center justify-center gap-2 w-full mt-4 py-3 text-foreground hover:bg-secondary transition-colors rounded-lg"
+                >
+                  <span className="font-medium text-xs">{isTextExpanded ? "Masquer le texte" : "Lire la suite"}</span>
+                  <ChevronDown
+                    className={`transition-transform duration-300 ${isTextExpanded ? "rotate-180" : ""}`}
+                    size={20}
+                  />
+                </button>
+              )}
             </article>
             {[3].map((i) => (
               <Figure key={i} img={images[i]} />
