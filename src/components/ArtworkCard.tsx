@@ -18,13 +18,13 @@ const ArtworkCard = ({
   dimensions,
 }: ArtworkCardProps) => {
   return (
-    <Link to={`/artwork/${id}`} className="group block w-full">
-      <div className="artwork-card bg-secondary p-5 w-full rounded-lg">
-        <div className="overflow-hidden mb-12 w-full aspect-square bg-muted/30 flex items-center justify-center">
+    <Link to={`/artwork/${id}`} className="group block w-full max-w-sm">
+      <div className="artwork-card bg-secondary p-5 w-full rounded-lg h-full">
+        <div className="overflow-hidden mb-6 w-full aspect-square bg-muted flex items-center justify-center rounded">
           <img
             src={image}
             alt={title}
-            className="w-full h-full object-contain image-filtered transition-elegant group-hover:scale-105"
+            className="max-w-full max-h-full object-contain image-filtered transition-elegant group-hover:scale-105"
           />
         </div>
         <div className="space-y-1">
