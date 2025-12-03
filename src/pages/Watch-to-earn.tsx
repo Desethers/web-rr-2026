@@ -212,7 +212,7 @@ const WatchToEarn: React.FC = () => {
 
               {/* Citation à droite */}
               <div className="quote_side flex items-center">
-                <p className="text-2xl md:text-3xl lg:text-3xl font-medium leading-tight px-4 md:px-[100px]">
+                <p className="text-xl md:text-3xl lg:text-3xl font-medium leading-tight px-4 md:px-[100px]">
                   Cette exposition est d'abord née d'une volonté de placer
                   l'expérience du spectateur au cœur du processus de création.
                   Réunir le temps de spectateur et le temps de travail
@@ -225,7 +225,7 @@ const WatchToEarn: React.FC = () => {
               <Figure key={i} img={images[i]} />
             ))}
             <div className="quotes_exhibition_full">
-              <p className="quotes_full text-xl md:text-[35px] px-4 md:px-[300px] text-left">
+              <p className="quotes_full text-lg md:text-[35px] px-4 md:px-[300px] text-left">
                 J'utilise ici la formule d'économie du spectateur car c'est bien
                 de cela dont il s'agit : de tenir une comptabilité des deux
                 mondes et de leur respect réciproque.
@@ -238,7 +238,7 @@ const WatchToEarn: React.FC = () => {
             <div className="module_img_quote grid md:grid-cols-2 gap-10">
               {/* Image à gauche */}
               <div className="quote_side flex items-center">
-                <p className="text-2xl md:text-3xl lg:text-3xl font-medium leading-tight px-4 md:px-[100px]">
+                <p className="text-xl md:text-3xl lg:text-3xl font-medium leading-tight px-4 md:px-[100px]">
                   Les monochromes ainsi que les images produites comme celles
                   que l'on s'en fait, sont les matériaux de prédilection des
                   collages muraux présentés dans la boutique des Bains du nord.
