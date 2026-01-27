@@ -29,7 +29,7 @@ const Gallery = () => {
     },
     {
       id: "foster-wallace-2024",
-      image: "https://raphaelrossi.com/assets/last-artworks/Foster-Wallace-2024-detoure.png",
+      image: "/assets/last-artworks/Foster-Wallace-2024-detoure.png",
       title: "Foster Wallace",
       year: 2024,
       medium: "Acrylic on canvas",
@@ -37,7 +37,7 @@ const Gallery = () => {
     },
     {
       id: "ottessa-moshfegh-2024",
-      image: "https://raphaelrossi.com/assets/last-artworks/ottessa-moshfegh-2024-detoure.png",
+      image: "/assets/last-artworks/ottessa-moshfegh-2024-detoure.png",
       title: "Ottessa Moshfegh",
       year: 2024,
       medium: "Acrylic on canvas",
@@ -53,7 +53,7 @@ const Gallery = () => {
     },
     {
       id: "laura-kasischke-2023",
-      image: "https://raphaelrossi.com/assets/last-artworks/kasischke-face-2023.png",
+      image: "/assets/last-artworks/kasischke-face-2023.png",
       title: "Laura Kasischke",
       year: 2023,
       medium: "Acrylic on canvas",
@@ -61,7 +61,7 @@ const Gallery = () => {
     },
     {
       id: "joan-didion-2023",
-      image: "https://raphaelrossi.com/assets/last-artworks/joan-didion-face-2023.png",
+      image: "/assets/last-artworks/joan-didion-face-2023.png",
       title: "Joan Didion",
       year: 2023,
       medium: "Acrylic on canvas",

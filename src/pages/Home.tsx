@@ -18,14 +18,14 @@ const Home = () => {
     dimensions: "80 x 80 cm"
   }, {
     id: "foster-wallace-2024",
-    image: "https://raphaelrossi.com/assets/last-artworks/Foster-Wallace-2024-detoure.png",
+    image: "/assets/last-artworks/Foster-Wallace-2024-detoure.png",
     title: "Foster Wallace",
     year: 2024,
     medium: "Acrylic on canvas",
     dimensions: "124 x 124 cm"
   }, {
     id: "ottessa-moshfegh-2024",
-    image: "https://raphaelrossi.com/assets/last-artworks/ottessa-moshfegh-2024-detoure.png",
+    image: "/assets/last-artworks/ottessa-moshfegh-2024-detoure.png",
     title: "Ottessa Moshfegh",
     year: 2024,
     medium: "Acrylic on canvas",

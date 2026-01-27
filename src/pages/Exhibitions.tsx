@@ -15,7 +15,7 @@ const Exhibitions = () => {
       title: "Extraverted paintings / Introverting pictures",
       venue: "Bagnoler",
       dates: "12 septembre - 10 octobre 2023",
-      image: "https://raphaelrossi.com/assets/extraverted-paintings/extraverted-01.jpg",
+      image: "/assets/extraverted-paintings/extraverted-01.jpg",
     },
     {
       id: "3",
