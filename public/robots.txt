@@ -1,14 +1,7 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
+# robots.txt for raphaelrossi.com
 
 User-agent: *
 Allow: /
+
+# Sitemap
+Sitemap: https://raphaelrossi.com/sitemap.xml

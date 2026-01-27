@@ -11,7 +11,6 @@ export const watchToEarnImages = [
   {
     src: "/assets/watch-to-earn/watch-3.jpg", alt: "View of the exhibition", caption: "Installation view, Name Dropping at Pauline Perplex, 2025",
   },
-  
    
   {
     src: "/assets/watch-to-earn/watch-5.jpg", alt: "View of the exhibition", caption: "Installation view, Name Dropping at Pauline Perplex, 2025",

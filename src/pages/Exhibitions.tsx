@@ -87,7 +87,7 @@ const Exhibitions = () => {
                     <Link
                       to="/exhibitions/Namedropping"
                       state={exhibition}
-                      className="text-xl font-medium text-primary hover:underline"
+                      className="text-xl font-medium text-primary link-underline"
                     >
                       {exhibition.title}
                     </Link>
@@ -95,7 +95,7 @@ const Exhibitions = () => {
                     <Link
                       to="/exhibitions/Extraverted-paintings"
                       state={exhibition}
-                      className="text-xl font-medium text-primary hover:underline"
+                      className="text-xl font-medium text-primary link-underline"
                     >
                       {exhibition.title}
                     </Link>
@@ -103,7 +103,7 @@ const Exhibitions = () => {
                     <Link
                       to="/exhibitions/Watch-to-earn"
                       state={exhibition}
-                      className="text-xl font-medium text-primary hover:underline"
+                      className="text-xl font-medium text-primary link-underline"
                     >
                       {exhibition.title}
                     </Link>
@@ -111,7 +111,7 @@ const Exhibitions = () => {
                     <Link
                       to="/exhibitions/Madame-Bovary"
                       state={exhibition}
-                      className="text-xl font-medium text-primary hover:underline"
+                      className="text-xl font-medium text-primary link-underline"
                     >
                       {exhibition.title}
                     </Link>
@@ -119,7 +119,7 @@ const Exhibitions = () => {
                     <Link
                       to="/exhibitions/La-capitale-vol-II"
                       state={exhibition}
-                      className="text-xl font-medium text-primary hover:underline"
+                      className="text-xl font-medium text-primary link-underline"
                     >
                       {exhibition.title}
                     </Link>
@@ -127,7 +127,7 @@ const Exhibitions = () => {
                     <Link
                       to="/exhibitions/La-capitale"
                       state={exhibition}
-                      className="text-xl font-medium text-primary hover:underline"
+                      className="text-xl font-medium text-primary link-underline"
                     >
                       {exhibition.title}
                     </Link>
@@ -135,7 +135,7 @@ const Exhibitions = () => {
                     <Link
                       to="/exhibitions/Au-bord-de-l-age-adulte"
                       state={exhibition}
-                      className="text-xl font-medium text-primary hover:underline"
+                      className="text-xl font-medium text-primary link-underline"
                     >
                       {exhibition.title}
                     </Link>
@@ -143,7 +143,7 @@ const Exhibitions = () => {
                     <Link
                       to="/exhibitions/Le-Vingtieme-Prix"
                       state={exhibition}
-                      className="text-xl font-medium text-primary hover:underline"
+                      className="text-xl font-medium text-primary link-underline"
                     >
                       {exhibition.title}
                     </Link>
@@ -151,9 +151,13 @@ const Exhibitions = () => {
                     <h3 className="text-xl font-medium">{exhibition.title}</h3>
                   )}
 
-                  <div className="space-y-0">
-                    <p className="text-base text-muted-foreground">{exhibition.venue}</p>
-                    <p className="text-base text-muted-foreground">{exhibition.dates}</p>
+                  <div className="relative h-6 overflow-hidden">
+                    <p className="text-base text-muted-foreground transition-all duration-300 group-hover:opacity-0 group-hover:-translate-y-full">
+                      {exhibition.venue}
+                    </p>
+                    <p className="text-base text-muted-foreground absolute top-0 left-0 transition-all duration-300 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0">
+                      {exhibition.dates}
+                    </p>
                   </div>
                 </div>
               </div>

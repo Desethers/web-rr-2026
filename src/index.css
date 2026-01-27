@@ -105,6 +105,27 @@ All colors MUST be HSL.
     transition: var(--transition-elegant);
   }
 
+  /* Animated underline effect for exhibition titles */
+  .link-underline {
+    position: relative;
+    text-decoration: none;
+  }
+
+  .link-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+  }
+
+  .link-underline:hover::after {
+    width: 100%;
+  }
+
   .artwork-card {
     @apply transition-elegant hover:scale-[1.01];
   }
