@@ -87,7 +87,7 @@ const Exhibitions = () => {
                     <Link
                       to="/exhibitions/Namedropping"
                       state={exhibition}
-                      className="text-xl font-medium text-primary link-underline"
+                      className="text-xl font-medium text-primary link-underline cursor-pointer"
                     >
                       {exhibition.title}
                     </Link>
@@ -95,7 +95,7 @@ const Exhibitions = () => {
                     <Link
                       to="/exhibitions/Extraverted-paintings"
                       state={exhibition}
-                      className="text-xl font-medium text-primary link-underline"
+                      className="text-xl font-medium text-primary link-underline cursor-pointer"
                     >
                       {exhibition.title}
                     </Link>
@@ -103,7 +103,7 @@ const Exhibitions = () => {
                     <Link
                       to="/exhibitions/Watch-to-earn"
                       state={exhibition}
-                      className="text-xl font-medium text-primary link-underline"
+                      className="text-xl font-medium text-primary link-underline cursor-pointer"
                     >
                       {exhibition.title}
                     </Link>
@@ -111,7 +111,7 @@ const Exhibitions = () => {
                     <Link
                       to="/exhibitions/Madame-Bovary"
                       state={exhibition}
-                      className="text-xl font-medium text-primary link-underline"
+                      className="text-xl font-medium text-primary link-underline cursor-pointer"
                     >
                       {exhibition.title}
                     </Link>
@@ -119,7 +119,7 @@ const Exhibitions = () => {
                     <Link
                       to="/exhibitions/La-capitale-vol-II"
                       state={exhibition}
-                      className="text-xl font-medium text-primary link-underline"
+                      className="text-xl font-medium text-primary link-underline cursor-pointer"
                     >
                       {exhibition.title}
                     </Link>
@@ -127,7 +127,7 @@ const Exhibitions = () => {
                     <Link
                       to="/exhibitions/La-capitale"
                       state={exhibition}
-                      className="text-xl font-medium text-primary link-underline"
+                      className="text-xl font-medium text-primary link-underline cursor-pointer"
                     >
                       {exhibition.title}
                     </Link>
@@ -135,7 +135,7 @@ const Exhibitions = () => {
                     <Link
                       to="/exhibitions/Au-bord-de-l-age-adulte"
                       state={exhibition}
-                      className="text-xl font-medium text-primary link-underline"
+                      className="text-xl font-medium text-primary link-underline cursor-pointer"
                     >
                       {exhibition.title}
                     </Link>
@@ -143,7 +143,7 @@ const Exhibitions = () => {
                     <Link
                       to="/exhibitions/Le-Vingtieme-Prix"
                       state={exhibition}
-                      className="text-xl font-medium text-primary link-underline"
+                      className="text-xl font-medium text-primary link-underline cursor-pointer"
                     >
                       {exhibition.title}
                     </Link>
