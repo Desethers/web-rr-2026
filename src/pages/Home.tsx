@@ -55,7 +55,7 @@ const Home = () => {
         </section>
 
         {/* Last Artworks */}
-        <section className="mx-auto px-4 md:px-[25px] py-12">
+        <section className="mx-auto px-4 md:px-[25px] py-0 mt-[90px] mb-[70px] xl:mt-20 xl:mb-20">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 justify-items-center">
             {artworks.map((artwork, index) => <div key={artwork.id} className="animate-fade-in w-full flex justify-center" style={{
             animationDelay: `${index * 100}ms`
@@ -65,8 +65,8 @@ const Home = () => {
           </div>
 
           <div>
-            <h1 className="text-2xl lg:text-5xl xl:text-6xl font-semibold mb-4">Last artworks</h1>
-            <p className="text-xl text-muted-foreground mb-8">New pieces from the studio</p>
+            <h1 className="text-2xl lg:text-5xl xl:text-6xl font-semibold mb-2">Last artworks</h1>
+            <p className="text-xl text-muted-foreground mb-6">New pieces from the studio</p>
             <Link to="/gallery" className="btn-rounded">
               Explore more artworks
             </Link>

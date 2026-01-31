@@ -70,16 +70,18 @@ All colors MUST be HSL.
   line-height: 1.5;
 }
 
+.intro_exhibition {
+  font-size: 18px;
+}
+
 @media (min-width: 768px) {
-  .textandinfos,
-  .intro_exhibition {
+  .textandinfos {
     font-size: 19px;
   }
 }
 
 @media (min-width: 1024px) {
-  .textandinfos,
-  .intro_exhibition {
+  .textandinfos {
     font-size: 20px;
   }
 }

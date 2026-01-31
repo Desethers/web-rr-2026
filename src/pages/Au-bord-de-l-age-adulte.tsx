@@ -46,7 +46,7 @@ const AuBordDeLAgeAdulte: React.FC = () => {
 
         <section className="textandinfos">
           <div className="containerintro grid md:grid-cols-2 gap-4 mx-auto px-4 md:px-[25px] py-4">
-            <div className="intro_exhibition text-sm md:text-base">
+            <div className="intro_exhibition">
               <p>23 janvier - 21 avril 2020</p>
               <p className="mt-2">
                 FRAC Champagne-Ardennes,
@@ -55,7 +55,7 @@ const AuBordDeLAgeAdulte: React.FC = () => {
               </p>
             </div>
 
-            <div className="intro_exhibition text-sm md:text-base space-y-5">
+            <div className="intro_exhibition space-y-5">
               <p>
                 The FRAC Champagne-Ardenne hosts, as part of the exhibition
                 Plein Jeu #2, Camille Beson, Raphaël Rossi, Maxime Testu, and
@@ -144,7 +144,7 @@ const AuBordDeLAgeAdulte: React.FC = () => {
                   loading="lazy"
                   decoding="async"
                 />
-                <figcaption className="legende_img text-sm text-muted-foreground mt-2 text-left">
+                <figcaption className="legende_img mt-2 text-xs sm:text-sm md:text-base text-muted-foreground">
                   Installation view, Au bord de l'âge adulte, 2019 Photo :
                   Martin Argyroglo ©
                 </figcaption>

@@ -46,7 +46,7 @@ const LaCapitale: React.FC = () => {
 
         <section className="textandinfos">
           <div className="containerintro grid md:grid-cols-2 gap-4 mx-auto px-4 md:px-[25px] py-4">
-            <div className="intro_exhibition text-sm md:text-base">
+            <div className="intro_exhibition">
               <p>11 janvier - 22 mars 2020</p>
               <p className="mt-2">
                 Centre d'art les Tanneries,
@@ -55,7 +55,7 @@ const LaCapitale: React.FC = () => {
               </p>
             </div>
 
-            <div className="intro_exhibition text-sm md:text-base">
+            <div className="intro_exhibition">
               <p className="mb-4">
                 For their first exhibition, both collective and individual, at
                 the Tanneries, Camille Besson, Raphaël Rossi, Maxime Testu, and

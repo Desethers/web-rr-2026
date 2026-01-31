@@ -50,7 +50,7 @@ const WatchToEarn: React.FC = () => {
 
         <section className="textandinfos">
           <div className="containerintro grid md:grid-cols-2 gap-4 mx-auto px-4 md:px-[25px] py-4">
-            <div className="intro_exhibition text-sm md:text-base">
+            <div className="intro_exhibition">
               <p>29 septembre - 22 octobre 2023</p>
               <p className="mt-4">
                 <p>FRAC Bourgogne</p>
@@ -60,7 +60,7 @@ const WatchToEarn: React.FC = () => {
 
             <div className="h-px bg-border md:hidden" />
 
-            <div className="intro_exhibition text-sm md:text-base">
+            <div className="intro_exhibition">
               <p>
                 Watch to earn is an exhibition conceived following my
                 participation in the research and production residency,
@@ -281,7 +281,7 @@ const WatchToEarn: React.FC = () => {
                     loading="lazy"
                     decoding="async"
                   />
-                  <figcaption className="legende_img mt-2 text-sm text-muted-foreground">
+                  <figcaption className="legende_img mt-2 text-xs sm:text-sm md:text-base text-muted-foreground">
                     {img.caption}
                   </figcaption>
                 </figure>
