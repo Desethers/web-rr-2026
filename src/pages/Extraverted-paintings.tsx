@@ -25,7 +25,7 @@ const ExtravertedPaintings: React.FC = () => {
         <section className="textandinfos">
           <div className="containerintro grid md:grid-cols-2 gap-4 mx-auto px-4 md:px-[25px] py-4">
             {/* Date et infos */}
-            <div className="intro_exhibition text-lg">
+            <div className="intro_exhibition text-[18px]">
               <p className="mb-4 md:mb-6">29 septembre - 23 novembre 2024</p>
               <p>
                 Bagnoler, 46 rue Jules Ferry,
@@ -36,7 +36,7 @@ const ExtravertedPaintings: React.FC = () => {
 
             <div className="h-px bg-border md:hidden " />
 
-            <div className="intro_exhibition text-lg">
+            <div className="intro_exhibition text-[18px]">
               <p>
                 Extraverted paintings / Introverting pictures is a solo
                 exhibition in which a new set of wall and framed collages is
@@ -56,7 +56,7 @@ const ExtravertedPaintings: React.FC = () => {
             {images.length > 0 && <Figure img={images[0]} />}
 
             <ExpandableText>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] text-sm md:text-base mx-auto text-justify">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] text-sm md:text-[18px] mx-auto text-justify">
                   <div>
                     <p className="mb-6">
                       Sur le banc public s'échangent les mots et les images. La

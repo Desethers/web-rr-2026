@@ -24,7 +24,7 @@ const LeVingtiemePrix: React.FC = () => {
 
         <section className="textandinfos">
           <div className="containerintro grid md:grid-cols-2 gap-4 max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px] py-4">
-            <div className="intro_exhibition">
+            <div className="intro_exhibition text-[18px]">
               <p>11 septembre - 27 octobre 2018</p>
               <p className="mt-2">
                 Fondation d'entreprise Ricard,
@@ -33,7 +33,7 @@ const LeVingtiemePrix: React.FC = () => {
               </p>
             </div>
 
-            <div className="intro_exhibition">
+            <div className="intro_exhibition text-[18px]">
               <p>
                 Extrait : Sur le banc public s’échangent les mots et les images.
                 La réification du sens en unités manipulables...
@@ -46,7 +46,7 @@ const LeVingtiemePrix: React.FC = () => {
 
         <section className="gallery max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[25px]">
           <div className="pt-2 sm:pt-10 md:pt-12 lg:pt-16 xl:pt-20 space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-24 xl:space-y-[100px]">
-            <article className="texte_exhibition text-sm md:text-base">
+            <article className="texte_exhibition text-sm md:text-[18px]">
               <p>
                 Sur le banc public s’échangent les mots et les images. La
                 réification du sens en unités manipulables introduit dans
