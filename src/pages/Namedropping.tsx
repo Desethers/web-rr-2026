@@ -151,6 +151,8 @@ const NameDropping: React.FC = () => {
                 />
                 <figcaption className="legende_img mt-2 text-xs sm:text-sm md:text-base text-muted-foreground">
                   Franzen 02, 2025
+                  <br />
+                  Acrylic on canvas, 80x80 cm
                 </figcaption>
               </figure>
 
@@ -221,13 +223,12 @@ const NameDropping: React.FC = () => {
               {[
                 {
                   src: "/assets/name-dropping/015.jpg",
-                  caption: `Moshfegh,2024`,
+                  caption: `Moshfegh, 2024\nAcrylic on canvas, 103x103 cm`,
                   inquireLink: "/artwork/ottessa-moshfegh-2024",
                 },
                 {
                   src: "/assets/name-dropping/014.jpg",
-                  caption: `Foster Wallace, 2024
-            canvas, magazines.`,
+                  caption: `Foster Wallace, 2024\nAcrylic on canvas, 123x123 cm`,
                   inquireLink: "/artwork/foster-wallace-2024",
                 },
               ].map((img, idx) => (
@@ -241,7 +242,7 @@ const NameDropping: React.FC = () => {
                   />
 
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 sm:gap-6 mt-2 md:mt-4">
-                    <figcaption className="legende_img text-xs sm:text-sm md:text-base text-muted-foreground">
+                    <figcaption className="legende_img text-xs sm:text-sm md:text-base text-muted-foreground whitespace-pre-line">
                       {img.caption}
                     </figcaption>
 

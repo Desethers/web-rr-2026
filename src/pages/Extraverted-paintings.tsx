@@ -101,17 +101,15 @@ const ExtravertedPaintings: React.FC = () => {
                 loading="lazy"
                 decoding="async"
               />
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-6 mt-[12px] mb-[12px] py-4">
-                <div className="legende_img text-sm text-muted-foreground">
-                  <p>
-                    Artwork 3, 2023
-                    <br />
-                    canvas, magazines
-                  </p>
-                </div>
+              <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-6 mt-2 md:mt-4">
+                <figcaption className="legende_img text-xs sm:text-sm md:text-[14px] text-muted-foreground">
+                  Artwork 3, 2023
+                  <br />
+                  canvas, magazines
+                </figcaption>
                 <Link
                   to="/artwork/how-to-be"
-                  className="bouton_inquire block md:inline-block w-full md:w-[260px] border border-foreground px-4 py-2 md:py-4 text-xs md:text-base text-center hover:bg-foreground hover:text-background transition-colors"
+                  className="bouton_inquire block sm:inline-block border border-foreground w-full sm:w-[240px] md:w-[260px] py-2 text-center hover:bg-foreground hover:text-background transition-colors text-sm md:text-base"
                 >
                   Inquire
                 </Link>

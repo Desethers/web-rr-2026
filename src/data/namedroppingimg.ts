@@ -17,7 +17,7 @@ export const nameDroppingImages: ExhibitImage[] = [
   { src: "/assets/name-dropping/007.jpg", alt: "View of exhibition", caption: "View of exhibition" },
   { src: "/assets/name-dropping/008.jpg", alt: "Eisenberg, 2023", caption: "Eisenberg, 2023\ncanvas, magazines, laser print\n200 x 40 cm" },
   { src: "/assets/name-dropping/009.jpg", alt: "View of exhibition", caption: "View of exhibition" },
-  { src: "/assets/name-dropping/010.jpg", alt: "Details of America", caption: "Details of America generates great artists and finest sales, 2023\ncanvas, laser print, magazines" },
+  { src: "/assets/name-dropping/010.jpg", alt: "Details of America", caption: "Virginie Despentes 14 & 15, 2025, Acrylic on canvas, 80x80 cm (x2)" },
   { src: "/assets/name-dropping/011.jpg", alt: "Installation view, Name Dropping at Pauline Perplex, 2025", caption: "Installation view, Name Dropping at Pauline Perplex, 2025" },
   { src: "/assets/name-dropping/012.jpg", alt: "View of exhibition", caption: "View of exhibition" },
   { src: "/assets/name-dropping/013.jpg", alt: "Installation view", caption: "Installation view, Name Dropping at Pauline Perplex, 2025" },
