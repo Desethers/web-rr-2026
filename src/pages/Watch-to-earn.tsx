@@ -81,7 +81,7 @@ const WatchToEarn: React.FC = () => {
             <article className="texte_exhibition">
               <div className="relative">
                 <div
-                  className={`grid md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] mx-auto text-justify text-sm md:text-base overflow-hidden transition-all duration-500 ${isMobile && !isTextExpanded ? "max-h-[10em]" : "max-h-[5000px]"}`}
+                  className={`grid md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] mx-auto text-justify text-sm md:text-base overflow-hidden transition-all duration-500 ${!isTextExpanded ? "max-h-[20em]" : "max-h-[5000px]"}`}
                 >
                   <div>
                     <p className="mb-4">
@@ -174,23 +174,21 @@ const WatchToEarn: React.FC = () => {
                   </div>
                 </div>
 
-                {isMobile && !isTextExpanded && (
+                {!isTextExpanded && (
                   <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none" />
                 )}
               </div>
 
-              {isMobile && (
-                <button
-                  onClick={() => setIsTextExpanded(!isTextExpanded)}
-                  className="flex items-center justify-center gap-2 w-full mt-4 py-3 text-foreground hover:bg-secondary transition-colors rounded-lg"
-                >
-                  <span className="font-medium text-xs">{isTextExpanded ? "Masquer le texte" : "Lire la suite"}</span>
-                  <ChevronDown
-                    className={`transition-transform duration-300 ${isTextExpanded ? "rotate-180" : ""}`}
-                    size={20}
-                  />
-                </button>
-              )}
+              <button
+                onClick={() => setIsTextExpanded(!isTextExpanded)}
+                className="flex items-center justify-center gap-2 w-full mt-4 text-foreground hover:opacity-70 transition-opacity"
+              >
+                <span className="text-xs md:text-sm">{isTextExpanded ? "Réduire" : "Lire la suite"}</span>
+                <ChevronDown
+                  className={`transition-transform duration-300 ${isTextExpanded ? "rotate-180" : ""}`}
+                  size={16}
+                />
+              </button>
             </article>
             {[3].map((i) => (
               <Figure key={i} img={images[i]} />
