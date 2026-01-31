@@ -1,11 +1,13 @@
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
+
 const Exhibitions = () => {
-  // ...existing code...
   const exhibitions = [
     {
       id: "1",
       title: "Name Dropping",
+      slug: "Namedropping",
       venue: "Pauline Perplexe",
       dates: "13 juin - 04 juillet 2025",
       image: "/assets/name-dropping/006.jpg",
@@ -13,6 +15,7 @@ const Exhibitions = () => {
     {
       id: "2",
       title: "Extraverted paintings / Introverting pictures",
+      slug: "Extraverted-paintings",
       venue: "Bagnoler",
       dates: "12 septembre - 10 octobre 2023",
       image: "/assets/extraverted-paintings/extraverted-01.jpg",
@@ -20,6 +23,7 @@ const Exhibitions = () => {
     {
       id: "3",
       title: "Watch to earn",
+      slug: "Watch-to-earn",
       venue: "Frac Bourgogne",
       dates: "5 septembre - 6 novembre 2022",
       image: "/assets/watch-to-earn/watch-12.jpg",
@@ -27,6 +31,7 @@ const Exhibitions = () => {
     {
       id: "4",
       title: "Madame Bovary",
+      slug: "Madame-Bovary",
       venue: "Poush",
       dates: "08 mars - 28 mars 2024",
       image: "/assets/pictures-past-exhibitions/bovary-past-exhibitions-grid.jpg",
@@ -34,6 +39,7 @@ const Exhibitions = () => {
     {
       id: "5",
       title: "La capitale tomes 1 et 2, Vol.II",
+      slug: "La-capitale-vol-II",
       venue: "Centre d'Art les Tanneries",
       dates: "15 avril - 10 mai 2024",
       image: "/assets/pictures-past-exhibitions/la-capitale-vol02-past-exhibitions-grid.jpg",
@@ -41,13 +47,15 @@ const Exhibitions = () => {
     {
       id: "6",
       title: "La capitale tome I et II",
-      venue: "Centre d’art les Tanneries",
+      slug: "La-capitale",
+      venue: "Centre d'art les Tanneries",
       dates: "11 janvier - 22 mars 2020",
       image: "/assets/pictures-past-exhibitions/la-capitale-tomes-1-et-2-past-exhibitions-grid.jpg",
     },
     {
       id: "7",
       title: "Au bord de l'âge adulte",
+      slug: "Au-bord-de-l-age-adulte",
       venue: "FRAC Champagne-Ardennes",
       dates: "10 otobre - 13 déc. 2019",
       image: "/assets/pictures-past-exhibitions/au-bord-de-l-age-past-exhibitions-grid.jpg",
@@ -55,6 +63,7 @@ const Exhibitions = () => {
     {
       id: "8",
       title: "Le Vingtième Prix de la Fondation Ricard",
+      slug: "Le-Vingtieme-Prix",
       venue: "Fondation d'entreprise Ricard",
       dates: "11 septembre - 27 octobre 2018",
       image: "/assets/pictures-past-exhibitions/vingtieme-prix-past-exhibitions-grid.jpg",
@@ -83,73 +92,13 @@ const Exhibitions = () => {
                 </div>
 
                 <div className="space-y-1">
-                  {exhibition.title === "Name Dropping" ? (
-                    <Link
-                      to="/exhibitions/Namedropping"
-                      state={exhibition}
-                      className="text-xl font-medium text-primary link-underline cursor-pointer"
-                    >
-                      {exhibition.title}
-                    </Link>
-                  ) : exhibition.title === "Extraverted paintings / Introverting pictures" ? (
-                    <Link
-                      to="/exhibitions/Extraverted-paintings"
-                      state={exhibition}
-                      className="text-xl font-medium text-primary link-underline cursor-pointer"
-                    >
-                      {exhibition.title}
-                    </Link>
-                  ) : exhibition.title === "Watch to earn" ? (
-                    <Link
-                      to="/exhibitions/Watch-to-earn"
-                      state={exhibition}
-                      className="text-xl font-medium text-primary link-underline cursor-pointer"
-                    >
-                      {exhibition.title}
-                    </Link>
-                  ) : exhibition.title === "Madame Bovary" ? (
-                    <Link
-                      to="/exhibitions/Madame-Bovary"
-                      state={exhibition}
-                      className="text-xl font-medium text-primary link-underline cursor-pointer"
-                    >
-                      {exhibition.title}
-                    </Link>
-                  ) : exhibition.title === "La capitale tomes 1 et 2, Vol.II" ? (
-                    <Link
-                      to="/exhibitions/La-capitale-vol-II"
-                      state={exhibition}
-                      className="text-xl font-medium text-primary link-underline cursor-pointer"
-                    >
-                      {exhibition.title}
-                    </Link>
-                  ) : exhibition.title === "La capitale tome I et II" ? (
-                    <Link
-                      to="/exhibitions/La-capitale"
-                      state={exhibition}
-                      className="text-xl font-medium text-primary link-underline cursor-pointer"
-                    >
-                      {exhibition.title}
-                    </Link>
-                  ) : exhibition.title === "Au bord de l'âge adulte" ? (
-                    <Link
-                      to="/exhibitions/Au-bord-de-l-age-adulte"
-                      state={exhibition}
-                      className="text-xl font-medium text-primary link-underline cursor-pointer"
-                    >
-                      {exhibition.title}
-                    </Link>
-                  ) : exhibition.title === "Le Vingtième Prix de la Fondation Ricard" ? (
-                    <Link
-                      to="/exhibitions/Le-Vingtieme-Prix"
-                      state={exhibition}
-                      className="text-xl font-medium text-primary link-underline cursor-pointer"
-                    >
-                      {exhibition.title}
-                    </Link>
-                  ) : (
-                    <h3 className="text-xl font-medium">{exhibition.title}</h3>
-                  )}
+                  <Link
+                    to={`/exhibitions/${exhibition.slug}`}
+                    state={exhibition}
+                    className="text-xl font-medium text-primary link-underline cursor-pointer"
+                  >
+                    {exhibition.title}
+                  </Link>
 
                   <div className="relative h-6 overflow-hidden">
                     <p className="text-base text-muted-foreground transition-all duration-300 group-hover:opacity-0 group-hover:-translate-y-full">
@@ -165,23 +114,7 @@ const Exhibitions = () => {
           </div>
         </section>
       </main>
-      <footer className="footer mt-1 md:mt-8">
-        <div className="footer-content mx-auto px-4 md:px-[25px] py-6 flex flex-row justify-between items-center gap-2">
-          <div className="legal text-left">
-            <p className="text-xs md:text-base">© 2024 Raphaël Rossi - All Rights Reserved</p>
-          </div>
-          <div className="social-media text-right">
-            <a
-              href="https://www.instagram.com/raphaaelrossi/"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:underline text-xs md:text-base"
-            >
-              Instagram
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 };

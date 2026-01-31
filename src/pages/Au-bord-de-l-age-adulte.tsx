@@ -1,31 +1,9 @@
 import React from "react";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import Figure from "@/components/exhibition/Figure";
 import { Link } from "react-router-dom";
 import { auBordDeLAgeAdulteImages } from "../data/auborddelageadulteimg";
-
-type ExhibitImage = {
-  src: string;
-  alt?: string;
-  caption?: string | JSX.Element;
-  className?: string;
-};
-
-const Figure: React.FC<{ img: ExhibitImage }> = ({ img }) => (
-  <figure className={img.className ?? "imagefull"}>
-    <img
-      src={img.src}
-      alt={img.alt ?? ""}
-      className="w-full object-cover"
-      loading="lazy"
-      decoding="async"
-    />
-    {img.caption && (
-      <figcaption className="legende_img mt-2 text-xs sm:text-sm md:text-base text-muted-foreground">
-        {img.caption}
-      </figcaption>
-    )}
-  </figure>
-);
 
 const AuBordDeLAgeAdulte: React.FC = () => {
   const images = auBordDeLAgeAdulteImages;
@@ -174,23 +152,7 @@ const AuBordDeLAgeAdulte: React.FC = () => {
         </section>
       </main>
 
-      <footer className="footer mt-1 md:mt-8">
-        <div className="footer-content mx-auto px-4 md:px-[25px] py-6 flex flex-row justify-between items-center gap-2">
-          <div className="legal text-left">
-            <p className="text-xs md:text-base">© 2024 Raphaël Rossi - All Rights Reserved</p>
-          </div>
-          <div className="social-media text-right">
-            <a
-              href="https://www.instagram.com/raphaaelrossi/"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:underline text-xs md:text-base"
-            >
-              Instagram
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 };

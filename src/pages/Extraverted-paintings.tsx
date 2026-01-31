@@ -1,48 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import Figure from "@/components/exhibition/Figure";
+import ExpandableText from "@/components/exhibition/ExpandableText";
 import { Link } from "react-router-dom";
-import { ChevronDown } from "lucide-react";
 import { extravertedPaintingsImages } from "../data/extravertedpaintingsimg";
-import { useIsMobile } from "@/hooks/use-mobile";
-type ExhibitImage = {
-  src: string;
-  alt?: string;
-  caption?: string | JSX.Element;
-  className?: string;
-  inquireLink?: string;
-};
-const Figure: React.FC<{
-  img: ExhibitImage;
-}> = ({ img }) => (
-  <figure className={img.className ?? "imagefull"}>
-    <img
-      src={img.src}
-      alt={img.alt ?? ""}
-      className="w-full object-cover"
-      loading="lazy"
-      decoding="async"
-    />
-    {img.caption && (
-      <div className="flex items-start justify-between gap-6 md:mt-2">
-        <figcaption className="legende_img mt-2 text-xs sm:text-sm text-muted-foreground">
-          {img.caption}
-        </figcaption>
-        {img.inquireLink && (
-          <Link
-            to={img.inquireLink}
-            className="bouton_inquire inline-block border border-foreground px-2 py-1 md:px-8 md:py-4 text-xs md:text-base hover:bg-foreground hover:text-background transition-colors whitespace-nowrap"
-          >
-            Inquire
-          </Link>
-        )}
-      </div>
-    )}
-  </figure>
-);
-const NameDropping: React.FC = () => {
+
+const ExtravertedPaintings: React.FC = () => {
   const images = extravertedPaintingsImages;
-  const isMobile = useIsMobile();
-  const [isTextExpanded, setIsTextExpanded] = useState(false);
   return (
     <>
       <Navigation />
@@ -90,11 +55,8 @@ const NameDropping: React.FC = () => {
           <div className="space-y-12 md:space-y-[100px]">
             {images.length > 0 && <Figure img={images[0]} />}
 
-            <article className="texte_exhibition">
-              <div className="relative">
-                <div
-                  className={`grid grid-cols-1 md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] text-sm md:text-base mx-auto text-justify overflow-hidden transition-all duration-500 ${isMobile && !isTextExpanded ? "max-h-[10em]" : "max-h-[5000px]"}`}
-                >
+            <ExpandableText>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] text-sm md:text-base mx-auto text-justify">
                   <div>
                     <p className="mb-6">
                       Sur le banc public s'échangent les mots et les images. La
@@ -127,24 +89,7 @@ const NameDropping: React.FC = () => {
                   </div>
                 </div>
 
-                {isMobile && !isTextExpanded && (
-                  <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none" />
-                )}
-              </div>
-
-              {isMobile && (
-                <button
-                  onClick={() => setIsTextExpanded(!isTextExpanded)}
-                  className="flex items-center justify-center gap-2 w-full mt-4 py-3 text-foreground hover:bg-secondary transition-colors rounded-lg"
-                >
-                  <span className="font-medium text-xs">{isTextExpanded ? "Masquer le texte" : "Lire la suite"}</span>
-                  <ChevronDown
-                    className={`transition-transform duration-300 ${isTextExpanded ? "rotate-180" : ""}`}
-                    size={20}
-                  />
-                </button>
-              )}
-            </article>
+            </ExpandableText>
 
             <Figure key={2} img={images[2]} />
 
@@ -230,26 +175,8 @@ const NameDropping: React.FC = () => {
         </section>
       </main>
 
-      <footer className="footer mt-12">
-        <div className="footer-content mx-auto px-4 md:px-[25px] py-6 flex flex-row justify-between items-center">
-          <div className="legal">
-            <p className="text-xs md:text-base">
-              © 2024 Raphaël Rossi - All Rights Reserved
-            </p>
-          </div>
-          <div className="social-media">
-            <a
-              href="https://www.instagram.com/raphaaelrossi/"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:underline text-xs md:text-base"
-            >
-              Instagram
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 };
-export default NameDropping;
+export default ExtravertedPaintings;

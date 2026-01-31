@@ -1,38 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import Figure from "@/components/exhibition/Figure";
+import ExpandableText from "@/components/exhibition/ExpandableText";
 import { Link } from "react-router-dom";
-import { ChevronDown } from "lucide-react";
 import { watchToEarnImages } from "../data/watchtoearnimg";
-import { useIsMobile } from "@/hooks/use-mobile";
-
-type ExhibitImage = {
-  src: string;
-  alt?: string;
-  caption?: string | JSX.Element;
-  className?: string;
-};
-
-const Figure: React.FC<{ img: ExhibitImage }> = ({ img }) => (
-  <figure className={img.className ?? "imagefull"}>
-    <img
-      src={img.src}
-      alt={img.alt ?? ""}
-      className="w-full object-cover"
-      loading="lazy"
-      decoding="async"
-    />
-    {img.caption && (
-      <figcaption className="legende_img mt-2 text-xs sm:text-sm md:text-base text-muted-foreground">
-        {img.caption}
-      </figcaption>
-    )}
-  </figure>
-);
 
 const WatchToEarn: React.FC = () => {
   const images = watchToEarnImages;
-  const isMobile = useIsMobile();
-  const [isTextExpanded, setIsTextExpanded] = useState(false);
 
   return (
     <>
@@ -78,11 +53,8 @@ const WatchToEarn: React.FC = () => {
           <div className="pt-2 sm:pt-10 md:pt-12 lg:pt-16 xl:pt-20 space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-24 xl:space-y-[100px]">
             <Figure key={8} img={images[8]} />
 
-            <article className="texte_exhibition">
-              <div className="relative">
-                <div
-                  className={`grid md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] mx-auto text-justify text-sm md:text-base overflow-hidden transition-all duration-500 ${!isTextExpanded ? "max-h-[20em]" : "max-h-[5000px]"}`}
-                >
+            <ExpandableText>
+              <div className="grid md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] mx-auto text-justify text-sm md:text-base">
                   <div>
                     <p className="mb-4">
                       L'Eldorado, c'est la quête effrénée d'une liberté
@@ -174,22 +146,7 @@ const WatchToEarn: React.FC = () => {
                   </div>
                 </div>
 
-                {!isTextExpanded && (
-                  <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none" />
-                )}
-              </div>
-
-              <button
-                onClick={() => setIsTextExpanded(!isTextExpanded)}
-                className="flex items-center justify-center gap-2 w-full mt-4 text-foreground hover:opacity-70 transition-opacity"
-              >
-                <span className="text-xs md:text-sm">{isTextExpanded ? "Réduire" : "Lire la suite"}</span>
-                <ChevronDown
-                  className={`transition-transform duration-300 ${isTextExpanded ? "rotate-180" : ""}`}
-                  size={16}
-                />
-              </button>
-            </article>
+            </ExpandableText>
             {[3].map((i) => (
               <Figure key={i} img={images[i]} />
             ))}
@@ -327,23 +284,7 @@ const WatchToEarn: React.FC = () => {
         </section>
       </main>
 
-      <footer className="footer mt-1 md:mt-8">
-        <div className="footer-content mx-auto px-4 md:px-[25px] py-6 flex flex-row justify-between items-center gap-2">
-          <div className="legal text-left">
-            <p className="text-xs md:text-base">© 2024 Raphaël Rossi - All Rights Reserved</p>
-          </div>
-          <div className="social-media text-right">
-            <a
-              href="https://www.instagram.com/raphaaelrossi/"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:underline text-xs md:text-base"
-            >
-              Instagram
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 };

@@ -80,7 +80,7 @@ const Gallery = () => {
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <p className="text-lg text-muted-foreground">New pieces from the studio</p>
 
-              <div className="text-base text-muted-foreground leading-relaxed mb-4">
+              <div className="text-lg text-muted-foreground leading-relaxed mb-4">
                 <p className="mb-4">
                   The Gallery is the straight line from my studio to you—no intermediates. You’re plugged straight into
                   my production. Each piece—painting, collage, collectible—comes out of my hands.
