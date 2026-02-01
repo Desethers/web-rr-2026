@@ -21,7 +21,7 @@ const Figure: React.FC<{ img: ExhibitImage }> = ({ img }) => (
     {img.caption && (
       img.inquireLink ? (
         <div className="flex items-start justify-between gap-6 md:mt-2">
-          <figcaption className="legende_img mt-2 text-xs sm:text-sm md:text-[14px] text-muted-foreground">
+          <figcaption className="legende_img mt-2 text-xs sm:text-sm md:text-[14px] text-muted-foreground whitespace-pre-line">
             {img.caption}
           </figcaption>
           <Link
@@ -32,7 +32,7 @@ const Figure: React.FC<{ img: ExhibitImage }> = ({ img }) => (
           </Link>
         </div>
       ) : (
-        <figcaption className="legende_img mt-2 text-xs sm:text-sm md:text-[14px] text-muted-foreground">
+        <figcaption className="legende_img mt-2 text-xs sm:text-sm md:text-[14px] text-muted-foreground whitespace-pre-line">
           {img.caption}
         </figcaption>
       )

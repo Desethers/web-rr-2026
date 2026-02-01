@@ -73,7 +73,7 @@ const MadameBovary: React.FC = () => {
                     loading="lazy"
                     decoding="async"
                   />
-                  <p className="legende_img whitespace-pre-line">Don DeLillo</p>
+                  <p className="legende_img whitespace-pre-line mt-2 text-xs sm:text-sm md:text-[14px] text-muted-foreground">Don DeLillo</p>
                 </div>
 
                 {/* Citation à droite */}
@@ -109,7 +109,7 @@ const MadameBovary: React.FC = () => {
                       loading="lazy"
                       decoding="async"
                     />
-                    <figcaption className="legende_img mt-2 text-xs sm:text-sm md:text-base text-muted-foreground">
+                    <figcaption className="legende_img mt-2 text-xs sm:text-sm md:text-[14px] text-muted-foreground">
                       {img.caption}
                     </figcaption>
                   </figure>

@@ -162,7 +162,7 @@ const WatchToEarn: React.FC = () => {
                   loading="lazy"
                   decoding="async"
                 />
-                <p className="legende_img whitespace-pre-line">Don DeLillo</p>
+                <p className="legende_img whitespace-pre-line mt-2 text-xs sm:text-sm md:text-[14px] text-muted-foreground">KS1 installation, 2022</p>
               </div>
 
               {/* Citation à droite */}
@@ -209,7 +209,7 @@ const WatchToEarn: React.FC = () => {
                   loading="lazy"
                   decoding="async"
                 />
-                <p className="legende_img whitespace-pre-line">Don DeLillo</p>
+                <p className="legende_img whitespace-pre-line mt-2 text-xs sm:text-sm md:text-[14px] text-muted-foreground">Detail of Les 5 diables, 2022</p>
               </div>
             </div>
 
@@ -222,12 +222,11 @@ const WatchToEarn: React.FC = () => {
               {[
                 {
                   src: "/assets/watch-to-earn/watch-11.jpg",
-                  caption: `Don DeLillo`,
+                  caption: `KS3, 2022\nCanvas,laser print, chromolux paper`,
                 },
                 {
                   src: "/assets/watch-to-earn/watch-8.jpg",
-                  caption: `Details of Valéria, 2023
-                      canvas, magazines.`,
+                  caption: `Detail of KS3, 2022`,
                 },
               ].map((img, idx) => (
                 <figure className="imagefull" key={idx}>
@@ -238,7 +237,7 @@ const WatchToEarn: React.FC = () => {
                     loading="lazy"
                     decoding="async"
                   />
-                  <figcaption className="legende_img mt-2 text-xs sm:text-sm md:text-base text-muted-foreground">
+                  <figcaption className="legende_img mt-2 text-xs sm:text-sm md:text-[14px] text-muted-foreground">
                     {img.caption}
                   </figcaption>
                 </figure>
@@ -252,12 +251,11 @@ const WatchToEarn: React.FC = () => {
               {[
                 {
                   src: "/assets/watch-to-earn/watch-2.jpg",
-                  caption: `Don DeLillo`,
+                  caption: `AD1, 2022\n50 x 65 cm`,
                 },
                 {
                   src: "/assets/watch-to-earn/watch-10.jpg",
-                  caption: `Details of Valéria, 2023
-                            canvas, magazines.`,
+                  caption: `AD1, 2022\n50 x 65 cm`,
                 },
               ].map((img, idx) => (
                 <div className="img_side" key={idx}>
@@ -268,7 +266,7 @@ const WatchToEarn: React.FC = () => {
                     loading="lazy"
                     decoding="async"
                   />
-                  <p className="legende_img whitespace-pre-line">
+                  <p className="legende_img whitespace-pre-line mt-2 text-xs sm:text-sm md:text-[14px] text-muted-foreground">
                     {img.caption}
                   </p>
                 </div>

@@ -122,7 +122,7 @@ const AuBordDeLAgeAdulte: React.FC = () => {
                   loading="lazy"
                   decoding="async"
                 />
-                <figcaption className="legende_img mt-2 text-xs sm:text-sm md:text-base text-muted-foreground">
+                <figcaption className="legende_img mt-2 text-xs sm:text-sm md:text-[14px] text-muted-foreground">
                   Installation view, Au bord de l'âge adulte, 2019 Photo :
                   Martin Argyroglo ©
                 </figcaption>

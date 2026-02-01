@@ -108,7 +108,7 @@ const LaCapitaleVolII: React.FC = () => {
                   loading="lazy"
                   decoding="async"
                 />
-                <figcaption className="legende_img mt-2 text-xs sm:text-sm md:text-base text-muted-foreground">
+                <figcaption className="legende_img mt-2 text-xs sm:text-sm md:text-[14px] text-muted-foreground">
                   Franzen 02, 2025
                 </figcaption>
               </figure>
@@ -153,7 +153,7 @@ const LaCapitaleVolII: React.FC = () => {
                     loading="lazy"
                     decoding="async"
                   />
-                  <figcaption className="legende_img mt-2 text-xs sm:text-sm md:text-base text-muted-foreground">
+                  <figcaption className="legende_img mt-2 text-xs sm:text-sm md:text-[14px] text-muted-foreground">
                     {img.caption}
                   </figcaption>
                 </figure>

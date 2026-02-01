@@ -142,7 +142,7 @@ const ExtravertedPaintings: React.FC = () => {
                     loading="lazy"
                     decoding="async"
                   />
-                  <figcaption className="legende_img text-xs sm:text-sm md:text-base mt-2 text-muted-foreground">
+                  <figcaption className="legende_img text-xs sm:text-sm md:text-[14px] mt-2 text-muted-foreground">
                     {img.caption}
                   </figcaption>
                 </div>
