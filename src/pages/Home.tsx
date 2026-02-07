@@ -4,7 +4,8 @@ import ArtworkCard from "@/components/ArtworkCard";
 const Home = () => {
   const artworks = [{
     id: "Despentes 14&15",
-    image: "/assets/artworks-img/Despentes-diptik-icone.png",
+    image: "/assets/artworks-img/Despentes02.jpg",
+    imageHover: "/assets/artworks-img/Despentes01.jpeg",
     title: "Despentes 14 & 15",
     year: 2025,
     medium: "Acrylic on canvas",

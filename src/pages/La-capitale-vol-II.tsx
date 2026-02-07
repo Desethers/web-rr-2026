@@ -2,6 +2,7 @@ import React from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Figure from "@/components/exhibition/Figure";
+import ExpandableText from "@/components/exhibition/ExpandableText";
 import { Link } from "react-router-dom";
 import { laCapitaleVol2Images } from "../data/lacapitalevol2img";
 
@@ -50,7 +51,7 @@ const LaCapitaleVolII: React.FC = () => {
         <section className="gallery mx-auto px-4 md:px-[25px]">
           <div className="pt-2 sm:pt-10 md:pt-12 lg:pt-16 xl:pt-20 space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-24 xl:space-y-[100px]">
             <Figure key={1} img={images[1]} />
-            <article className="texte_exhibition">
+            <ExpandableText>
               <div className="grid md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] mx-auto text-justify text-sm md:text-[18px]">
                 <div>
                   <p className="mb-4">
@@ -91,7 +92,7 @@ const LaCapitaleVolII: React.FC = () => {
                   <p className="mb-4">Text by Eric Degoutte</p>
                 </div>
               </div>
-            </article>
+            </ExpandableText>
 
             {[2, 3].map((i) => (
               <Figure key={i} img={images[i]} />
@@ -115,16 +116,10 @@ const LaCapitaleVolII: React.FC = () => {
 
               {/* Citation à droite */}
               <div className="quote_side flex items-center">
-                <p className="text-xl md:text-3xl lg:text-3xl font-medium leading-tight px-4 md:px-[100px]">
-                  Laboratoire de formes et d'associations comme de formes
-                  d'associations, l'espace-temps de La Capitale, Tomes I et II,
-                  vol. II met ainsi en lumière l'intérêt partagé par les quatre
-                  artistes pour les coulisses et interstices de la création – de
-                  l'atelier à l'espace d'exposition, du mystère des gestes aux
-                  lumières de la Ville –, comme il laisse poindre la promesse de
-                  projets futurs – ouverts à d'autres collaborateurs – pour
-                  continuer à faire de l'atelier une œuvre et de l'œuvre un
-                  atelier.
+                <p className="text-xl md:text-[28px] lg:text-[28px] font-medium leading-[32px] px-4 md:px-[50px] border border-black">
+                 The space-time of La Capitale, Volumes I and II—Volume II in particular—thus highlights the shared interest of the four 
+                 artists in the backstage areas and interstices of creation: from the studio to the exhibition space, from the mystery 
+                 of gestures to the lights of the city.
                 </p>
               </div>
             </div>
@@ -160,7 +155,7 @@ const LaCapitaleVolII: React.FC = () => {
               ))}
             </div>
 
-            <div className="mt-1 md:mt-12">
+            <div className="mt-10 md:mt-20">
               <Link to="/exhibitions" className="text-sm hover:underline">
                 ← Retour aux expositions
               </Link>

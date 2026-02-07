@@ -55,6 +55,8 @@ const LaCapitale: React.FC = () => {
 
         <section className="gallery mx-auto px-4 md:px-[25px]">
           <div className="pt-2 sm:pt-10 md:pt-12 lg:pt-16 xl:pt-20 space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-24 xl:space-y-[100px]">
+            {images.length > 0 && <Figure key="first" img={images[0]} />}
+
             <article className="texte_exhibition">
               <div className="grid md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] mx-auto text-justify text-sm md:text-[18px]">
                 <div>
@@ -76,13 +78,15 @@ const LaCapitale: React.FC = () => {
                     questions both the ontological and physical relationships
                     between the individual and cinema, between intimate and
                     collective imaginaries, leading to analyses to which the
-                    figure of the artist is not immune. Text by Eric Degoutte
+                    figure of the artist is not immune.
+                  </p>
+                  <p className="mb-4 italic">Text by Eric Degoutte
                   </p>
                 </div>
               </div>
             </article>
 
-            {images.map((img, idx) => (
+            {images.slice(1).map((img, idx) => (
               <Figure key={idx} img={img} />
             ))}
 
