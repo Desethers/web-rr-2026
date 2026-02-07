@@ -6,7 +6,7 @@ interface ExpandableTextProps {
   maxHeight?: string;
 }
 
-const ExpandableText: React.FC<ExpandableTextProps> = ({ children, maxHeight = "20em" }) => {
+const ExpandableText: React.FC<ExpandableTextProps> = ({ children, maxHeight = "14em" }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (

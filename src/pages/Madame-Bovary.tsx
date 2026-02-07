@@ -67,13 +67,15 @@ const MadameBovary: React.FC = () => {
                 {/* Image à gauche */}
                 <div className="img_side">
                   <img
-                    src="/assets/madame-bovary/madame-bovary-01.jpg"
-                    alt="view of exhibition"
+                    src={images[1].src}
+                    alt={images[1].alt}
                     className="w-full"
                     loading="lazy"
                     decoding="async"
                   />
-                  <p className="legende_img whitespace-pre-line mt-2 text-xs sm:text-sm md:text-[14px] text-muted-foreground">Don DeLillo</p>
+                  <p className="legende_img whitespace-pre-line mt-2 text-xs sm:text-sm md:text-[14px] text-muted-foreground">
+                    {images[1].caption}
+                  </p>
                 </div>
 
                 {/* Citation à droite */}
@@ -90,27 +92,17 @@ const MadameBovary: React.FC = () => {
 
               {/* 🔹 Bloc 2 images côte à côte */}
               <div className="module_img_img grid md:grid-cols-2 gap-10">
-                {[
-                  {
-                    src: "/assets/madame-bovary/madame-bovary-09.jpg",
-                    caption: `Don DeLillo`,
-                  },
-                  {
-                    src: "/assets/madame-bovary/madame-bovary-05.jpg",
-                    caption: `Details of Valéria, 2023
-                      canvas, magazines.`,
-                  },
-                ].map((img, idx) => (
-                  <figure className="imagefull" key={idx}>
+                {[9, 5].map((i) => (
+                  <figure className="imagefull" key={i}>
                     <img
-                      src={img.src}
-                      alt="view of exhibition"
+                      src={images[i].src}
+                      alt={images[i].alt}
                       className="w-full object-cover"
                       loading="lazy"
                       decoding="async"
                     />
-                    <figcaption className="legende_img mt-2 text-xs sm:text-sm md:text-[14px] text-muted-foreground">
-                      {img.caption}
+                    <figcaption className="legende_img whitespace-pre-line mt-2 text-xs sm:text-sm md:text-[14px] text-muted-foreground">
+                      {images[i].caption}
                     </figcaption>
                   </figure>
                 ))}

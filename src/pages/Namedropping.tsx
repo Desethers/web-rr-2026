@@ -59,7 +59,7 @@ const NameDropping: React.FC = () => {
             <Figure key={4} img={images[4]} />
 
             <ExpandableText>
-              <div className="grid md:grid-cols-2 gap-x-6 md:gap-x-8 lg:gap-x-12 xl:gap-x-16 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 mx-auto text-justify text-sm md:text-lg">
+              <div className="grid md:grid-cols-2 gap-x-6 md:gap-x-8 lg:gap-x-12 xl:gap-x-16 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 mx-auto text-justify text-[16px]">
                 <div>
                   <p className="mb-4 italic">Madame Bovary, c'est vous.</p>
                   <p className="mb-4">
@@ -143,16 +143,14 @@ const NameDropping: React.FC = () => {
             <div className="module_img_quote grid md:grid-cols-2 gap-6 md:gap-8 lg:gap-10">
               <figure className="img_side">
                 <img
-                  src="/assets/artworks-img/Franzen-01-detail.jpg"
-                  alt="view of exhibition"
+                  src={images[17].src}
+                  alt={images[17].alt}
                   className="w-full"
                   loading="lazy"
                   decoding="async"
                 />
-                <figcaption className="legende_img mt-2 text-xs sm:text-sm md:text-[14px] text-muted-foreground">
-                  Detail of Franzen 02, 2025
-                  <br />
-                  Acrylic on canvas, 80x80 cm
+                <figcaption className="legende_img whitespace-pre-line mt-2 text-xs sm:text-sm md:text-[14px] text-muted-foreground">
+                  {images[17].caption}
                 </figcaption>
               </figure>
 
@@ -165,22 +163,11 @@ const NameDropping: React.FC = () => {
             </div>
 
             <div className="module_img_img grid md:grid-cols-2 gap-12 md:gap-8 lg:gap-8 ">
-              {[
-                {
-                  src: "/assets/name-dropping/013.jpg",
-                  caption: `Don DeLillo 02, 2025\nAcrylic on canvas, 80 x 80 cm`,
-                  inquireLink: "/artwork/De-Lillo-02",
-                },
-                {
-                  src: "/assets/name-dropping/012.jpg",
-                  caption: `Kasischke-02, 2024\nAcrylic on canvas, 123 x 92,5 cm`,
-                  inquireLink: "/artwork/Kasischke-02",
-                },
-              ].map((img, idx) => (
-                <figure className="imagefull" key={idx}>
+              {[12, 11].map((i) => (
+                <figure className="imagefull" key={i}>
                   <img
-                    src={img.src}
-                    alt="view of exhibition"
+                    src={images[i].src}
+                    alt={images[i].alt}
                     className="w-full object-cover"
                     loading="lazy"
                     decoding="async"
@@ -188,12 +175,12 @@ const NameDropping: React.FC = () => {
 
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-6 mt-2 md:mt-4">
                     <figcaption className="legende_img text-xs sm:text-sm md:text-[14px] text-muted-foreground whitespace-pre-line">
-                      {img.caption}
+                      {images[i].caption}
                     </figcaption>
 
-                    {img.inquireLink && (
+                    {images[i].inquireLink && (
                       <Link
-                        to={img.inquireLink}
+                        to={images[i].inquireLink}
                         className="bouton_inquire block sm:inline-block border border-foreground w-full sm:w-[240px] md:w-[260px] py-2 text-center hover:bg-foreground hover:text-background transition-colors text-sm md:text-base"
                       >
                         Inquire
@@ -219,22 +206,11 @@ const NameDropping: React.FC = () => {
             ))}
 
             <div className="module_img_img grid md:grid-cols-2 gap-12 md:gap-8 lg:gap-10">
-              {[
-                {
-                  src: "/assets/name-dropping/015.jpg",
-                  caption: `Moshfegh, 2024\nAcrylic on canvas, 103x103 cm`,
-                  inquireLink: "/artwork/ottessa-moshfegh-2024",
-                },
-                {
-                  src: "/assets/name-dropping/014.jpg",
-                  caption: `Foster Wallace, 2024\nAcrylic on canvas, 123 x 123 cm`,
-                  inquireLink: "/artwork/foster-wallace-2024",
-                },
-              ].map((img, idx) => (
-                <figure className="imagefull" key={idx}>
+              {[14, 13].map((i) => (
+                <figure className="imagefull" key={i}>
                   <img
-                    src={img.src}
-                    alt="view of exhibition"
+                    src={images[i].src}
+                    alt={images[i].alt}
                     className="w-full object-cover"
                     loading="lazy"
                     decoding="async"
@@ -242,12 +218,12 @@ const NameDropping: React.FC = () => {
 
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 sm:gap-6 mt-2 md:mt-4">
                     <figcaption className="legende_img text-xs sm:text-sm md:text-[14px] text-muted-foreground whitespace-pre-line">
-                      {img.caption}
+                      {images[i].caption}
                     </figcaption>
 
-                    {img.inquireLink && (
+                    {images[i].inquireLink && (
                       <Link
-                        to={img.inquireLink}
+                        to={images[i].inquireLink}
                         className="bouton_inquire block sm:inline-block border border-foreground w-full sm:w-[240px] md:w-[260px] py-2 text-center hover:bg-foreground hover:text-background transition-colors text-sm md:text-base"
                       >
                         Inquire

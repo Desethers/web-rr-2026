@@ -40,10 +40,7 @@ const ExtravertedPaintings: React.FC = () => {
               <p>
                 Extraverted paintings / Introverting pictures is a solo
                 exhibition in which a new set of wall and framed collages is
-                presented. Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Alias temporibus dolor cum laborum provident est,
-                architecto excepturi aspernatur quisquam optio sint itaque
-                inventore, non aliquam libero ullam facere impedit vel!
+                presented. 
               </p>
             </div>
 
@@ -56,7 +53,7 @@ const ExtravertedPaintings: React.FC = () => {
             {images.length > 0 && <Figure img={images[0]} />}
 
             <ExpandableText>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] text-sm md:text-[18px] mx-auto text-justify">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] text-[16px] mx-auto text-justify">
                   <div>
                     <p className="mb-6">
                       Sur le banc public s'échangent les mots et les images. La
@@ -96,16 +93,14 @@ const ExtravertedPaintings: React.FC = () => {
             <figure className="imagefull">
               <img
                 src={images[5].src}
-                alt="Artwork 3"
+                alt={images[5].alt}
                 className="w-full object-cover"
                 loading="lazy"
                 decoding="async"
               />
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-6 mt-2 md:mt-4">
-                <figcaption className="legende_img text-xs sm:text-sm md:text-[14px] text-muted-foreground">
-                  Artwork 3, 2023
-                  <br />
-                  canvas, magazines
+                <figcaption className="legende_img whitespace-pre-line text-xs sm:text-sm md:text-[14px] text-muted-foreground">
+                  {images[5].caption}
                 </figcaption>
                 <Link
                   to="/artwork/how-to-be"
@@ -121,29 +116,18 @@ const ExtravertedPaintings: React.FC = () => {
             ))}
 
             {/* 🔹 Bloc 2 images côte à côte */}
-            <div className="module_img_img grid md:grid-cols-2 gap-6 md:gap-10 my-6 mt-2 whitespace-pre-line">
-              {[
-                {
-                  src: "/assets/extraverted-paintings/extraverted-10.jpg",
-                  caption: `Details of America generates great artists and finest sales, 2023 
-                            canvas, laser print, magazines`,
-                },
-                {
-                  src: "/assets/extraverted-paintings/extraverted-11.jpg",
-                  caption: `Details of Valéria, 2023
-                            canvas, magazines.`,
-                },
-              ].map((img, idx) => (
-                <div className="img_side" key={idx}>
+            <div className="module_img_img grid md:grid-cols-2 gap-6 md:gap-10 my-6 mt-2">
+              {[9, 10].map((i) => (
+                <div className="img_side" key={i}>
                   <img
-                    src={img.src}
-                    alt=""
+                    src={images[i].src}
+                    alt={images[i].alt}
                     className="w-full"
                     loading="lazy"
                     decoding="async"
                   />
-                  <figcaption className="legende_img text-xs sm:text-sm md:text-[14px] mt-2 text-muted-foreground">
-                    {img.caption}
+                  <figcaption className="legende_img whitespace-pre-line text-xs sm:text-sm md:text-[14px] mt-2 text-muted-foreground">
+                    {images[i].caption}
                   </figcaption>
                 </div>
               ))}

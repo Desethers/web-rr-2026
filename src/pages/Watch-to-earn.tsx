@@ -54,7 +54,7 @@ const WatchToEarn: React.FC = () => {
             <Figure key={8} img={images[8]} />
 
             <ExpandableText>
-              <div className="grid md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] mx-auto text-justify text-sm md:text-[18px]">
+              <div className="grid md:grid-cols-2 gap-x-6 md:gap-x-[100px] px-4 md:px-[100px] mx-auto text-justify text-[16px]">
                   <div>
                     <p className="mb-4">
                       L'Eldorado, c'est la quête effrénée d'une liberté
@@ -65,7 +65,7 @@ const WatchToEarn: React.FC = () => {
                       toujours plus lointaine, d'un avenir où le temps serait
                       enfin disponible à profusion. Paradoxalement, c'est aussi un
                       lieu, une salle de cinéma située rue Alfred de Musset, à
-                      Dijon.Là, passé immobile et futur illusoire se rencontrent,
+                      Dijon. Là, passé immobile et futur illusoire se rencontrent,
                       l'Eldorado devient une intersection entre le réel et
                       l'imaginaire, entre le tangible et l'intangible.
                     </p>
@@ -156,13 +156,15 @@ const WatchToEarn: React.FC = () => {
               {/* Image à gauche */}
               <div className="img_side">
                 <img
-                  src="/assets/watch-to-earn/watch-0.jpg"
-                  alt="view of exhibition"
+                  src={images[0].src}
+                  alt={images[0].alt}
                   className="w-full"
                   loading="lazy"
                   decoding="async"
                 />
-                <p className="legende_img whitespace-pre-line mt-2 text-xs sm:text-sm md:text-[14px] text-muted-foreground">KS1 installation, 2022</p>
+                <p className="legende_img whitespace-pre-line mt-2 text-xs sm:text-sm md:text-[14px] text-muted-foreground">
+                  {images[0].caption}
+                </p>
               </div>
 
               {/* Citation à droite */}
@@ -191,7 +193,7 @@ const WatchToEarn: React.FC = () => {
             ))}
             {/* 🔹 Bloc image + citation côte à côte */}
             <div className="module_img_quote grid md:grid-cols-2 gap-10">
-              {/* Image à gauche */}
+              {/* Citation à gauche */}
               <div className="quote_side flex items-center">
                 <p className="text-xl md:text-3xl lg:text-3xl font-medium leading-tight px-4 md:px-[100px]">
                   Les monochromes ainsi que les images produites comme celles
@@ -200,16 +202,18 @@ const WatchToEarn: React.FC = () => {
                 </p>
               </div>
 
-              {/* Citation à droite */}
+              {/* Image à droite */}
               <div className="img_side">
                 <img
-                  src="/assets/watch-to-earn/watch-7.jpg"
-                  alt="view of exhibition"
+                  src={images[6].src}
+                  alt={images[6].alt}
                   className="w-full"
                   loading="lazy"
                   decoding="async"
                 />
-                <p className="legende_img whitespace-pre-line mt-2 text-xs sm:text-sm md:text-[14px] text-muted-foreground">Detail of Les 5 diables, 2022</p>
+                <p className="legende_img whitespace-pre-line mt-2 text-xs sm:text-sm md:text-[14px] text-muted-foreground">
+                  {images[6].caption}
+                </p>
               </div>
             </div>
 
@@ -219,26 +223,17 @@ const WatchToEarn: React.FC = () => {
 
             {/* 🔹 Bloc 2 images côte à côte */}
             <div className="module_img_img grid md:grid-cols-2 gap-10">
-              {[
-                {
-                  src: "/assets/watch-to-earn/watch-11.jpg",
-                  caption: `KS3, 2022\nCanvas,laser print, chromolux paper`,
-                },
-                {
-                  src: "/assets/watch-to-earn/watch-8.jpg",
-                  caption: `Detail of KS3, 2022`,
-                },
-              ].map((img, idx) => (
-                <figure className="imagefull" key={idx}>
+              {[10, 7].map((i) => (
+                <figure className="imagefull" key={i}>
                   <img
-                    src={img.src}
-                    alt="view of exhibition"
+                    src={images[i].src}
+                    alt={images[i].alt}
                     className="w-full object-cover"
                     loading="lazy"
                     decoding="async"
                   />
-                  <figcaption className="legende_img mt-2 text-xs sm:text-sm md:text-[14px] text-muted-foreground">
-                    {img.caption}
+                  <figcaption className="legende_img whitespace-pre-line mt-2 text-xs sm:text-sm md:text-[14px] text-muted-foreground">
+                    {images[i].caption}
                   </figcaption>
                 </figure>
               ))}
@@ -248,26 +243,17 @@ const WatchToEarn: React.FC = () => {
             ))}
             {/* 🔹 Bloc 2 images côte à côte */}
             <div className="module_img_img grid md:grid-cols-2 gap-10 my-6">
-              {[
-                {
-                  src: "/assets/watch-to-earn/watch-2.jpg",
-                  caption: `AD1, 2022\n50 x 65 cm`,
-                },
-                {
-                  src: "/assets/watch-to-earn/watch-10.jpg",
-                  caption: `AD1, 2022\n50 x 65 cm`,
-                },
-              ].map((img, idx) => (
-                <div className="img_side" key={idx}>
+              {[2, 9].map((i) => (
+                <div className="img_side" key={i}>
                   <img
-                    src={img.src}
-                    alt="view of exhibition"
+                    src={images[i].src}
+                    alt={images[i].alt}
                     className="w-full"
                     loading="lazy"
                     decoding="async"
                   />
                   <p className="legende_img whitespace-pre-line mt-2 text-xs sm:text-sm md:text-[14px] text-muted-foreground">
-                    {img.caption}
+                    {images[i].caption}
                   </p>
                 </div>
               ))}

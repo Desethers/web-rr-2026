@@ -47,7 +47,7 @@ const Home = () => {
           <div className="max-w-3xl">
             <h1 className="text-3xl lg:text-5xl xl:text-6xl font-semibold mb-2 animate-fade-in">Name dropping</h1>
             <p className="text-lg lg:text-2xl text-muted-foreground ">Pauline Perplexe</p>
-            <p className="text-lg lg:text-2xl text-muted-foreground mb-6">13 juin - 4 juillet 2025</p>
+            <p className="text-lg lg:text-xl text-muted-foreground mb-6 leading-7">13 juin - 4 juillet 2025</p>
             <Link to="/exhibitions" className="btn-rounded font-normal">
               Explore more exhibitions
             </Link>
@@ -66,7 +66,7 @@ const Home = () => {
 
           <div>
             <h1 className="text-2xl lg:text-5xl xl:text-6xl font-semibold mb-2">Last artworks</h1>
-            <p className="text-xl text-muted-foreground mb-6">New pieces from the studio</p>
+            <p className="text-lg lg:text-xl text-muted-foreground mb-6 leading-7">New pieces from the studio</p>
             <Link to="/gallery" className="btn-rounded">
               Explore more artworks
             </Link>

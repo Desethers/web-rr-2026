@@ -27,7 +27,7 @@ export const extravertedPaintingsImages = [
   {
     src: "/assets/extraverted-paintings/extraverted-06.jpg",
     alt: "Extraverted Painting 6",
-    caption: "Artwork 6, 2023",
+    caption: "Artwork 3, 2023\ncanvas, magazines",
   },
   {
     src: "/assets/extraverted-paintings/extraverted-07.jpg",
@@ -47,12 +47,12 @@ export const extravertedPaintingsImages = [
   {
     src: "/assets/extraverted-paintings/extraverted-10.jpg",
     alt: "Extraverted Painting 10",
-    caption: "Artwork 10, 2023",
+    caption: "Details of America generates great artists and finest sales, 2023\ncanvas, laser print, magazines",
   },
   {
     src: "/assets/extraverted-paintings/extraverted-11.jpg",
     alt: "Extraverted Painting 11",
-    caption: "Artwork 11, 2023",
+    caption: "Details of Valéria, 2023\ncanvas, magazines.",
   },
   {
     src: "/assets/extraverted-paintings/extraverted-12.jpg",
