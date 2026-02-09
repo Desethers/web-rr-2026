@@ -1,5 +1,9 @@
-const Footer = () => (
-  <footer className="footer mt-1 md:mt-8">
+type FooterProps = {
+  className?: string;
+};
+
+const Footer = ({ className }: FooterProps) => (
+  <footer className={`footer mt-1 md:mt-8 ${className ?? ""}`.trim()}>
     <div className="footer-content mx-auto px-4 md:px-[25px] py-6 flex flex-row justify-between items-center gap-2">
       <div className="legal text-left">
         <p className="text-xs md:text-base">© 2024 Raphaël Rossi - All Rights Reserved</p>
